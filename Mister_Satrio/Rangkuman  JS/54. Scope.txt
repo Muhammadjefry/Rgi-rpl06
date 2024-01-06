@@ -1,0 +1,22 @@
+
+
+------------- JavaScript Scope ------------
+
+* Cakupan menentukan aksesibilitas (visibilitas) variabel.
+* JavaScript memiliki 3 jenis cakupan:
+
+   * Cakupan blok
+   * Ruang lingkup fungsi
+   * Ruang lingkup global
+
+    Lingkup Blok
+   --------------
+   * Sebelum ES6 (2015), JavaScript hanya memiliki Global Scope dan Function Scope . 
+   * ES6 memperkenalkan dua kata kunci JavaScript baru yang penting: letdan const.
+   * Kedua kata kunci ini menyediakan Block Scope dalam JavaScript.
+   * Variabel yang dideklarasikan di dalam blok {} tidak dapat diakses dari luar blok:
+   * Contoh
+    {
+     let x = 2;
+    }
+    // x can NOT be used here

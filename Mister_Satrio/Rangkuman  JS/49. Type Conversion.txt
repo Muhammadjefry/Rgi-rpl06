@@ -1,0 +1,11 @@
+
+
+------------ JavaScript Type Conversion -------
+
+      *   Mengubah String menjadi Angka
+      *   Mengubah Angka menjadi String
+      *   Mengubah Tanggal menjadi Angka
+      *   Mengubah Angka menjadi Tanggal
+      *   Mengubah Boolean menjadi Angka
+      *   Mengonversi Angka ke Boolean
+

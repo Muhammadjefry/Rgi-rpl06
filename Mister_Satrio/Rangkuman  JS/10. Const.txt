@@ -1,0 +1,40 @@
+  
+  ------------- JavaScript Const -----------
+
+   - Variabel yang didefinisikan dengan consttidak dapat dideklarasikan ulang
+
+   - Variabel yang didefinisikan dengan consttidak dapat ditugaskan kembali
+
+   - Variabel yang didefinisikan constmemiliki Cakupan Blok
+
+   Tidak Dapat Ditugaskan Kembali
+
+    Variabel consttidak dapat ditugaskan kembali:
+    Contohnya : 
+         const PI = 3.141592653589793;
+        PI = 3.14;      // kehendaknya memberikan kesalahan
+        PI = PI + 10;   // wasiatnya juga memberikan kesalahan
+
+        Harus Ditugaskan
+----------------------------- 
+    - Variabel JavaScript constharus diberi nilai saat dideklarasikan
+        Contohnya :
+        - Benar
+          const PI = 3.14159265359;
+
+        - Salah
+          const PI;
+          PI = 3.14159265359;  
+
+   
+    Kapan menggunakan konstanta JavaScript?
+   --------------------------------------------
+    Selalu deklarasikan variabel constketika Anda tahu bahwa nilainya tidak boleh diubah.
+
+    Gunakan constsaat Anda mendeklarasikan:
+
+    - Array baru
+    - Objek baru
+    - Fungsi baru
+    - RegExp baru
+

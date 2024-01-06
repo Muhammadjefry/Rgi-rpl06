@@ -1,0 +1,110 @@
+
+----------- JavaScript String Search ------
+
+
+String Search Methods
+----------------------
+     *   String indexOf()
+     *   String lastIndexOf()
+     *   String search()
+     *   String match()
+     *   String matchAll()
+     *   String includes()
+     *   String startsWith()
+     *   String endsWith()
+
+     JavaScript String indexOf()
+     ---------------------------
+    *  Metode ini indexOf()mengembalikan indeks (posisi) kemunculan pertama sebuah string dalam sebuah string:
+    Contohnya :
+     let text = "Please locate where 'locate' occurs!";
+     let index = text.indexOf("locate");
+
+     Catatan
+    -----------
+    * JavaScript menghitung posisi dari nol.
+    * 0 adalah posisi pertama dalam sebuah string, 1 adalah posisi kedua, 2 adalah posisi ketiga, 
+
+    JavaScript String lastIndexOf()
+    ------------------------------
+    * Metode ini lastIndexOf()mengembalikan indeks kemunculan terakhir teks tertentu dalam sebuah string:
+    Contohnya ;
+    let text = "Please locate where 'locate' occurs!";
+    let index = text.lastIndexOf("locate"); 
+
+    * Keduanya indexOf(), dan lastIndexOf()kembalikan -1 jika teks tidak ditemukan:
+
+     Contohnya ;
+   let text = "Please locate where 'locate' occurs!";
+   let index = text.lastIndexOf("John"); 
+
+   JavaScript String search()
+   ----------------------------
+   * Metode ini search()mencari string untuk string (atau ekspresi reguler) dan mengembalikan posisi yang cocok:
+   Contohnya :
+   let text = "Please locate where 'locate' occurs!";
+   text.search("locate"); 
+
+   JavaScript String matchAll()
+   ----------------------------
+   *  Metode ini matchAll()mengembalikan iterator yang berisi hasil pencocokan string dengan string (atau ekspresi reguler).
+   Contohnya :
+   const iterator = text.matchAll("Cats"); 
+
+
+   Catatan
+------------
+   * matchAll()adalah fitur ES2020 .
+   * matchAll()tidak berfungsi di Internet Explorer.
+
+   JavaScript String includes()
+   ---------------------------
+   *  Metode ini includes()mengembalikan nilai benar jika string berisi nilai yang ditentukan.
+   Kalau tidak, ia akan kembali false.
+
+    Contohnya ;
+     * Periksa apakah suatu string menyertakan "dunia":
+    let text = "Hello world, welcome to the universe.";
+    text.includes("world"); 
+
+
+     Catatan
+    ----------
+    * includes()peka huruf besar-kecil.
+    * includes()adalah fitur ES6 . 
+    * includes()tidak didukung di Internet Explorer.
+
+    JavaScript String startsWith()
+    -------------------------------
+    * Metode ini startsWith()kembali truejika string dimulai dengan nilai yang ditentukan.
+    * Kalau tidak, ia akan mengembalikan false:
+
+    Contohnya :
+----------------
+    * Mengembalikan nilai benar:
+     let text = "Hello world, welcome to the universe.";
+     text.startsWith("Hello"); 
+
+    * Mengembalikan salah:
+     let text = "Hello world, welcome to the universe.";
+    text.startsWith("world") 
+
+
+      Catatan
+      ----------
+    
+    * startsWith()peka huruf besar-kecil.
+    * startsWith()adalah fitur ES6 .
+    * startsWith()tidak didukung di Internet Explorer.
+
+    JavaScript String endsWith()
+    -----------------------------
+    * Metode ini endsWith()kembali truejika string diakhiri dengan nilai yang ditentukan.
+    * Kalau tidak, ia akan mengembalikan false:
+    Contohnya :
+    * Periksa apakah string diakhiri dengan "Doe":
+    let text = "John Doe";
+    text.endsWith("Doe");
+
+
+

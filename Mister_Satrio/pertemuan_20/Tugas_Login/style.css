@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.parent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  background-image: url(desktop-wallpaper-more-coffee-backgrounds-for-powerpoint-templates-aesthetic-coffee-computer-thumbnail.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+/* .form {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: transparent;
+} */
+button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+#btn:hover,
+:focus {
+  color: #ff0000;
+  background: #008cff;
+  border: 1px solid #008cff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+/* .imgcontainer {
+  text-align: center;
+  position: sticky;
+}
+
+img.avatar {
+  width: 15%;
+  margin-bottom: -50px;
+} */
+/* Modal Content/Box */
+.kata {
+  position: absolute;
+  top: 100px;
+  margin-left: 100px;
+  width: 650px;
+  height: 50px;
+  font-size: 35px;
+  font-family: sans-serif;
+  color: white;
+}
+.kata span {
+  color: #ffc800;
+}
+.log {
+  margin-top: 20px;
+  margin-left: 50px;
+  color: rgb(255, 255, 255);
+  border: 1px solid #008cff;
+}
+
+.log:hover {
+  background: #ff0000;
+  color: #ffffff;
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+.modal {
+  margin: 60px auto;
+  width: 60%;
+  display: none;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+  transition: 0.2s ease all;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: #000000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+.signin,
+.form {
+  flex: 50%;
+  height: 100%;
+  padding: 20px 40px;
+}
+.form h1 {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Black Ops One", cursive;
+  color: rgb(0, 0, 0);
+}
+
+.form button {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 40px;
+  background: none;
+  color: rgb(255, 0, 0);
+  border: 1px solid red;
+}
+.form button:hover {
+  background-color: rgb(21, 21, 21);
+  color: rgb(255, 255, 255);
+}
+.form button:focus {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.signin h1 {
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Black Ops One", cursive;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input {
+  margin-bottom: 50px;
+  font-size: 15px;
+  padding: 10px 10px 5px 9px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+}
+
+.input:focus {
+  outline: none;
+  border-radius: 5px;
+}
+
+label {
+  padding: 2px;
+  font-family: sans-serif;
+  color: #ff0000;
+  font-size: 12px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: -9px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #ff0000;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  top: -50px;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.signin .button1 {
+  display: block;
+  margin: auto;
+  height: 40px;
+  width: 80%;
+  margin-bottom: 10px;
+  margin-top: -20px;
+  background: none;
+  color: rgb(255, 0, 0);
+  border: 1px solid;
+}
+.signin .button1:hover {
+  background-color: rgb(6, 6, 6);
+  color: rgb(255, 255, 255);
+}
+.signin .button1:focus {
+  background: red;
+}
+.Bawah {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button2,
+.button3 {
+  background: none;
+  outline: none;
+  border: 1px solid red;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 5px;
+}
+.button2:hover,
+.button3:hover {
+  background: black;
+  color: white;
+}
+/* .animate, */
+.close {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+/* @-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+} */
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@media (max-width: 800px) {
+  .parent,
+  .kata .p,
+  .log,
+  .modal,
+  .container {
+    flex-direction: column;
+  }
+  .p {
+    margin-left: 100px;
+    width: 350px;
+  }
+  .parent {
+    height: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .parent,
+  .kata,
+  .log,
+  .modal,
+  .container {
+    flex-direction: column;
+  }
+  .kata {
+    margin-left: 20px;
+    width: 500px;
+    font-size: 30px;
+  }
+  .parent {
+    height: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .parent,
+  .kata,
+  .log,
+  .modal,
+  .container {
+    flex-direction: column;
+  }
+  .kata {
+    font-size: 25;
+    top: 100px;
+    margin-left: 10px;
+    width: 300px;
+  }
+  .parent {
+    height: 100%;
+  }
+}

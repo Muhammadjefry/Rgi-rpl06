@@ -1,0 +1,25 @@
+
+------------   Keluarkan JavaScript  -----------
+
+  -  Menulis Element HTML, Menggunakan innerHTML.
+  contohnya : 
+     <script>
+     document.getElementById("demo").innerHTML = 5 + 6;
+     </script>
+
+  -  Menulis Keluar ke HTML, Menggunakan document.write().
+  contohnya : 
+    <script>
+     document.write(5 + 6);
+     </script>
+
+  -  Menulis alert box, Menggunakan window.alert().
+  contohnya :   
+    <script>
+       window.alert(5 + 6);
+     </script>
+
+  -  Menulis didalam console, Menggunakan console.log().
+     <script>
+       console.log(5 + 6);
+     </script>

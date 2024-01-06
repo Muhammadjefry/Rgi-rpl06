@@ -1,0 +1,120 @@
+
+---------- Operator JavaScript -----------------
+
+    1. Penugasan JavaScript
+        - Operator Penugasan ( =) memberikan nilai pada variabel:
+        Contohnya : 
+        let x = 10;
+
+    2. Penambahan JavaScript
+       - Operator Penjumlahan ( ) +menambahkan angka:
+       Contohnya : 
+         let x = 5;
+         let y = 2;
+         let z = x + y; 
+
+    3. Perkalian JavaScript
+       - Operator Perkalian ( ) *mengalikan bilangan:
+       Contohnya : 
+         let x = 5;
+         let y = 2;
+         let z = x * y; 
+
+       Jenis Operator JavaScript
+   -----------------------------------
+     Ada berbagai jenis operator JavaScript:
+     -  Operator Aritmatika
+     -  Operator Penugasan
+     -  Operator Perbandingan
+     -  Operator String
+     -  Operator Logis
+     -  Operator Bitwise
+     -  Operator Terner
+     -  Tipe Operator
+
+
+     Operator 	Description
+     ------------------------
+      + 	Addition
+      - 	Subtraction
+      * 	Multiplication
+      ** 	Exponentiation (ES2016)
+      / 	Division
+      % 	Modulus (Division Remainder)
+      ++ 	Increment
+      -- 	Decrement
+
+      Operator Penugasan JavaScript
+      -------------------------------
+      Contohnya: 
+      let x = 10;
+      x += 5; 
+
+      Rumusnya :
+      Operator 	Example 	Same As
+         = 	    x = y 	    x = y
+         +=     x += y 	    x = x + y
+         -=     x -= y 	    x = x - y
+         *=     x *= y 	    x = x * y
+         /=     x /= y 	    x = x / y
+         %=     x %= y 	    x = x % y
+         **=    x **= y     x = x ** y
+
+     Operator Perbandingan JavaScript
+     ---------------------------------
+     Operator 	Description
+       ==     	equal to
+       ===     	equal value and equal type
+       !=     	not equal
+       !==     	not equal value or not equal type
+       > 	    greater than
+       < 	    less than
+       >=     	greater than or equal to
+       <=     	less than or equal to
+       ? 	    ternary operator
+      
+      Perbandingan String JavaScript
+      ---------------------------------
+      - Semua operator perbandingan di atas juga dapat digunakan pada string:
+          Contohnya :
+            let text1 = "A";
+            let text2 = "B";
+            let result = text1 < text2; 
+
+    Penambahan String JavaScript
+    -----------------------------
+    -  Ini + juga dapat digunakan untuk menambahkan (menggabungkan) string:
+           Contohnya:
+             let text1 = "John";
+             let text2 = "Doe";
+              let text3 = text1 + " " + text2; 
+
+    -  Operator +=penugasan juga dapat digunakan untuk menambahkan (menggabungkan) string:
+     Contohnya : 
+        let text1 = "What a very ";
+        text1 += "nice day";
+        ------------------------
+        Hasil dari text1 adalah:
+        What a very nice day 
+
+        Menambahkan String dan Angka
+    ----------------------------------------
+    -  Menambahkan dua angka akan menghasilkan jumlah, tetapi menambahkan angka dan string akan menghasilkan string:
+      Contohnya:
+      let x = 5 + 5;
+      let y = "5" + 5;
+      let z = "Hello" + 5;
+     ------------------------
+      Hasil dari x , y , dan z adalah:
+      10
+      55
+      Hello5 
+
+
+      Operator Logika JavaScript
+      ----------------------------
+              
+        Operator 	Description
+          &&       	logical and
+          ||       	logical or
+          !       	logical not

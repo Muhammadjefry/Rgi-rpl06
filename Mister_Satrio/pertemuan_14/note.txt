@@ -1,0 +1,8 @@
+1.array
+2.string
+3.dates
+4.Function
+ - no argumen and no return
+ - argumen and no return
+ - argumen and return
+5.setinterval and clearinterval

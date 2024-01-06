@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome6.4.0/css/all.css" />
+    <link rel="stylesheet" href="fontawesome6.4.0/css/brands.css" />
+    <link rel="stylesheet" href="fontawesome6.4.0/css/solid.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="login2.php" class="box">
+        <div class="form">
+          <h1>Form Here</h1>
+          <!-- username -->
+          <label for="username">Username :</label>
+          <input
+            type="text"
+            placeholder="Email or phone"
+            id="username"
+            name="email1"
+          />
+          <!-- password -->
+          <label for="password">Password :</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            name="password1"
+          />
+          <!-- button -->
+          <button type="submit">Login</button>
+        </div>
+        <div class="signin">
+          <h1>Sign In</h1>
+          <!-- firstname -->
+          <label for="firstname">First Name :</label>
+          <input
+            type="text"
+            placeholder="Enter your First Name"
+            id="firstname"
+            name="first"
+          />
+          <!-- lastname -->
+          <label for="lastname">Last Name</label>
+          <input
+            type="text"
+            placeholder="Enter your last Name"
+            id="lastname"
+            name="last"
+          />
+          <!-- username -->
+          <label for="username">Username :</label>
+          <input
+            type="text"
+            placeholder="Email or phone"
+            id="username"
+            name="username2"
+          />
+          <!-- password -->
+          <label for="password">Password :</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            name="password2"
+          />
+          <!-- sign up -->
+          <button class="button1">Sign up</button>
+          <!-- register -->
+          <div class="Bawah">
+            <button type="submit" class="button2">Register</button>
+            <button type="reset" class="button3">Forgot password</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script>
+      alert("Selamat Datang..");
+      var lagi = true;
+
+      while (lagi) {
+        var nama = prompt("Masukan Nama :");
+        alert(" Haii " + nama + " Gmana Kabar..?");
+        lagi = alert(nama + " Udah Makan BLom...?");
+        lagi = confirm(
+          "Klo blum tekan ok ya.., Klo udah Tekan  Cancel, Tapi nanti bakal cape  klo tekan ok, Klo" +
+            nama +
+            " ga percaya, coba ajh"
+        );
+      }
+      alert("Terima Kasih" + nama);
+    </script>
+  </body>
+</html>

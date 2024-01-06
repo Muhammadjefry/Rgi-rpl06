@@ -1,0 +1,9 @@
+1. div (tempat kotak) dan span (tempat selebar isinya) 
+2. query (cara memilih bagian html dari css )
+    a.query berjenjang 
+3. margin= (jarak batas luar)  (dan padding jarak batas dalam)
+margin-top (spesifik)
+margin : 10px (semua sisi)
+margin : 10px 20px (kanan-kiri & atas-bawah)
+margin : 5px 10px 15px 20px (atas kanan bawah kiri)
+4. float

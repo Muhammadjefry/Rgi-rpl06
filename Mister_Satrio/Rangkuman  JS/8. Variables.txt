@@ -1,0 +1,34 @@
+
+------------- Variabel JavaScript -----------
+   
+    Variabel adalah Wadah untuk Menyimpan Data
+    Variabel JavaScript dapat dideklarasikan dengan 4 cara:
+
+    Secara otomatis
+    - Menggunakan var;
+    - Menggunakan let;
+    - Menggunakan const;
+    
+
+     Kapan Menggunakan var, let, atau const?
+     
+     1. Selalu mendeklarasikan variabel
+     
+     2. Selalu gunakan constjika nilainya tidak boleh diubah
+     
+     3. Selalu gunakan constjika tipenya tidak boleh diubah (Array dan Objek)
+     
+     4. Gunakan hanya letjika Anda tidak dapat menggunakannyaconst
+     
+     5. Hanya gunakan varjika Anda HARUS mendukung browser lama.
+     
+     Mendeklarasikan Variabel JavaScript
+  --------------------------------------------
+     -  Membuat variabel dalam JavaScript disebut "mendeklarasikan" variabel.
+    
+    -  Anda mendeklarasikan variabel JavaScript dengan varatau letkata kunci:
+
+     contohnya : 
+        var carName; 
+        let carName; 
+    

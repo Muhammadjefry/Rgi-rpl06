@@ -1,0 +1,26 @@
+
+
+
+--------------- JavaScript Errors ----------------
+
+Throw, and Try...Catch...Finally
+--------------------------------
+    * Pernyataan tersebut trymendefinisikan blok kode untuk dijalankan (untuk dicoba).
+    * Pernyataan tersebut catchmendefinisikan blok kode untuk menangani kesalahan apa pun.
+    * Pernyataan tersebut finallymendefinisikan blok kode untuk dijalankan apa pun hasilnya.
+    * Pernyataan tersebut throwmendefinisikan kesalahan khusus.
+      Kesalahan Akan Terjadi!
+   ---------------------------------
+   * Saat menjalankan kode JavaScript, berbagai kesalahan dapat terjadi.
+   * Kesalahan dapat berupa kesalahan pengkodean yang dilakukan oleh programmer, kesalahan karena salah input, dan hal-hal lain yang tidak dapat diperkirakan sebelumnya.
+   * Contoh
+   * Dalam contoh ini kami salah mengeja "alert" menjadi "adddlert" sehingga secara sengaja menghasilkan kesalahan:
+   <p id="demo"></p>
+     <script>
+     try {
+       adddlert("Welcome guest!");
+     }
+     catch(err) {
+       document.getElementById("demo").innerHTML = err.message;
+     }
+     </script> 

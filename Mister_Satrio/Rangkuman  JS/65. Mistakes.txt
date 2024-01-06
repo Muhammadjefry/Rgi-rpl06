@@ -1,0 +1,15 @@
+
+
+---------- JavaScript Common Mistakes --------
+
+* Bab ini menunjukkan beberapa kesalahan umum JavaScript.
+* Secara tidak sengaja Menggunakan Operator Penugasan
+* Program JavaScript dapat memberikan hasil yang tidak diharapkan jika pemrogram secara tidak sengaja menggunakan operator penugasan ( =), dan bukan operator perbandingan ( ==) dalam pernyataan if.
+
+  ifPernyataan ini kembali false(seperti yang diharapkan) karena x tidak sama dengan 10:
+  let x = 0;
+  if (x == 10)
+  
+  ifPernyataan ini kembali true(mungkin tidak seperti yang diharapkan), karena 10 benar:
+  let x = 0;
+  if (x = 10) 

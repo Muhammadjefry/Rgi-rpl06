@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        flex: 50%;
+      }
+      .apa,
+      .bae {
+        flex: 50%;
+        display: flex;
+        text-align: center;
+        line-height: 500px;
+        font-size: 50px;
+      }
+      .satu {
+        /* by name */
+        background-color: darkgreen;
+        border: 2px solid black;
+        flex: 50%;
+        height: 500px;
+      }
+      .dua {
+        /* by hex */
+        flex: 50%;
+        border: 2px solid black;
+        background-color: #1cc8ea;
+        height: 500px;
+      }
+
+      .tiga {
+        /* by rgb */
+        border: 2px solid black;
+        background-color: rgb(181, 8, 124);
+        flex: 50%;
+        height: 500px;
+      }
+      .empat {
+        /* by rgba */
+        border: 2px solid black;
+        background-color: rgba(215, 159, 4, 0.5);
+        flex: 50%;
+        height: 500px;
+      }
+
+      @media (max-width: 800px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 600px) {
+        .container .apa .bae {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="apa">
+        <div class="satu">Apa</div>
+        <div class="dua">Lu</div>
+      </div>
+      <div class="bae">
+        <div class="tiga">Liat</div>
+        <div class="empat">Liat</div>
+      </div>
+    </div>
+  </body>
+</html>

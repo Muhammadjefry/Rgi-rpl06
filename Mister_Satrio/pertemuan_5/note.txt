@@ -1,0 +1,6 @@
+icon = fontawesome
+flex = pengembangan dari float
+media query (lebar layar)
+------------------------------------
+color, bakground, border, shadow, gradient
+position

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 200px auto;
+      }
+      #time {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="time">00:00</div>
+    <button id="btn_start" disabled>Start</button>
+    <button id="btn_stop" disabled>Stop</button>
+    <script>
+      // Take Element from HTML
+      let time = document.getElementById("time");
+      let btn_start = document.getElementById("btn_start");
+      let btn_stop = document.getElementById("btn_stop");
+
+      // Variable for time duration
+      let timer = false;
+      let minute = 0;
+      let second = 0;
+
+      // Initial State
+      btn_start.disabled = false;
+
+      // Press Start
+      btn_start.addEventListener("click", function () {
+        btn_start.disabled = true;
+        btn_stop.disabled = false;
+        timer = true;
+        duration();
+      });
+
+      // press Stop
+      btn_stop.addEventListener("click", function () {
+        btn_stop.disabled = true;
+        btn_start.disabled = false;
+        timer = false;
+        duration();
+      });
+
+      function duration() {
+        if (timer) {
+          second++;
+          if (second == 60) {
+            minute += 1;
+            second = 0;
+          }
+
+          // prepare to print in html
+          lblSecond = second.toString();
+          lblMinute = minute.toString();
+
+          //convert 1 digit to 2 digit
+          if (second < 10) {
+            lblSecond = "0" + lblSecond;
+          }
+          if (minute < 10) {
+            lblMinute = "0" + lblMinute;
+          }
+
+          // print to html
+          time.innerHTML = lblMinute + ":" + lblSecond;
+          setTimeout(duration, 1000);
+        }
+      }
+    </script>
+  </body>
+</html>

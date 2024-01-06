@@ -1,0 +1,36 @@
+
+ ------- JavaScript Best Practices ----------
+ 
+ * Hindari variabel global, hindari new, hindari ==, hindarieval()
+ * Hindari Variabel Global
+ * Minimalkan penggunaan variabel global. 
+ * Ini mencakup semua tipe data, objek, dan fungsi.
+ * Variabel dan fungsi global dapat ditimpa oleh skrip lain.
+ * Gunakan variabel lokal sebagai gantinya, dan pelajari cara menggunakan penutupan .
+ * Selalu Deklarasikan Variabel Lokal
+ * Semua variabel yang digunakan dalam suatu fungsi harus dideklarasikan sebagai variabel lokal .
+ * Variabel lokal harus dideklarasikan dengan kata kunci var, let, atau constkata kunci, jika tidak maka variabel tersebut akan menjadi variabel global.
+ * Mode ketat tidak mengizinkan variabel yang tidak dideklarasikan.
+ * Deklarasi di Atas
+ * Merupakan praktik pengkodean yang baik untuk meletakkan semua deklarasi di bagian atas setiap skrip atau fungsi.
+Ini akan:
+
+    Berikan kode yang lebih bersih
+    Sediakan satu tempat untuk mencari variabel lokal
+    Mempermudah untuk menghindari variabel global (tersirat) yang tidak diinginkan
+    Mengurangi kemungkinan deklarasi ulang yang tidak diinginkan
+
+// Declare at the beginning
+let firstName, lastName, price, discount, fullPrice;
+
+// Use later
+firstName = "John";
+lastName = "Doe";
+
+price = 19.90;
+discount = 0.10;
+
+fullPrice = price - discount;
+
+Ini juga berlaku untuk variabel loop:
+for (let i = 0; i < 5; i++) {

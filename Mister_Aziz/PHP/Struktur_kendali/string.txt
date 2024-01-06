@@ -1,0 +1,23 @@
+
+-------------------String-----------------
+
+strlen() = menghitung oanjang sebuah length
+strcmp() = menggabungkan 2 buah string
+expload() = memecah sebuah string menjadi array
+htmlspecialchars() = function khusus menjaga dari hacker
+
+-------------------Utility-----------------
+
+var_dump() = sebuah fungsi untuk mencetak variabel, object dll
+
+isset() = Mengecek sebuah variabel apakah sudah 
+dibikin atau belom / bulean (true  && false)
+
+empty() = mengecek apakahv variabel yang ada, ada isinya atau belom
+
+die() = menghentikan program yang dibawahya
+
+sleep() = untuk memberhentikan sementara
+
+------------------User define function----------
+

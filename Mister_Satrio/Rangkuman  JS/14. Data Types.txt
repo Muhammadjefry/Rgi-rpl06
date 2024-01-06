@@ -1,0 +1,91 @@
+
+---------- JavaScript Data Types -------------
+
+    JavaScript memiliki 8 Tipe Data
+
+    1. String
+    2. Number
+    3. Bigint
+    4. Boolean
+    5. Undefined
+    6. Null
+    7. Symbol
+    8. Object 
+
+    Tipe Data Objek
+    
+    1. An object
+    2. An array
+    3. A date 
+
+    Catatan
+    --------
+   Variabel JavaScript dapat menampung semua jenis data.
+
+   Konsep Tipe Data
+  --------------------
+   - Dalam pemrograman, tipe data merupakan konsep penting.
+   - Untuk dapat mengoperasikan variabel, penting untuk mengetahui sesuatu tentang tipenya.
+   - Tanpa tipe data, komputer tidak dapat menyelesaikan masalah ini dengan aman:
+
+   Contohnya :
+   let x = 16 + "Volvo";
+        Menjadi
+   let x = "16" + "Volvo";
+
+   Catatan
+   --------
+   Saat menambahkan angka dan string, JavaScript akan memperlakukan angka tersebut sebagai string.
+
+   Jenis JavaScript bersifat Dinamis
+---------------------------------------
+   - JavaScript memiliki tipe dinamis. Artinya variabel yang sama dapat digunakan untuk menampung tipe data yang berbeda:
+
+   Contohnya : 
+     let x;       // Now x is undefined
+     x = 5;       // Now x is a Number
+     x = "John";  // Now x is a String 
+
+     String JavaScript
+-------------------------
+   - String (atau string teks) adalah serangkaian karakter seperti "John Doe".
+    
+   - String ditulis dengan tanda kutip. Anda dapat menggunakan tanda kutip tunggal atau ganda:
+   Contohnya :
+      // Using double quotes:
+      let carName1 = "Volvo XC60";
+      
+      // Using single quotes:
+      let carName2 = 'Volvo XC60';
+
+      Nomor JavaScript
+ ------------------------
+   - Semua nomor JavaScript disimpan sebagai angka desimal (floating point).
+   - Bilangan dapat ditulis dengan atau tanpa desimal:
+
+   Contohnya : 
+        // With decimals:
+       let x1 = 34.00;
+       // Without decimals:
+       let x2 = 34; 
+      
+      Array JavaScript
+      ----------------
+      const cars = ["Saab", "Volvo", "BMW"]; 
+
+       Objek JavaScript
+      ----------------
+      const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; 
+
+      The typeof Operator
+      -------------------
+        typeof ""        // Returns "string"
+        typeof 3.14      // Returns "number" 
+
+        Undefined
+     ---------------
+     let car;    // Value is undefined, type is undefined 
+
+     Empty Values 
+     ------------
+     let car = "";    // The value is "", the typeof is "string" 

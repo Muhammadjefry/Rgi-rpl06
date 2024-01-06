@@ -1,0 +1,45 @@
+
+--------------- JavaScript Strings ------------
+
+ * String JavaScript digunakan untuk menyimpan dan memanipulasi teks.
+ * String JavaScript adalah nol atau lebih karakter yang ditulis di dalam tanda kutip.
+
+ Contohnya :
+let text = "John Doe"; 
+
+            String Length
+           ---------------
+    *  Untuk mencari panjang string, gunakan properti bawaan length:
+
+    Contohnya :
+       let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+       let length = text.length; 
+
+       Escape Character(Karakter Pelarian)
+       -----------------------------------
+       * Karena string harus ditulis dalam tanda kutip, JavaScript akan salah memahami string ini:
+       let text = "We are the so-called "Vikings" from the north."; 
+       
+       Maka akan Menghasilkan = "We are the so-called ".
+
+       * Solusi untuk menghindari masalah ini adalah dengan menggunakan karakter escape backslash .
+       * Karakter escape garis miring terbalik ( \) mengubah karakter khusus menjadi karakter string:
+
+     Code 	Result 	Description
+      \' 	  '    	Single quote
+      \" 	  "    	Double quote
+      \\ 	  \    	Backslash
+      Contohnya : 
+      let text = "We are the so-called 
+                \"Vikings\" from the north.";
+     Hasilnya = We are the so-called "Vikings" from the north.
+
+     * Enam urutan escape lainnya valid dalam JavaScript:
+
+     Code 	Result
+     \b 	Backspace
+     \f 	Form Feed
+     \n 	New Line
+     \r 	Carriage Return
+     \t 	Horizontal Tabulator
+     \v 	Vertical Tabulator

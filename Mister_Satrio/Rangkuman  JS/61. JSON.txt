@@ -1,0 +1,68 @@
+
+
+----------------- JavaScript JSON -------------
+
+  * JSON adalah format untuk menyimpan dan mengangkut data.
+  * JSON sering digunakan ketika data dikirim dari server ke halaman web.
+  * Apa itu JSON?
+
+     *  JSON adalah singkatan dari J ava S cript O bject N otation
+     *  JSON adalah format pertukaran data yang ringan
+     *  JSON tidak bergantung pada bahasa *
+     *  JSON "mendeskripsikan diri sendiri" dan mudah dimengerti
+
+* Sintaks JSON berasal dari sintaks notasi objek JavaScript, namun format JSON hanya berupa teks. Kode untuk membaca dan menghasilkan data JSON dapat ditulis dalam bahasa pemrograman apa pun.
+Contoh JSON
+
+   * Sintaks JSON ini mendefinisikan objek karyawan: array yang terdiri dari 3 catatan karyawan (objek):
+Contoh JSON
+{
+"employees":[
+  {"firstName":"John", "lastName":"Doe"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Peter", "lastName":"Jones"}
+]
+} 
+
+
+  * Format JSON Mengevaluasi ke Objek JavaScript
+  * Format JSON secara sintaksis identik dengan kode untuk membuat objek JavaScript.
+  * Karena kesamaan ini, program JavaScript dapat dengan mudah mengubah data JSON menjadi objek JavaScript asli.
+     * Aturan Sintaks JSON
+
+       *  Data dalam pasangan nama/nilai
+       *  Data dipisahkan dengan koma
+       *  Kurung kurawal menahan benda
+       *  Tanda kurung siku menampung array
+
+   * Data JSON - Nama dan Nilai
+   * Data JSON ditulis sebagai pasangan nama/nilai, sama seperti properti objek JavaScript.
+   * Pasangan nama/nilai terdiri dari nama field (dalam tanda kutip ganda), diikuti titik dua, diikuti nilai:
+     "firstName":"John"
+
+
+     Objek JSON
+-------------------
+   * Objek JSON ditulis di dalam kurung kurawal.
+   * Sama seperti di JavaScript, objek dapat berisi beberapa pasangan nama/nilai:
+{"firstName":"John", "lastName":"Doe"} 
+
+   Array JSON
+-----------------
+   * Array JSON ditulis di dalam tanda kurung siku.
+    Sama seperti di JavaScript, array dapat berisi objek:
+     "employees":[
+       {"firstName":"John", "lastName":"Doe"},
+       {"firstName":"Anna", "lastName":"Smith"},
+       {"firstName":"Peter", "lastName":"Jones"}
+     ]
+
+     Mengonversi Teks JSON menjadi Objek JavaScript
+----------------------------------------------------
+   * Penggunaan umum JSON adalah untuk membaca data dari server web, dan menampilkan data di halaman web.
+   * Untuk mempermudah, hal ini dapat didemonstrasikan dengan menggunakan string sebagai input.
+   * Pertama, buat string JavaScript yang berisi sintaks JSON:
+       let text = '{ "employees" : [' +
+       '{ "firstName":"John" , "lastName":"Doe" },' +
+       '{ "firstName":"Anna" , "lastName":"Smith" },' +
+       '{ "firstName":"Peter" , "lastName":"Jones" } ]}';

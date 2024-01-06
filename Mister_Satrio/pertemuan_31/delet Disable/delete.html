@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      button {
+        font-size: 2em;
+        padding: 10px 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">Start</button>
+    <button id="btn_coba" disabled>Coba</button>
+    <script>
+      let btn = document.getElementById("btn");
+      let btn_coba = document.getElementById("btn_coba");
+      btn.addEventListener("click", function () {
+        btn_coba.disabled = false;
+      });
+    </script>
+  </body>
+</html>

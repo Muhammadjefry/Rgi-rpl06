@@ -1,0 +1,25 @@
+
+
+
+---------- JavaScript new Date() -----------------
+
+Type 	Example
+ISO Date 	"2015-03-25" (The International Standard)
+Short Date 	"03/25/2015"
+Long Date 	"Mar 25 2015" or "25 Mar 2015"
+
+    JavaScript Date Output
+    -----------------------
+    Thu Sep 28 2023 21:19:13 GMT+0700 (Western Indonesia Time) 
+
+    Tanggal Singkat JavaScript.
+  -------------------------------
+   Tanggal pendek ditulis dengan sintaks "MM/DD/YYYY" seperti ini:
+   Contoh
+   const d = new Date("03/25/2015");
+
+   Tanggal Panjang JavaScript.
+  -----------------------------------
+   Tanggal panjang paling sering ditulis dengan sintaks "MMM DD YYYY" seperti ini:
+   Contoh
+   const d = new Date("Mar 25 2015"); 

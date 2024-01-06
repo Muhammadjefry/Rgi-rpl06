@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //ambil tanggal
+        let tanggal = new Date();
+        let no_tanggal = tanggal.getDate();
+        let bulan = tanggal.getMonth();
+        let tahun = tanggal.getFullYear();
+
+        //convert 2 digit
+        if (no_tanggal < 10) {
+          no_tanggal = "0" + no_tanggal;
+        }
+        if (bulan < 10) {
+          bulan = "0" + bulan;
+        }
+        if (tahun < 10) {
+          tahun = "0" + tahun;
+        }
+
+        let nurut = 1;
+        let noPendaftaran = 1;
+        let temp = 0;
+        $("#btn").click(function () {
+          let nilai1 = $("#nama").val();
+          let nilai2 = $("#umur").val();
+          let nilai3 = $("#kelas").val();
+          if (noPendaftaran < 10) {
+            temp = "00" + noPendaftaran;
+          } else if (noPendaftaran < 100) {
+            temp = "0" + noPendaftaran;
+          } else if (noPendaftaran < 1000) {
+            temp = noPendaftaran;
+          }
+          let cetakNopendaftaran =
+            temp + " " + no_tanggal + "-" + bulan + "-" + tahun;
+          // variabel cetak
+          var baris_baru =
+            "<tr><td>" +
+            nurut +
+            "</td><td>" +
+            cetakNopendaftaran +
+            "</td><td>" +
+            nilai1 +
+            "</td><td>" +
+            nilai2 +
+            "</td><td>" +
+            nilai3 +
+            "</td><td>" +
+            " " +
+            "</td></tr>";
+
+          // tambah kotak baru
+          $("#tabel").append(baris_baru);
+          nurut += 1;
+          noPendaftaran += 1;
+          $("#nama").val("");
+          $("#umur").val("");
+          $("#kelas").val("");
+        });
+      });
+    </script>
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: 1px black solid;
+        margin-top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      th,
+      td {
+        padding: 5px 10px;
+        border: 1px black solid;
+      }
+      th {
+        background-color: #ffee00;
+      }
+      tr:nth-child(even) {
+        background-color: #e9e9e9;
+        text-align: center;
+      }
+      tr:nth-child(odd) {
+        text-align: center;
+
+        background-color: #fff;
+      }
+      label,
+      input {
+        margin-bottom: 10px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <header>
+      <div id="time">00:00:00</div>
+      <label for="">No Pendaftaran :</label>
+      <input type="number" name="" id="number" />
+    </header> -->
+    <div class="kotak">
+      <div>
+        <label for="nama">Nama :</label>
+        <input type="text" name="nama" id="nama" />
+      </div>
+      <div>
+        <label for="umur">Umur :</label>
+        <input type="text" name="umur" id="umur" />
+      </div>
+      <div>
+        <label for="kelas">Kelas :</label>
+        <input type="text" name="kelas" id="kelas" />
+      </div>
+    </div>
+    <br />
+    <button id="btn">Daftar</button>
+    <br />
+    <br />
+
+    <hr />
+    <table id="tabel">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>No Pendaftaran</th>
+          <th>Nama</th>
+          <th>Umur</th>
+          <th>Kelas</th>
+          <th>Hapus</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+</html>

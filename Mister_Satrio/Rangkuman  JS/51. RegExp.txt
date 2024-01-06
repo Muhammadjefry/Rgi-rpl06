@@ -1,0 +1,16 @@
+
+
+------- JavaScript Regular Expressions ---------
+
+
+  * Ekspresi reguler adalah rangkaian karakter    yang membentuk pola pencarian.
+  * Pola pencarian dapat digunakan untuk operasi pencarian teks dan penggantian teks.
+  * Apa itu Ekspresi Reguler?
+  * Ekspresi reguler adalah rangkaian karakter yang membentuk pola pencarian .
+  * Saat Anda mencari data dalam teks, Anda bisa menggunakan pola pencarian ini untuk menjelaskan apa yang Anda cari.
+  * Ekspresi reguler dapat berupa karakter tunggal, atau pola yang lebih rumit.
+  * Ekspresi reguler dapat digunakan untuk melakukan semua jenis operasi pencarian teks dan penggantian teks .
+Sintaksis
+/pattern/modifiers;
+Contoh
+/w3schools/i;

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #b7b7b7;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        margin-top: 30px;
+        width: 90%;
+        height: 200px;
+        border-radius: 20px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-button-next {
+        background: rgb(255, 255, 255);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        top: 100px;
+        right: 40px;
+      }
+      .swiper-button-prev {
+        border-radius: 50%;
+        background: white;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 100px;
+        left: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://cf.shopee.co.id/file/id-50009109-2672044172b3bb4a5aa053bca9ad8af8_xxhdpi"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://cf.shopee.co.id/file/id-50009109-0524d03f88938db30cdf1b2c58b90506_xxhdpi"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://cf.shopee.co.id/file/id-50009109-a272d7c65157ce8bb685b01ecb83f401_xxhdpi"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

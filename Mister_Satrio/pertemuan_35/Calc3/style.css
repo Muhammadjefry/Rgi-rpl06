@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#555353, #363535, #303030);
+  text-align: center;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+.container {
+  width: 400px;
+  border: 2px solid #222;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+#container-monitor {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 196, 0);
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  height: 50px;
+  font-size: 32px;
+  text-align: right;
+}
+table {
+  width: 100%;
+  height: 60vh;
+  /* text-align: center; */
+}
+table tr {
+  height: 50px;
+}
+
+.btn {
+  /* height: 50px; */
+  border: none;
+  width: 60px;
+  height: 50px;
+  /* text-align: center; */
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 50%;
+  /* box-shadow: 5px 5px #999, 5px 1px #999; */
+}
+.btn:hover {
+  background-color: rgb(255, 208, 0);
+}
+.btn.clear {
+  background: red;
+  color: #fff;
+}
+#hasil {
+  background: green;
+  color: #fff;
+}
+.banner-area {
+  position: relative;
+  font-family: sans-serif;
+}
+span {
+  color: rgb(255, 221, 0);
+}
+h2 {
+  color: #fff;
+}

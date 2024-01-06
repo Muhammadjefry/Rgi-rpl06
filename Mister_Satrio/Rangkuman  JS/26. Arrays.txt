@@ -1,0 +1,158 @@
+
+
+------------------- JavaScript Arrays -----------------
+
+ *  Array adalah variabel khusus yang dapat menampung  
+     lebih dari satu nilai:
+   const cars = ["Saab", "Volvo", "BMW"]; 
+
+   Mengapa Menggunakan Array?
+----------------------------------
+*  Jika Anda memiliki daftar item (misalnya daftar nama mobil), menyimpan mobil dalam variabel tunggal akan terlihat seperti ini:
+     let car1 = "Saab";
+     let car2 = "Volvo";
+     let car3 = "BMW";
+*  Namun, bagaimana jika Anda ingin menelusuri mobil-mobil tersebut dan menemukan mobil tertentu? Dan bagaimana jika Anda tidak punya 3 mobil, tapi 300?
+     
+   Solusinya adalah sebuah array!
+ -------------------------------------    
+* Sebuah array dapat menampung banyak nilai dalam satu nama, dan Anda dapat mengakses nilai tersebut dengan mengacu pada nomor indeks.
+
+     Membuat Array
+    ----------------
+   
+   * Menggunakan literal array adalah cara termudah untuk membuat Array JavaScript.
+   * Sintaksis:
+    const array_name = [item1, item2, ...];    
+    
+    Contoh:
+   const cars = ["Saab", "Volvo", "BMW"];  
+
+   Using the JavaScript Keyword new
+   ------------------------------------
+   Contohnya :
+    const cars = new Array("Saab", "Volvo", "BMW"); 
+
+    Accessing Array Elements
+    ------------------------
+    Anda mengakses elemen array dengan mengacu pada nomor indeks :
+    const cars = ["Saab", "Volvo", "BMW"];
+    let car = cars[0]; 
+
+     Mengubah Array menjadi String
+   --------------------------------
+    * Metode JavaScript toString()mengonversi array menjadi string nilai array (dipisahkan koma).
+    Contohnya ;
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo").innerHTML = fruits.toString();
+    Hasil:
+    Banana,Orange,Apple,Mango 
+
+    Access the Full Array
+----------------------------
+   Dengan JavaScript, array lengkap dapat diakses dengan mengacu pada nama array:
+   Contoh :
+    const cars = ["Saab", "Volvo", "BMW"];
+    document.getElementById("demo").innerHTML = cars; 
+
+    Arrays are Objects
+    ------------------
+    *  Array adalah tipe objek khusus. Operator typeofdi JavaScript mengembalikan "objek" untuk array.
+    * Namun, array JavaScript paling tepat digambarkan sebagai array.
+    * Array menggunakan angka untuk mengakses "elemen"-nya. Dalam contoh ini, person[0]kembalikan John:
+    Himpunan:
+    const person = ["John", "Doe", 46]; 
+
+    Array Elements Can Be Objects
+ -------------------------------------
+    * Variabel JavaScript dapat berupa objek. Array adalah jenis objek khusus.
+    * Karena itu, Anda dapat memiliki variabel dengan tipe berbeda dalam Array yang sama.
+    * Anda dapat memiliki objek dalam Array. Anda dapat memiliki fungsi dalam Array. Anda dapat memiliki array dalam Array:
+    myArray[0] = Date.now;
+    myArray[1] = myFunction;
+    myArray[2] = myCars; 
+
+    Array Properties and Methods
+    ------------------------------
+    * Kekuatan sebenarnya dari array JavaScript adalah properti dan metode array bawaan:
+
+     cars.length   // Returns the number of elements
+     cars.sort()   // Sorts the array 
+
+     The length Property
+     ----------------------
+    * Properti lengtharray mengembalikan panjang array (jumlah elemen array).
+     Contohnya ;
+     const fruits = ["Banana", "Orange", "Apple", "Mango"];
+     let length = fruits.length; 
+
+     Accessing the First Array Element
+     ---------------------------------
+     Contoh
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+   let fruit = fruits[0];
+
+   Accessing the Last Array Element
+   --------------------------------
+   Contoh
+     const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    let fruit = fruits[fruits.length - 1]; 
+
+    Looping Array Elements
+    -----------------------
+    * Salah satu cara untuk melakukan perulangan melalui array adalah dengan menggunakan forperulangan:
+    Contoh
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    let fLen = fruits.length;
+    
+    let text = "<ul>";
+    for (let i = 0; i < fLen; i++) {
+      text += "<li>" + fruits[i] + "</li>";
+    }
+    text += "</ul>"; 
+
+    Adding Array Elements
+    ------------------------
+   *  Cara termudah untuk menambahkan elemen baru ke array adalah dengan menggunakan push()metode:
+    Contohnya 
+    const fruits = ["Banana", "Orange", "Apple"];
+    fruits.push("Lemon");  // Adds a new element (Lemon) to fruits 
+
+
+
+     PERINGATAN !
+     Menambahkan elemen dengan indeks tinggi dapat membuat "lubang" yang tidak terdefinisi dalam array:
+     Contoh
+     const fruits = ["Banana", "Orange", "Apple"];
+     fruits[6] = "Lemon";  // Creates undefined "holes" in fruits 
+
+     Array Asosiatif
+     ----------------
+     * Banyak bahasa pemrograman mendukung array dengan indeks bernama.
+     * Array dengan indeks bernama disebut array asosiatif (atau hash).
+     * JavaScript tidak mendukung array dengan indeks bernama.
+     * Dalam JavaScript, array selalu menggunakan indeks bernomor .  
+     Contoh
+     const person = [];
+     person[0] = "John";
+     person[1] = "Doe";
+     person[2] = 46;
+     person.length;    // Will return 3
+     person[0];        // Will return "John" 
+
+     The Difference Between Arrays and Objects
+     --------------------------------------
+    * Dalam JavaScript, array menggunakan indeks bernomor .  
+    * Dalam JavaScript, objek menggunakan indeks bernama .
+   * Array adalah jenis objek khusus, dengan indeks bernomor.
+    
+    JavaScript new Array()
+    --------------------
+     * JavaScript memiliki konstruktor array bawaan new Array().
+     * Tapi Anda bisa menggunakannya dengan aman [].
+    * Kedua pernyataan berbeda ini membuat array kosong baru bernama points:
+    const points = new Array();
+    const points = [];
+    Kedua pernyataan berbeda ini membuat array baru yang berisi 6 angka:
+    const points = new Array(40, 100, 1, 5, 25, 10);
+    const points = [40, 100, 1, 5, 25, 10]; 

@@ -1,0 +1,60 @@
+
+
+-----------  JavaScript Performance  -----------------
+
+    * Cara mempercepat kode JavaScript Anda.
+Kurangi Aktivitas dalam Loop
+-----------------------------
+* Loop sering digunakan dalam pemrograman.
+* Setiap pernyataan dalam satu perulangan, termasuk pernyataan for, dieksekusi untuk setiap iterasi perulangan.
+* Pernyataan atau tugas yang dapat ditempatkan di luar perulangan akan membuat perulangan berjalan lebih cepat.
+Buruk:
+---------
+for (let i = 0; i < arr.length; i++) {
+Kode yang Lebih Baik:
+let l = arr.length;
+for (let i = 0; i < l; i++) {
+
+* Kode yang buruk mengakses properti panjang array setiap kali loop diulang.
+* Kode yang lebih baik mengakses properti panjang di luar loop dan membuat loop berjalan lebih cepat.
+  Kurangi Akses DOM
+  -------------------
+* Mengakses HTML DOM sangat lambat, dibandingkan dengan pernyataan JavaScript lainnya.
+* Jika Anda ingin mengakses elemen DOM beberapa kali, akseslah sekali, dan gunakan sebagai variabel lokal:
+Contoh
+const obj = document.getElementById("demo");
+obj.innerHTML = "Hello";
+
+  Kurangi Ukuran DOM
+ ---------------------
+ * Usahakan jumlah elemen dalam DOM HTML tetap sedikit.
+ * Hal ini akan selalu meningkatkan pemuatan halaman, dan mempercepat rendering (tampilan halaman), terutama pada perangkat yang lebih kecil.
+ * Setiap upaya untuk menelusuri DOM (seperti getElementsByTagName) akan mendapatkan keuntungan dari DOM yang lebih kecil.
+   Hindari Variabel yang Tidak Perlu
+ --------------------------------------
+ * Jangan membuat variabel baru jika Anda tidak berencana menyimpan nilai.
+ * Seringkali Anda dapat mengganti kode seperti ini:
+    let fullName = firstName + " " + lastName;
+    document.getElementById("demo").innerHTML = fullName;
+    
+    Dengan ini:
+       document.getElementById("demo").innerHTML = firstName + " " + lastName;
+       Tunda Pemuatan JavaScript
+
+   * Menempatkan skrip Anda di bagian bawah badan halaman memungkinkan browser memuat halaman terlebih dahulu.
+     Saat skrip sedang diunduh, browser tidak akan memulai pengunduhan lainnya. Selain itu, semua aktivitas penguraian dan rendering mungkin diblokir.
+
+ * Spesifikasi HTTP menetapkan bahwa browser tidak boleh mengunduh lebih dari dua komponen secara paralel.
+ * Alternatifnya adalah dengan menggunakan defer="true"tag skrip. Atribut defer menentukan bahwa skrip harus dijalankan setelah halaman selesai diurai, tetapi ini hanya berfungsi untuk skrip eksternal.
+ * Jika memungkinkan, Anda dapat menambahkan skrip Anda ke halaman dengan kode, setelah halaman dimuat:
+Contoh :
+     <script>
+     window.onload = function() {
+       const element = document.createElement("script");
+       element.src = "myScript.js";
+       document.body.appendChild(element);
+     };
+     </script>
+    * Hindari Menggunakan dengan
+    * Hindari menggunakan withkata kunci. Ini berdampak negatif pada kecepatan. Ini juga mengacaukan cakupan JavaScript.
+    * Kata withkunci tidak diperbolehkan dalam mode ketat.

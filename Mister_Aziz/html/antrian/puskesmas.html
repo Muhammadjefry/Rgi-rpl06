@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #indicator {
+        display: block;
+        height: 40px;
+        width: 40px;
+        border-radius: 999px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: green;
+      }
+      #indicator.pleasewait {
+        background-color: red;
+      }
+
+      button {
+        width: 300px;
+        padding: 15px;
+        background-color: #222;
+        color: #eee;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 10px;
+      }
+      button:hover {
+        background-color: #eee;
+        color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="indicator"></div>
+    <audio></audio>
+
+    <button data-unit="0">Umum</button>
+    <button data-unit="1">KIA</button>
+    <button data-unit="2">Gigi</button>
+    <br />
+    <button data-unit="3">Apotek</button>
+    <button data-unit="4">Laboratorium</button>
+
+    <script>
+      var tombol = document.querySelectorAll("button");
+      for (var i = 0, len = tombol.length; i < len; i++) {
+        tombol[i].addEventListener("click", function (e) {
+          e.preventDefault();
+          // dari sini
+          var aaa = new FormData();
+          aaa.append("unit", e.target.getAttribute("data-unit"));
+          // sampe sini
+          fetch("puskesmas_proses.php", {
+            method: "POST",
+            credentials: "same-origin",
+            body: aaa,
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              var strings = data.split("");
+              var index = 0;
+              var audio = document.querySelector("audio");
+              var indicator = document.querySelector("#indicator");
+              var cl = "pleasewait";
+
+              if (!indicator.classList.contains(cl)) {
+                indicator.classList.add(cl);
+
+                audio.src = "mp3/" + strings[0] + ".mp3";
+                audio.play();
+
+                audio.onended = function () {
+                  index++;
+                  if (index < strings.length) {
+                    audio.src = "mp3/" + strings[index] + ".mp3";
+                    audio.play();
+                  } else {
+                    indicator.classList.remove(cl);
+                  }
+                };
+              }
+
+              console.log(data);
+            })
+            .catch((error) => {
+              console.log(error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

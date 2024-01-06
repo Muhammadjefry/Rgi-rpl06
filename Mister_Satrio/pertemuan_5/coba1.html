@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        flex: 50%;
+        display: flex;
+      }
+      .kanan,
+      .kiri {
+        display: flex;
+        flex: 50%;
+      }
+      .satu,
+      .dua,
+      .tiga,
+      .empat {
+        text-align: center;
+        line-height: 200px;
+        align-items: center;
+        height: 200px;
+        display: flex;
+        flex: 50%;
+        justify-content: center;
+      }
+      .satu {
+        background-color: aqua;
+      }
+      .dua {
+        background-color: red;
+      }
+      .tiga {
+        background-color: blueviolet;
+      }
+      .empat {
+        background-color: gold;
+      }
+      @media (max-width: 800px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 600px) {
+        .container .kanan .kiri {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kanan">
+        <div class="satu">Apakah</div>
+        <div class="dua">Kau</div>
+      </div>
+      <div class="kiri">
+        <div class="tiga">Mencintai</div>
+        <div class="empat">Ku</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+
+
+--------------- JavaScript Sets ------------------
+
+   * Set JavaScript adalah kumpulan nilai unik.
+   * Setiap nilai hanya dapat muncul satu kali dalam satu Set.
+
+Metode Set Penting
+Method              	Description
+new Set()           	Membuat Set baru
+add() 	                Menambahkan elemen baru ke Set
+delete()              	Menghapus elemen dari Set
+has()           	    Mengembalikan nilai benar jika ada nilai di Set
+forEach() 	              Memanggil panggilan balik untuk setiap elemen di Set
+values() 	           	Mengembalikan iterator dengan semua nilai dalam satu Set
+Property 	             	Keterangan
+size 	                Mengembalikan jumlah elemen dalam suatu Set
+
+Metode Set() baru
+-------------------
+Berikan Array ke new Set()konstruktor:
+Contoh
+// Create a Set
+const letters = new Set(["a","b","c"]); 
+
+
+Metode add()
+-------------
+Contoh
+letters.add("d");
+letters.add("e"); 
+
+Metode forEach()
+----------------
+Metode ini forEach()memanggil (memanggil) fungsi untuk setiap elemen Set:
+Contoh
+// Create a Set
+const letters = new Set(["a","b","c"]);
+
+// List all Elements
+let text = "";
+letters.forEach (function(value) {
+  text += value;
+}) 
+
+
+Metode nilai()
+-------------------
+Metode ini values()mengembalikan objek iterator baru yang berisi semua nilai dalam suatu Set:
+Contoh
+letters.values()   // Returns [object Set Iterator] 

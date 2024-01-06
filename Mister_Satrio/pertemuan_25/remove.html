@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Belajar jQuery Duniailkom</title>
+    <script src="jquery-2.1.4.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hapus_html").click(function () {
+          $("#list_html").remove();
+        });
+        $("#hapus_css").click(function () {
+          $("#list_css").remove();
+        });
+        $("#hapus_php").click(function () {
+          $("#list_php").remove();
+        });
+        $("#hapus_all").click(function () {
+          $("#belajar").remove();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button id="hapus_html">Hapus HTML</button>
+    <button id="hapus_css">Hapus CSS</button>
+    <button id="hapus_php">Hapus PHP</button>
+    <button id="hapus_all">Hapus Semua!</button>
+    <ul id="belajar">
+      <li id="list_html">Belajar HTML di Duniailkom</li>
+
+      <li id="list_css">Belajar CSS di Duniailkom</li>
+
+      <li id="list_php">Belajar PHP di Duniailkom</li>
+
+      <li id="list_js">Belajar JavaScript di Duniailkom</li>
+
+      <li id="list_mysql">Belajar MySQL di Duniailkom</li>
+    </ul>
+  </body>
+</html>

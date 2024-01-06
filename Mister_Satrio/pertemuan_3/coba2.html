@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COba 2</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .father {
+        float: left;
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        position: relative;
+      }
+      .boy1 {
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        position: absolute;
+        left: 25px;
+        top: 25px;
+      }
+      .boy2 {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        position: absolute;
+        left: 50px;
+        top: 50px;
+      }
+
+      .mother {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        position: relative;
+        float: right;
+      }
+      .girl1 {
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        position: absolute;
+        left: 25px;
+        top: 25px;
+      }
+      .girl2 {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        position: absolute;
+        left: 50px;
+        top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="boy1"></div>
+      <div class="boy2"></div>
+    </div>
+
+    <div class="mother">
+      <div class="girl1"></div>
+      <div class="girl2"></div>
+    </div>
+  </body>
+</html>

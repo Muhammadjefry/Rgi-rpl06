@@ -1,0 +1,50 @@
+body {
+  background-image: url(https://i2.wp.com/blog.tripcetera.com/id/wp-content/uploads/2020/10/Danau-Toba-edited.jpg);
+}
+
+.judul {
+  color: red;
+}
+
+.nomor1 {
+  color: aqua;
+}
+
+.judul2 {
+  color: red;
+}
+
+.nomor2 {
+  color: aqua;
+}
+
+.judul3 {
+  color: red;
+}
+
+.nomor3 {
+  color: aqua;
+}
+
+.judul4 {
+  color: red;
+}
+
+.nomor4 {
+  color: aqua;
+}
+
+.judul5 {
+  color: red;
+}
+
+.nomor5 {
+  color: aqua;
+}
+
+.akhir {
+  font-size: 25px;
+}
+ul li {
+  list-style-type: none;
+}

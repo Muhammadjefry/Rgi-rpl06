@@ -1,0 +1,170 @@
+
+
+
+
+ ------------JavaScript Sorting Arrays------------------
+       Sorting an Array
+    -------------------
+    The sort() method sorts an array alphabetically:
+    Example
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.sort(); 
+
+    Reversing an Array
+   --------------------
+  * The reverse() method reverses the elements in an array.
+   You can use it to sort an array in descending order:
+    Example
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.sort();
+    fruits.reverse(); 
+
+
+   ---------- JavaScript Array Iteration-----------------
+
+   javaScript Array forEach()
+----------------------------------
+   * The forEach() method calls a function (a callback function) once for each array element.
+   Example
+   const numbers = [45, 4, 9, 16, 25];
+   let txt = "";
+   numbers.forEach(myFunction);
+   
+   function myFunction(value, index, array) {
+     txt += value + "<br>";
+   } 
+
+   JavaScript Array map()
+   ------------------------
+   Contoh ;
+    const numbers1 = [45, 4, 9, 16, 25];
+    const numbers2 = numbers1.map(myFunction);
+    
+    function myFunction(value, index, array) {
+      return value * 2;
+    } 
+
+    JavaScript Array flatMap()
+    --------------------------------
+    Contoh
+    const myArr = [1, 2, 3, 4, 5, 6];
+    const newArr = myArr.flatMap((x) => x * 2); 
+
+    JavaScript Array filter()
+    --------------------------------
+     Contoh
+    const numbers = [45, 4, 9, 16, 25];
+    const over18 = numbers.filter(myFunction);
+    
+    function myFunction(value, index, array) {
+      return value > 18;
+   } 
+
+   JavaScript Array reduce()
+   ----------------------------
+ Contoh
+   const numbers = [45, 4, 9, 16, 25];
+   let sum = numbers.reduce(myFunction);
+   function myFunction(total, value, index, array) {
+     return total + value;
+   } 
+
+   JavaScript Array reduceRight()
+   --------------------------------
+   Contoh :
+   const numbers = [45, 4, 9, 16, 25];
+   let sum = numbers.reduceRight(myFunction);
+   
+   function myFunction(total, value, index, array) {
+     return total + value;
+   } 
+
+   JavaScript Array every()
+   -------------------------
+   Example
+    const numbers = [45, 4, 9, 16, 25];
+    let allOver18 = numbers.every(myFunction);
+    function myFunction(value, index, array) {
+      return value > 18;
+    } 
+
+    JavaScript Array some()
+    -----------------------
+    Example
+    const numbers = [45, 4, 9, 16, 25];
+    let someOver18 = numbers.some(myFunction);
+    
+    function myFunction(value, index, array) {
+      return value > 18;
+    } 
+    JavaScript Array indexOf()
+    ---------------------------
+    Example
+    Search an array for the item "Apple":
+    const fruits = ["Apple", "Orange", "Apple", "Mango"];
+    let position = fruits.indexOf("Apple") + 1; 
+
+    JavaScript Array lastIndexOf()
+    -------------------------------
+    Example
+   Search an array for the item "Apple":
+   const fruits = ["Apple", "Orange", "Apple", "Mango"];
+   let position = fruits.lastIndexOf("Apple") + 1; 
+
+   JavaScript Array find()
+   --------------------------
+   Example
+    const numbers = [4, 9, 16, 25, 29];
+    let first = numbers.find(myFunction);
+    function myFunction(value, index, array) {
+      return value > 18;
+    } 
+
+    JavaScript Array findIndex()
+    -------------------------------
+    Example
+    const numbers = [4, 9, 16, 25, 29];
+    let first = numbers.findIndex(myFunction);
+    function myFunction(value, index, array) {
+      return value > 18;
+    } 
+
+    JavaScript Array.from()
+    -------------------------
+    Example
+   Buat Array dari String:
+   Array.from("ABCDEFG"); 
+
+   JavaScript Array Keys()
+  ----------------------------
+  Example
+   Buat objek Array Iterator, yang berisi kunci array:
+   const fruits = ["Banana", "Orange", "Apple", "Mango"];
+   const keys = fruits.keys();
+   for (let x of keys) {
+     text += x + "<br>";
+   } 
+
+   JavaScript Array entries()
+   ----------------------------
+   Example
+   Buat Array Iterator, lalu ulangi pasangan kunci/nilai:
+   const fruits = ["Banana", "Orange", "Apple", "Mango"];
+   const f = fruits.entries();
+   
+   for (let x of f) {
+     document.getElementById("demo").innerHTML += x;
+   } 
+
+   JavaScript Array includes()
+   -------------------------------
+   const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  fruits.includes("Mango"); // is true 
+
+  JavaScript Array Spread (...)
+  -----------------------------
+   const q1 = ["Jan", "Feb", "Mar"];
+   const q2 = ["Apr", "May", "Jun"];
+   const q3 = ["Jul", "Aug", "Sep"];
+   const q4 = ["Oct", "Nov", "May"];
+   const year = [...q1, ...q2, ...q3, ...q4]; 

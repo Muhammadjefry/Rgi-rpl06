@@ -1,0 +1,61 @@
+
+-------------------  JavaScript BigInt --------------
+
+     * Variabel JavaScript BigIntdigunakan untuk menyimpan nilai bilangan bulat besar yang terlalu besar untuk diwakili oleh JavaScript normal Number.
+
+    JavaScript Integer Accuracy
+    ____________________________
+   * Bilangan bulat JavaScript hanya akurat hingga 15 digit:
+   * Presisi Integer
+    let x = 999999999999999;
+    let y = 9999999999999999; 
+    
+    How to Create a BigInt
+    ------------------------
+     * Untuk membuat a BigInt, tambahkan n ke akhir bilangan bulat atau panggil BigInt():
+     Contohnya :
+        let x = 9999999999999999;
+        let y = 9999999999999999n;
+
+        BigInt: Tipe Data JavaScript baru
+---------------------------------------------
+    * JavaScript typeofa BigIntadalah "besar":
+    Contohnya ;
+       let x = BigInt(999999999999999);
+       let type = typeof x; 
+
+    * BigIntadalah tipe data numerik kedua dalam JavaScript (setelah Number).
+    * Dengan BigIntjumlah total tipe data yang didukung di JavaScript adalah 8:
+             1. String
+             2. Number
+             3. Bigint
+             4. Boolean
+             5. Undefined
+             6. Null
+             7. Symbol
+             8. Objec
+
+      BigInt Operators
+      -----------------
+      * Operator yang dapat digunakan pada JavaScript Numberjuga dapat digunakan pada BigInt.
+      * Contoh Perkalian BigInt
+      let x = 9007199254740995n;
+      let y = 9007199254740995n;
+      let z = x * y; 
+
+
+       Catatan
+       ----------
+       * Aritmatika antara a BigIntdan a Numbertidak diperbolehkan (konversi tipe kehilangan informasi).
+       * Pergeseran kanan yang tidak ditandatangani (>>>) tidak dapat dilakukan pada a BigInt(tidak memiliki lebar tetap).
+       
+       BigInt Decimals
+       --------------
+       * A BigInttidak boleh memiliki desimal.
+      Contoh Divisi BigInt
+      let x = 5n;
+      let y = x / 2;
+      // Error: Cannot mix BigInt and other types, use explicit conversion.
+      let x = 5n;
+      let y = Number(x) / 2; 
+    

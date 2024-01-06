@@ -1,0 +1,15 @@
+
+
+
+ --------------- Math.random() --------------
+
+ Math.random()mengembalikan nomor acak antara 0 (inklusif), dan 1 (eksklusif):
+Contoh
+// Returns a random number:
+Math.random(); 
+
+Fungsi Acak yang Tepat
+-----------------------
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min) ) + min;
+} 

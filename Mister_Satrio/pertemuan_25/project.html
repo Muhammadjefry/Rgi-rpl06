@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        const db_user = ["adnan", "intan", "amel"];
+        const db_pass = ["adnan123", "intan123", "amel123"];
+        $("#btn").click(function () {
+          let in_user = $("#username").val();
+          let in_pass = $("#password").val();
+          let status_user = false;
+          let status_pass = false;
+          let m = 0;
+          for (n in db_user) {
+            if (in_user == db_user[n]) {
+              m = n;
+              status_user = true;
+            }
+          }
+          if (in_pass == db_pass[m]) {
+            status_pass = true;
+          }
+          if (status_pass && status_user) {
+            $("#output").text("Access Granted");
+          } else {
+            $("#output").text("Access Denied");
+          }
+        });
+      });
+    </script>
+    <!-- if (in_pass == db_pass[n]) { console.log("Acses Granted"); } else {
+    console.log("Password salah"); } -->
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" />
+    </div>
+    <br />
+    <div>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" />
+    </div>
+    <br />
+    <button id="btn">LOG IN</button>
+    <p id="output"></p>
+  </body>
+</html>

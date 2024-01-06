@@ -1,0 +1,72 @@
+
+
+--------------- JavaScript Get Date Methods ------
+
+
+The new Date() Constructor
+---------------------------
+Dalam JavaScript, objek tanggal dibuat dengan new Date().
+new Date()mengembalikan objek tanggal dengan tanggal dan waktu saat ini.
+Dapatkan Waktu Saat Ini
+const date = new Date(); 
+
+Metode Pengambilan Tanggal
+---------------------------------
+Method          	Description
+
+getFullYear() 	    Get year as a four digit number (yyyy)
+getMonth()        	Get month as a number (0-11)
+getDate()        	 Get day as a number (1-31)
+getDay() 	        Get weekday as a number (0-6)
+getHours()       	Get hour (0-23)
+getMinutes() 	    Get minute (0-59)
+getSeconds() 	     Get second (0-59)
+getMilliseconds()  	  Get millisecond (0-999)
+getTime() 	           Get time (milliseconds since January 1, 1970)
+     
+     Metode getFullYear()
+     ---------------------
+     const d = new Date();
+     d.getFullYear(); 
+
+      Metode getMonth()
+     ---------------------
+    const d = new Date();
+    d.getMonth();
+
+      Metode getDate()
+     ---------------------
+    const d = new Date();
+    d.getDate(); 
+
+      Metode getHours()
+     ---------------------
+     const d = new Date();
+     d.getHours(); 
+
+     Metode getMinutes()
+     ---------------------
+     const d = new Date();
+     .getMinutes(); 
+
+    Metode getSeconds()
+     ---------------------
+      const d = new Date();
+     d.getSeconds(); 
+
+     Metode getMilliseconds()
+     ---------------------
+    const d = new Date();
+    d.getMilliseconds(); 
+
+      Metode getDay()
+     ---------------------
+    const d = new Date();
+    d.getDay(); 
+
+     Metode getTime()
+     ---------------------
+   const d = new Date();
+   d.getTime(); 
+
+ 

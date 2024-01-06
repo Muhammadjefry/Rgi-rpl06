@@ -1,0 +1,69 @@
+
+
+ ------------- Properti Nomor JavaScript ------------
+  Property               Description
+  EPSILON 	            The difference between 1 and the smallest number > 1.
+  MAX_VALUE 	        The largest number possible in JavaScript
+  MIN_VALUE 	        The smallest number possible in JavaScript
+  MAX_SAFE_INTEGER 	    The maximum safe integer (253 - 1)
+  MIN_SAFE_INTEGER    	The minimum safe integer -(253 - 1)
+  POSITIVE_INFINITY 	Infinity (returned on overflow)
+  NEGATIVE_INFINITY 	Negative infinity (returned on overflow)
+  NaN 	                A "Not-a-Number" value
+
+   JavaScript EPSILON
+  -------------------
+    * Number.EPSILONadalah selisih antara bilangan floating point terkecil yang lebih besar dari 1 dan 1.
+      Contoh
+      let x = Number.EPSILON; 
+    
+
+     Catatan
+     -----------
+    * Number.EPSILONadalah fitur ES6 .
+    * Ini tidak berfungsi di Internet Explorer.
+
+    JavaScript MAX_VALUE
+    ---------------------
+    * Number.MAX_VALUEadalah konstanta yang mewakili angka terbesar dalam JavaScript.
+    Contoh
+    let x = Number.MAX_VALUE; 
+
+     
+     * Properti Angka Tidak Dapat Digunakan pada Variabel
+     * Properti nomor milik Objek Nomor JavaScript .
+     * Properti ini hanya dapat diakses sebagai Number.MAX_VALUE.
+     * Menggunakan x.MAX_VALUE, dimana x adalah variabel atau nilai, akan menghasilkan undefined:
+     
+     Contohnya ;
+          let x = 6;
+         x.MAX_VALUE
+
+  JavaScript MIN_VALUE
+-----------------------
+     * Number.MIN_VALUEadalah konstanta yang mewakili angka serendah mungkin dalam JavaScript.
+     Contoh;
+     let x = Number.MIN_VALUE; 
+
+    JavaScript MAX_SAFE_INTEGER
+-----------------------------------
+    * Number.MAX_SAFE_INTEGERmewakili bilangan bulat aman maksimum dalam JavaScript.
+    * Number.MAX_SAFE_INTEGERadalah (2 53 - 1).
+        Contohnya ;
+        let x = Number.MAX_SAFE_INTEGER; 
+
+  JavaScript MIN_SAFE_INTEGER
+------------------------------------
+     * Number.MIN_SAFE_INTEGERmewakili bilangan bulat aman minimum dalam JavaScript.
+    * Number.MIN_SAFE_INTEGERadalah -(2 53 - 1).
+    Contohnya ;
+    let x = Number.MIN_SAFE_INTEGER; 
+
+   Catatan
+-------------------------
+   * MAX_SAFE_INTEGERdan MIN_SAFE_INTEGERmerupakan fitur ES6 .
+   * Mereka tidak berfungsi di Internet Explorer.
+    JavaScript POSITIVE_INFINITY
+     Contoh
+     let x = Number.POSITIVE_INFINITY; 
+    

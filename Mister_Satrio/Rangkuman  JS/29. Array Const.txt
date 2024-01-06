@@ -1,0 +1,16 @@
+
+
+---------------- JavaScript Array Const ------------
+  Skrip ECMA 2015 (ES6)
+-------------------------
+     * Pada tahun 2015, JavaScript memperkenalkan kata kunci baru yang penting: const.
+     * Sudah menjadi praktik umum untuk mendeklarasikan array menggunakan const:
+     Contoh
+     const cars = ["Saab", "Volvo", "BMW"]; 
+
+     Tidak Dapat Ditugaskan Kembali
+----------------------------------------------
+     * Array yang dideklarasikan dengan consttidak dapat ditetapkan ulang:
+    Contoh
+    const cars = ["Saab", "Volvo", "BMW"];
+    cars = ["Toyota", "Volvo", "Audi"];    // ERROR 

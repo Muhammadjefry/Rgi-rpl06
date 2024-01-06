@@ -1,0 +1,129 @@
+
+------------ JavaScript String Methods ----------
+   -  String length
+       * String slice()
+       * String substring()
+       * String substr()
+       * String replace()
+       * String replaceAll()
+       * String toUpperCase()
+       * String toLowerCase()
+       * String concat()
+       * String trim()
+       * String trimStart()
+       * String trimEnd()
+       * String padStart()
+       * String padEnd()
+       * String charAt()
+       * String charCodeAt()
+       * String split()
+
+    JavaScript String Length
+    ------------------------
+    Properti lengthmengembalikan panjang string:
+    Contohnya :
+      let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      let length = text.length; 
+
+      Extracting String Parts (Mengekstraksi Bagian String)
+      ------------------------------------
+      Ada 3 metode untuk mengekstrak bagian dari string:
+      *  slice(start, end)
+      *  substring(start, end)
+      *  substr(start, length)
+
+      JavaScript String slice()
+      -------------------------
+     * slice()mengekstrak bagian dari string dan mengembalikan bagian yang diekstraksi dalam string baru.
+     * Metode ini mengambil 2 parameter: posisi awal, dan posisi akhir (tidak termasuk akhir).
+      Contohnya :
+      Iris sebagian string dari posisi 7 ke posisi 13:
+      let text = "Apple, Banana, Kiwi";
+      let part = text.slice(7, 13); 
+
+           Catatan
+     ---------------------
+    JavaScript menghitung posisi dari nol.
+    Posisi pertama adalah 0.    
+    Posisi kedua adalah 1.
+
+    Contohnya :
+     * Jika Anda menghilangkan parameter kedua, metode ini akan memotong sisa string:
+     let text = "Apple, Banana, Kiwi";
+     let part = text.slice(7); 
+
+     * Jika parameternya negatif, posisinya dihitung dari akhir string:
+     let text = "Apple, Banana, Kiwi";
+     let part = text.slice(-12); 
+    
+    JavaScript String substring()
+    -----------------------------
+    * substring()mirip dengan slice().
+    * Perbedaannya adalah nilai awal dan akhir yang kurang dari 0 diperlakukan sebagai 0 dalam substring().
+
+    Contohnya :
+    let str = "Apple, Banana, Kiwi";
+    let part = str.substring(7, 13); 
+
+    Replacing String Content
+    -------------------------
+    Metode ini replace()menggantikan nilai tertentu dengan nilai lain dalam sebuah string:
+    Contohnya ;
+    let text = "Please visit Microsoft!";
+    let newText = text.replace("Microsoft", "W3Schools"); 
+
+
+        Catatan
+    -----------
+    * Metode ini replace()tidak mengubah string yang dipanggil.
+    
+    * Metode ini replace()mengembalikan string baru.
+    
+    * Metode ini hanya replace()menggantikan pertandingan pertama
+    
+    * Jika Anda ingin mengganti semua kecocokan, gunakan ekspresi reguler dengan set flag /g. Lihat contoh di bawah.
+ 
+
+  JavaScript String ReplaceAll()
+  -------------------------------
+  Pada tahun 2021, JavaScript memperkenalkan metode string replaceAll():
+  Contohnya :
+  text = text.replaceAll("Cats","Dogs");
+  text = text.replaceAll("cats","dogs"); 
+
+   Converting to Upper and Lower Case
+   ------------------------------------
+   * Sebuah string diubah menjadi huruf besar dengan toUpperCase():
+   Contohnya :
+   let text1 = "Hello World!";
+   let text2 = text1.toUpperCase(); 
+   
+   * Sebuah string diubah menjadi huruf kecil dengan toLowerCase():
+   Contohnya :
+    let text1 = "Hello World!";       
+    let text2 = text1.toLowerCase();  
+
+    JavaScript String concat()
+    ---------------------------
+    concat()menggabungkan dua string atau lebih:
+    Contohnya :
+    let text1 = "Hello";
+    let text2 = "World";
+    let text3 = text1.concat(" ", text2); 
+   * Metode ini concat()dapat digunakan sebagai pengganti operator plus. Kedua baris ini melakukan hal yang sama
+
+   JavaScript String trim()
+   -------------------------
+   Metode ini trim()menghilangkan spasi dari kedua sisi string:
+   Contohnya :
+    let text1 = "      Hello World!      ";
+    let text2 = text1.trim(); 
+
+    JavaScript String trimStart()
+    ------------------------------
+    ECMAScript 2019 menambahkan metode String trimStart()ke JavaScript.
+
+   * Metode ini trimStart()bekerja seperti trim(), tetapi menghilangkan spasi hanya dari awal string.
+   Contohnya ;
+     let text1 = "     Hello World!     ";
+     let text2 = text1.trimStart(); 

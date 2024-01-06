@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+e>Belajar jQuery Duniailkom</title>
+<script src="jquery-2.1.4.js"></script>
+<script>
+$(document).ready(function() {
+
+$("#ambil").click(function() {
+var nilai1 = $("a[title]").attr("href");
+var nilai2 = $("a[title]").attr("title");
+var nilai3 = $("a[title]").attr("target");
+$("#tekape").html(nilai1+"<br>"+nilai2+"<br>"+nilai3);
+})
+
+});
+</script>
+</head>
+<body>
+<h2>Belajar jQuery Duniailkom</h2>
+<a href="https://www.duniailkom.com/tutorial-belajar-jquery-bagi-pemula/"
+title="Belajar jQuery yuk bro..."
+target="_blank" >
+Tutorial jQuery Duniailkom
+</a>
+<br><br>
+<button id="ambil">Ambil Atribut</button>
+<p id="tekape"></p>
+</body>
+</html>

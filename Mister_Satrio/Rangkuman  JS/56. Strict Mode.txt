@@ -1,0 +1,20 @@
+
+
+------------ JavaScript Use Strict ----------
+
+  * "use strict";Mendefinisikan bahwa kode JavaScript harus dieksekusi dalam "mode ketat".
+  * Petunjuk "gunakan ketat".
+  * Arahan ini "use strict"baru di ECMAScript versi 5.
+  * Ini bukan pernyataan, melainkan ekspresi literal, yang diabaikan oleh JavaScript versi sebelumnya.
+  * Tujuannya "use strict"adalah untuk menunjukkan bahwa kode harus dieksekusi dalam "mode ketat".
+  * Dengan mode ketat, Anda tidak dapat, misalnya, menggunakan variabel yang tidak dideklarasikan.
+  * Semua browser modern mendukung "use strict" kecuali Internet Explorer 9 dan yang lebih rendah:
+
+
+  Mendeklarasikan Mode Ketat
+--------------------------------
+  * Mode ketat dideklarasikan dengan menambahkan "use strict"; ke awal skrip atau fungsi.
+  * Dideklarasikan di awal skrip, ia memiliki cakupan global (semua kode dalam skrip akan dijalankan dalam mode ketat):
+  Contoh
+  "use strict";
+x = 3.14;       // This will cause an error because x is not declared 

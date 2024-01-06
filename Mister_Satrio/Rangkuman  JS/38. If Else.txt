@@ -1,0 +1,36 @@
+
+
+-------- JavaScript if, else, and else if-------------
+
+Pernyataan if
+---------------
+Gunakan ifpernyataan tersebut untuk menentukan blok kode JavaScript yang akan dieksekusi jika kondisinya benar.
+Sintaksis
+if (condition) {
+  //  block of code to be executed if the condition is true
+} 
+
+Contoh
+Ucapkan salam “Selamat siang” jika jam kurang dari pukul 18.00:
+if (hour < 18) {
+  greeting = "Good day";
+}
+
+Pernyataan lain
+---------------
+Gunakan elsepernyataan tersebut untuk menentukan blok kode yang akan dieksekusi jika kondisinya salah.
+if (condition) {
+  //  block of code to be executed if the condition is true
+} else {
+  //  block of code to be executed if the condition is false
+}
+
+Contoh:
+Jika jam kurang dari 18, buat ucapan "Selamat siang", jika tidak, "Selamat malam":
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+Hasil salamnya adalah:
+Good evening 

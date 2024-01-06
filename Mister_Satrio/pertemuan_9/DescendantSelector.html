@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    .container {
+      background-color: aqua;
+      width: 50%;
+      height: 500px;
+      margin: 50px auto;
+      overflow: hidden;
+    }
+    .container .kotak1 {
+      background-color: rgb(49, 80, 80);
+      width: 80%;
+      height: 450px;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+    .container .kotak1 .kotak2 {
+      background-color: red;
+      width: 80%;
+      height: 400px;
+      margin: 25px auto;
+      overflow: hidden;
+    }
+    .container .kotak1 .kotak2 .kotak3 {
+      background-color: rgb(71, 40, 40);
+      width: 80%;
+      height: 350px;
+      margin: 25px auto;
+      overflow: hidden;
+    }
+    .container .kotak1 .kotak2 .kotak3 p {
+      background-color: green;
+      width: 80%;
+      height: 300px;
+      margin: 25px auto;
+      text-align: center;
+      line-height: 300px;
+      font-weight: bold;
+      color: white;
+    }
+  </style>
+  <body>
+    <h1>Descendant Selector</h1>
+    <p>Memanggil anak-anaknya dengan spasi</p>
+    <div class="container">
+      <div class="kotak1">
+        <div class="kotak2">
+          <div class="kotak3">
+            <p>Hello world !</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

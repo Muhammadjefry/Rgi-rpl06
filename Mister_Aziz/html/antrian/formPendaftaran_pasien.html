@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form pendaftaran Pasien</title>
+  </head>
+  <body>
+    <form action="" id="formulir">
+      <label for="">Nama Pasien</label>
+      <br />
+      <input type="text" name="pasien_nama" id="" />
+      <br />
+      <br />
+      <label for="">Unit tujuan</label>
+      <br />
+      <select name="pasien_unit" id="">
+        <option value="0">Umum</option>
+        <option value="1">KIA</option>
+        <option value="2">Gigi</option>
+      </select>
+      <br />
+      <br />
+      <button id="kek">Kirim</button>
+    </form>
+    <p id="notif"></p>
+    <script>
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        var aaa = new FormData(e.target);
+
+        fetch("formproses.php", {
+          method: "POST",
+          credentials: "same-origin",
+          body: aaa,
+        })
+          // .then((Response)=>Response.json())
+          .then((Response) => Response.text())
+          .then((data) => {
+            var notif = document.querySelector("#notif");
+            notif.innerText = data;
+            console.log(data);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      });
+    </script>
+  </body>
+</html>

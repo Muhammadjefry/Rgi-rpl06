@@ -1,0 +1,5 @@
+1. Belajar basic tag
+2.Cara menghubungkan html dengan css
+  a.inline
+  b.internal
+  c.eksternal 

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Belajar jQuery Duniailkom</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#tombol_app").click(function () {
+          $("#box").append("<p>jQuery is Amazing...</p>");
+        });
+        $("#tombol_pre").click(function () {
+          $("#box").prepend("<p>Learning jQuery...</p>");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="box">
+      <h2>Sedang belajar jQuery di Duniailkom...</h2>
+    </div>
+    <button id="tombol_app">Append</button>
+    <button id="tombol_pre">Prepend</button>
+  </body>
+</html>

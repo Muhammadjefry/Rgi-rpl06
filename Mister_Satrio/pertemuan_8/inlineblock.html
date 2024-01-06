@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* block==bisa diatur widht heightnya jika inline==tdk bisa, dan block mengatur secara horizontal, inline secara vertical  */
+      label {
+        cursor: pointer;
+        display: inline;
+        margin-left: 20px;
+        background-color: red;
+        border-radius: 2px;
+        padding: 5px;
+      }
+      .kotak {
+        width: 100%;
+        background-color: rgb(105, 105, 105);
+        text-align: center;
+        line-height: 50px;
+      }
+      label:hover {
+        color: white;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kotak">
+      <label class="satu">Home</label>
+      <label class="dua">Search</label>
+      <label class="tiga">Trash</label>
+      <label class="empat">Globe</label>
+      <label class="lima"> Contact </label>
+    </div>
+  </body>
+</html>

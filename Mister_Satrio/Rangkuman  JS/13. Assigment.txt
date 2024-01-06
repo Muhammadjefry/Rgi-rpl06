@@ -1,0 +1,82 @@
+
+---------- JavaScript Assignment -------------
+
+ 1.   Operator Penugasan JavaScript
+       ---------------------------------
+      Operator penugasan memberikan nilai ke variabel JavaScript.
+        Operator 	Example 	Same As
+    1.     = 	         x = y 	    x = y
+          Contohnya : let x = 10;
+                     hasil x = 10;
+    2.     +=          x += y    	x = x + y
+          Contohnya : let x = 10;
+                       x += 5;
+                     hasil x = 15;
+    3.     -=          x -= y    	x = x - y
+          Contohnya : let x = 10;
+                       x -= 5;
+                     hasil x = 5;
+    4.     *=          x *= y    	x = x * y
+          Contohnya : let x = 10;
+                       x *= 5;
+                     hasil x = 50;
+    5.     /=          x /= y    	x = x / y
+          Contohnya : let x = 10;
+                       x /= 5;
+                     hasil x = 2;
+    6.     %=          x %= y    	x = x % y
+          Contohnya : let x = 10;
+                       x %= 5;
+                     hasil x = 0;
+    7.     **=         x **= y    x = x ** y
+            Contohnya : let x = 10;
+                       x **= 5;
+                     hasil x = 100000;
+
+    8.      <<= Operatornya
+            Contohnya : let x = -100; 
+                      x <<= 5; 
+                    hasil x = -3200;
+
+    9.       >>= Operator
+            Contohnya : let x = -100; 
+                      x >>= 5; 
+                    hasil x = -4;
+
+    10.         >>= Operator
+            Contohnya : let x = -100; 
+                      x >>>= 5; 
+                    hasil x = 134217724;
+
+2.   Operator Penugasan Shift
+      -----------------------------------
+       Operator  	Example 	Same As
+    1.     &= 	     x &= y 	x = x & y
+          Contohnya : let x = 10;
+                      x &= 5; 
+                    hasil x = 4;
+    2.     ^= 	     x ^= y 	x = x ^ y
+         Contohnya : let x = 10;
+                     x ^= 5; 
+                     hasil x = 97;
+    3.     |= 	     x |= y 	x = x | y
+          Contohnya : let x = 10;
+                     x |= 5; 
+                    hasil x = 101;
+
+3.  Operator Penugasan Logis
+      -----------------------------------
+      Operator  	Example 	Same As
+    1.   &&= 	    x &&= y 	x = x && (x = y)
+         Contohnya : let x = 10;
+                     x &&= 5; 
+                    hasil x = 5;
+    2.    ||= 	    x ||= y 	x = x || (x = y)
+         Contohnya : let x = 10;
+                     x ||= 5; 
+                    hasil x = 5;
+    3.    ??= 	    x ??= y 	x = x ?? (x = y)
+        Contohnya : let x = 10;
+                     x ??= 5; 
+                    hasil x = 5;
+    

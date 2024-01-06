@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>getClassname</title>
+  </head>
+  <body>
+    <p class="center warna ukuran" id="percobaan" style="font-size: 40px">
+      Percobaan
+    </p>
+    <script>
+      let kelas = document.getElementById("percobaan");
+      console.log(kelas.classList);
+      console.log(kelas.getAttribute("class"));
+      console.log(kelas.getAttribute("id"));
+      console.log(kelas.getAttribute("style"));
+      console.log(kelas.className);
+      console.log(kelas.classList[1]);
+      console.log(kelas.classList.contains("warna"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+
+------------- JavaScript Objects ----------------
+
+             Objek JavaScript
+            ------------------
+ - Anda telah mempelajari bahwa variabel JavaScript adalah wadah untuk nilai data.
+
+ - Kode ini memberikan nilai sederhana (Fiat) ke variabel bernama mobil:
+ Contohnya : 
+ let car = "Fiat"; 
+
+ - Objek juga merupakan variabel. Tapi objek bisa mengandung banyak nilai.
+
+
+  Object Definition(Definisi Objek)
+  ---------------------------------
+  Anda mendefinisikan (dan membuat) objek JavaScript dengan objek literal:
+  Contohnya :
+  const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; 
+
+  * Spasi dan jeda baris tidak penting. Definisi objek dapat mencakup beberapa baris *
+  Contohnya :
+  const person = {
+     firstName: "John",
+     lastName: "Doe",
+     age: 50,
+      eyeColor: "blue"  
+    }; 
+
+    Object Properties
+    -----------------
+    Pasangan nama:nilai dalam objek JavaScript disebut properti :
+    Properti 	     Nilai properti
+    nama depan    	Yohanes
+    nama keluarga  	Kelinci betina
+    usia 	        50
+    warna mata 	    biru
+
+    Accessing Object Properties(Mengakses Properti Objek)
+    Anda dapat mengakses properti objek dengan dua cara:
+     -  objectName.propertyName
+         Contohnya :
+         person.lastName;
+     - objectName["propertyName"]
+        Contohnya : 
+        person["lastName"]; 
+
+     Object Methods
+     ---------------
+     Properti 	    Nilai properti
+     nama depan 	Yohanes
+     nama keluarga 	Kelinci betina
+     usia           50
+     warna mata 	biru
+     nama lengkap 	function() {kembalikan   
+                     ini. NamaDepan + " " + Ini.NamaBelakang;}
+
+    * Metode adalah fungsi yang disimpan sebagai properti *
+    Contohnya :
+      const person = {
+        firstName   :   "John",
+        lastName    :   "Doe",
+        id          :   5566,
+        fullName    :   function() {
+        return this.firstName + " " + this.lastName;
+        }
+      }; 

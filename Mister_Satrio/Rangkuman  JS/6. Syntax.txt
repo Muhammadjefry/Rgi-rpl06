@@ -1,0 +1,82 @@
+
+----------- Sintaks JavaScript -----------
+
+Sintaks JavaScript mendefinisikan dua jenis nilai:
+
+   - Nilai tetap
+   - Nilai variabel
+Nilai tetap disebut Literals .
+Nilai variabel disebut Variabel .
+
+  Literal JavaScript
+  -------------------
+  - Dua aturan sintaksis terpenting untuk nilai tetap adalah:
+      1. Bilangan ditulis dengan atau tanpa desimal:
+         contohnya: 
+            10.50
+            1001
+      2. String adalah teks yang ditulis dalam tanda kutip ganda atau tunggal:
+         contohnya: 
+          "John Doe"
+          'John Doe'
+
+  Variabel JavaScript
+  -------------------
+  Dalam bahasa pemrograman, variabel digunakan untuk menyimpan nilai data.
+  JavaScript menggunakan kata kunci
+  - var, 
+  - let dan,
+  - const untuk mendeklarasikan variabel.
+
+  Operator JavaScript
+  -------------------
+ --- JavaScript menggunakan operator aritmatika ( + - * /) untuk menghitung nilai:
+
+ --- JavaScript menggunakan operator penugasan ( =) untuk menetapkan nilai ke variabel:
+
+  Kata Kunci JavaScript 
+  -------------------
+  1. Kata let kunci memberitahu browser untuk membuat variabel:
+   contohnya: 
+      - let x, y;
+        x = 5 + 6;
+        y = x * 10; 
+
+  2 . Kata varkunci juga memberitahu browser untuk membuat variabel:
+   contohnya: 
+      - var x, y; 
+        x = 5 + 6;
+        y = x * 10; 
+
+  Komentar JavaScript
+  -------------------
+  Tidak semua pernyataan JavaScript "dieksekusi".
+
+   Kode setelah garis miring ganda //atau di antara /*dan */diperlakukan sebagai komentar .
+
+   Komentar diabaikan, dan tidak akan dieksekusi:
+       contohnya: 
+       let x = 5;   // I will be executed
+       // x = 6;   I will NOT be executed 
+      
+
+   Pengidentifikasi / Nama JavaScript
+   -----------------------------------
+   Aturan untuk nama resmi sama di sebagian besar bahasa pemrograman.
+
+   Nama JavaScript harus dimulai dengan:
+    - Sebuah huruf (AZ atau az)
+    - Tanda dolar ($)
+    - Atau garis bawah (_)
+
+
+  JavaScript peka huruf besar-kecil
+----------------------------------------
+    Semua pengidentifikasi JavaScript peka huruf besar-kecil . 
+
+     Variabel lastName dan lastname, adalah dua variabel yang berbeda:
+     let lastname, lastName;
+     last Name = "Doe";
+     last name = "Peterson"; 
+
+     JavaScript tidak menafsirkan LET atau Let sebagai kata kunci let .

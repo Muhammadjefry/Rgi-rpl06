@@ -1,0 +1,4 @@
+-- DEPAN
+- pasien datang dan daftar
+- periksa kelengkapan dokumen
+ 

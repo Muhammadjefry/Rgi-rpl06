@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <form id="form-login">
+      <label for="">Username </label>
+      <input type="text" id="username" value="" />
+      <br />
+      <br />
+      <label for="">Password </label>
+      <input type="text" id="password" value="" />
+      <br />
+      <br />
+      <input type="submit" value="Submit" onclick="check_login()" />
+    </form>
+    <p id="output"></p>
+    <script>
+      document
+        .querySelector("#form-login")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+        });
+      const database_user = [
+        "alvin",
+        "jefry",
+        "sulaiman",
+        "jalal",
+        "lucky",
+        "udin",
+        "dimas",
+      ];
+      const database_password = [
+        "alvin123",
+        "jefry123",
+        "sulaiman123",
+        "jalal123",
+        "lucky123",
+        "udin123",
+        "dimas123",
+      ];
+      // function checkUsername(input_username, database_user) {
+      //   for (n in database_user) {
+      //     if (input_username == database_user[n]) {
+      //     }
+      //     return index;
+      //   }
+      // }
+      function check_login() {
+        //------Call form----
+        let form = document.getElementById("form-login");
+        let user = form[0].value;
+        let pass = form[1].value;
+
+        // -----Tagging----
+        let statusUsername = false;
+        let statusPassword = false;
+        let indexPassword = 0;
+
+        //-----Print to html--------
+        let output = document.getElementById("output");
+
+        //-----Username cannot filled empety----
+        if (user.length == 0) {
+          output.innerHTML = "Username harus diisi";
+        }
+        //-----Username cannot filled empety------
+        else if (pass.length == 0) {
+          output.innerHTML = "Password Harus diisi";
+        }
+        //----Validate Username and password----
+        if (user.length > 0 && pass.length > 0) {
+          //---Check Username------
+          for (idx in database_user) {
+            if (user == database_user[idx]) {
+              indexPassword = idx;
+              statusUsername = true;
+            }
+          }
+          //---Check Password------
+          if (pass == database_password[indexPassword]) {
+            statusPassword = true;
+          }
+          //---Enter Sistem
+          //---Check Username
+          if (statusUsername) {
+            //--Check Password status
+            if (statusPassword) {
+              output.innerHTML = " Access Granted";
+            } else {
+              output.innerHTML = "Wrong Password";
+            }
+          } else {
+            output.innerHTML = "Username Not Found";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

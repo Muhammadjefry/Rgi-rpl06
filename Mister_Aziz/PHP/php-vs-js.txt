@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<?php
+$jarak_m = 5400;
+$jarak_km = $jarak_m / 1000;
+$per_km = 1850;
+$ongkir_min = 6400;
+$admin = 1600;
+$ongkir = ( $jarak_km * $per_km ) + $admin;
+if( $ongkir <= $ongkir_min ) {
+    $x = $ongkir_min;
+} else {
+    $x = $ongkir;
+}
+
+echo "<p>PHP</p>
+<p class='output-php'>$x</p>";
+?>
+
+<br>
+
+<p>JS</p>
+<p class="output-js"></p>
+
+<script>
+var jarak_m = 5400;
+var jarak_km = jarak_m / 1000;
+var per_km = 1850;
+var ongkir_min = 6400;
+var admin = 1600;
+var ongkir = ( jarak_km * per_km ) + admin;
+if( ongkir <= ongkir_min ) {
+    var x = ongkir_min;
+} else {
+    var x = ongkir;
+}
+
+document.querySelector('.output-js').innerText = x;
+</script>
+</body>
+</html>

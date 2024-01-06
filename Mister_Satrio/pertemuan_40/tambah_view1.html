@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRUD PHP Dan MySQLi</title>
+    <style>
+      .kotak {
+        display: flex;
+        justify-content: center;
+        margin: 7em auto;
+        width: 80%;
+      }
+      .crud {
+        text-align: center;
+        font-family: sans-serif;
+      }
+      .crud h3 {
+        font-family: monospace;
+      }
+      .kembali {
+        margin-top: 50px;
+        text-align: center;
+        flex: 50%;
+      }
+      .kembali a {
+        text-decoration: none;
+        color: black;
+        font-size: 2em;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .form {
+        flex: 50%;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="crud">
+      <h2>CRUD DATA MAHASISWA</h2>
+      <h3>TAMBAH DATA MAHASISWA</h3>
+    </div>
+    <div class="kotak">
+      <div class="kembali">
+        <a href="tabel_siswa.php">&#8592; Kembali</a>
+      </div>
+      <div class="form">
+        <form action="tambah_controller.php" method="POST">
+          <table>
+            <tr>
+              <td>First Name :</td>
+              <td><input type="text" name="first_name" required /></td>
+            </tr>
+            <tr>
+              <td>Last Name :</td>
+              <td><input type="text" name="last_name" required /></td>
+            </tr>
+            <tr>
+              <td>Age :</td>
+              <td><input type="text" name="age" required /></td>
+            </tr>
+            <tr>
+              <td>Gender :</td>
+              <td><input type="text" name="gender" required /></td>
+            </tr>
+            <tr>
+              <td>Address :</td>
+              <td><input type="text" name="address" required /></td>
+            </tr>
+            <tr>
+              <td>Assesment IPA :</td>
+              <td><input type="text" name="assesment_ipa" required /></td>
+            </tr>
+            <tr>
+              <td>Assesment MTK :</td>
+              <td><input type="text" name="assesment_mtk" required /></td>
+            </tr>
+            <tr>
+              <td>Assesment B Indo :</td>
+              <td><input type="text" name="assesment_B_indo" required /></td>
+            </tr>
+            <tr>
+              <td>Assesment B Inggris :</td>
+              <td><input type="text" name="assesment_B_inggris" required /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="submit" value="Simpan" /></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

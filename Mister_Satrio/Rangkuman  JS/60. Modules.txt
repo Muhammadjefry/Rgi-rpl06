@@ -1,0 +1,59 @@
+
+------------ JavaScript Modules ------------
+
+Modul
+----------
+  * Modul JavaScript memungkinkan Anda memecah kode menjadi file terpisah.
+  * Hal ini mempermudah pemeliharaan basis kode.
+  * Modul diimpor dari file eksternal dengan importpernyataan tersebut.
+  * Modul juga mengandalkan type="module"tag <script>.
+     Contoh : 
+     <script type="module">
+     import message from "./message.js";
+     </script> 
+
+     Ekspor
+------------------
+     * Modul dengan fungsi atau variabel dapat disimpan dalam file eksternal apa pun.
+     * Ada dua jenis ekspor: Ekspor Bernama dan Ekspor Default .
+Dinamakan Ekspor
+-------------------- 
+   * Mari kita membuat file bernama person.js, dan mengisinya dengan hal-hal yang ingin kita ekspor.
+   * Anda dapat membuat ekspor bernama dengan dua cara. Sejajarkan satu per satu, atau sekaligus di bagian bawah.
+   * Sebaris satu per satu:
+   * person.js
+       export const name = "Jesse";
+       export const age = 40;
+
+       Sekaligus di bagian bawah:
+       ----------------------------
+       person.js
+       const name = "Jesse";
+       const age = 40;
+       
+       export {name, age};
+Ekspor Default
+-----------------
+     * Mari kita membuat file lain, bernama message.js, dan menggunakannya untuk mendemonstrasikan ekspor default.
+     * Anda hanya dapat memiliki satu ekspor default dalam satu file.
+     Contoh
+          
+     message.js
+     const message = () => {
+     const name = "Jesse";
+     const age = 40;
+     return name + ' is ' + age + 'years old.';
+     };
+     
+     export default message;
+Impor
+------
+   * Anda dapat mengimpor modul ke dalam file dengan dua cara, berdasarkan apakah modul tersebut diberi nama ekspor atau ekspor default.
+   * Ekspor bernama dibuat menggunakan kurung kurawal. Ekspor default tidak.
+   * Impor dari ekspor bernama
+   * Impor ekspor bernama dari file person.js:
+       import { name, age } from "./person.js";
+
+   * Impor dari ekspor default
+   * Impor ekspor default dari file message.js:
+       import message from "./message.js"; 

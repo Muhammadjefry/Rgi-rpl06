@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=], initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Menenmukan angka terbesar dengan memakai x sebagai angka[67, 89, 54, 99, 77, 89]
+      const angka = [67, 89, 54, 99, 77, 89];
+      let terbesar = angka[0];
+      for (let x in angka) {
+        if (terbesar < angka[x]) {
+          terbesar = angka[x];
+        }
+      }
+      document.write("Angka terbesar adalah = " + terbesar + "<br>");
+      //Menenmukan angka terkecil dengan memakai x sebagai angka[67, 89, 54, 99, 77, 89]
+      const Angka = [67, 89, 54, 99, 77, 89];
+      let Terkecil = Angka[0];
+      for (let x in Angka) {
+        if (Terkecil > Angka[x]) {
+          Terkecil = Angka[x];
+        }
+      }
+      document.write("Angka terkecil adalah = " + Terkecil);
+    </script>
+  </body>
+</html>

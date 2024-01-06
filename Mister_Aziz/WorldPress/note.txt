@@ -1,0 +1,12 @@
+Opsi Role (default) di dalam WP;
+- Subscriber
+ - hanya memiliki status sebagai user pendaftar
+- Contributor
+ - bisa menulis/edit-articel, tapi tidak bisa mepublikasikannya
+- 
+
+
+-Post 
+ -untuk content yang sering ditambahkan(ex: articel)
+-Page
+ - untuk content yang jarang ditambahkan/ diedit

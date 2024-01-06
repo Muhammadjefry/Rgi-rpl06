@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  </head>
+  <body>
+<div class="parent" >
+  <div class="kata">
+    <div class="p">
+    <p> " Hidup seperti <span>secangkir kopi,</span>  Dimana pahit dan manis bertemu dalam <span>kehangatan. "</span> </p>
+  </div>
+  <button
+    onclick="document.getElementById('id01').style.display='block'"
+    style="width: auto"
+    class="log"
+  >
+    Login
+  </button>
+      </div>
+      
+        <form
+          class="modal"
+          action="/action_page.php"
+          method="post"
+          id="id01"
+        >
+      
+      <!-- <div class="imgcontainer">
+        <img src="pons.png" alt="Avatar" class="avatar" />
+      </div> -->
+      <span
+             onclick="document.getElementById('id01').style.  display='none'"
+             class="close"
+             title="Close Modal">&times;</span>
+      <div class="container">
+        <div class="form">
+            <h1>Form Here</h1>
+            <!-- username -->
+            <div class="group">
+              <input
+                required=""
+                type="text"
+                class="input"
+                id="Username"
+                name="Username"
+                placeholder=""
+              />
+              <!-- <span class="highlight"></span> -->
+              <span class="bar"></span>
+              <label>Username</label>
+            </div>
+  
+            <!-- password -->
+            <div class="group">
+              <input
+                required=""
+                type="text"
+                class="input"
+                id="Password"
+                name="Password"
+                placeholder=""
+              />
+              <!-- <span class="highlight"></span> -->
+              <span class="bar"></span>
+              <label>Password</label>
+            </div>
+            <!-- button -->
+            <button type="submit">Login</button>
+          </div>
+          <div class="signin">
+            <h1>Sign In</h1>
+            <!-- firstname -->
+            <div class="group">
+              <input
+                required=""
+                type="text"
+                class="input"
+                id="firstname"
+                name="firstname"
+                placeholder=""
+              />
+              <!-- <span class="highlight"></span> -->
+              <span class="bar"></span>
+              <label>Firstname</label>
+            </div>
+            <!-- lastname -->
+            <div class="group">
+              <input
+                required=""
+                type="text"
+                class="input"
+                id="lastname"
+                name="lastname"
+                placeholder=""
+              />
+              <!-- <span class="highlight"></span> -->
+              <span class="bar"></span>
+              <label>Lastname</label>
+            </div>
+            <!-- username -->
+            <div class="group">
+              <input
+                required=""
+                type="text"
+                class="input"
+                id="username2"
+                name="username2"
+                placeholder=""
+              />
+              <!-- <span class="highlight"></span> -->
+              <span class="bar"></span>
+              <label>Username</label>
+            </div>
+            <!-- password -->
+            <div class="group">
+              <input
+                required=""
+                type="text"
+                class="input"
+                id="password2"
+                name="password2"
+                placeholder=""
+              />
+              <!-- <span class="highlight"></span> -->
+              <span class="bar"></span>
+              <label>Password</label>
+            </div>
+            <!-- sign up -->
+            <button
+              type="submit"
+              value="submit"
+              class="button1"
+              onclick="myFunction()"
+            >
+              Sign up
+            </button>
+            <!-- register -->
+            <div class="Bawah">
+              <input type="submit" class="button2" value="Register">
+              <input type="reset" class="button3" value="Forgot password">
+            </div>
+          </div>
+        </div>
+    </form>
+</div>
+    <script src="script.js">
+      // Get the modal
+      var modal = document.getElementById("id01");
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

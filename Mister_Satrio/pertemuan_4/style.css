@@ -1,0 +1,47 @@
+body {
+  margin: 50px;
+  text-align: center;
+}
+
+.form {
+  background: transparent;
+  backdrop-filter: blur(14px);
+  padding: 10px 60px 50px 60px;
+  display: inline-block;
+  box-shadow: 0 0px 15px 1px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  border-radius: 6px;
+}
+.form-control {
+  text-align: left;
+}
+.form h1 {
+  color: aqua;
+  font-family: "Bungee Spice";
+  font-size: 50px;
+}
+
+.form-control textarea,
+.form-control select,
+.form-control input {
+  border-radius: 10px;
+  display: block;
+  width: 95%;
+  padding: 10px;
+  font-family: inherit;
+  border: 2px solid grey;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+}
+
+.form label {
+  font-family: "oswald", sans-serif;
+}
+
+.form input {
+  font-family: cursive;
+}

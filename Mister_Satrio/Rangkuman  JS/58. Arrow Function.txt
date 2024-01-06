@@ -1,0 +1,50 @@
+
+
+------------ JavaScript Arrow Function ----------
+
+ * Fungsi panah diperkenalkan di ES6.
+ * Fungsi panah memungkinkan kita menulis sintaks fungsi yang lebih pendek:
+Contohnya :
+let myFunction = (a, b) => a * b; 
+Sebelum Panah:
+-----------
+hello = function() {
+  return "Hello World!";
+}
+Dengan Fungsi Panah:
+-----------------
+hello = () => {
+  return "Hello World!";
+}
+
+Fungsi Panah Dengan Parameter:
+-------------------------------
+hello = (val) => "Hello " + val;
+
+Fungsi Panah Tanpa Tanda Kurung:
+--------------------------------
+hello = val => "Hello " + val;
+
+Bagaimana dengan this?
+----------------------
+  * Penanganan thisfungsi panah juga berbeda dibandingkan fungsi biasa.
+  * 
+  * Singkatnya, dengan fungsi panah tidak ada pengikatan this.
+  * Dalam fungsi biasa, thiskata kunci mewakili objek yang disebut fungsi, bisa berupa jendela, dokumen, tombol, atau apa pun.
+  * Dengan fungsi panah, thiskata kunci selalu mewakili objek yang mendefinisikan fungsi panah.
+  * Mari kita lihat dua contoh untuk memahami perbedaannya.
+  * Kedua contoh tersebut memanggil metode dua kali, pertama saat halaman dimuat, dan sekali lagi saat pengguna mengklik tombol.
+  * Contoh pertama menggunakan fungsi reguler, dan contoh kedua menggunakan fungsi panah.
+  * Hasilnya menunjukkan bahwa contoh pertama mengembalikan dua objek berbeda (jendela dan tombol), dan contoh kedua mengembalikan objek jendela dua kali, karena objek jendela adalah "pemilik" fungsi tersebut.
+Contoh :
+Dengan fungsi reguler thismewakili objek yang memanggil fungsi tersebut:
+// Regular Function:
+hello = function() {
+  document.getElementById("demo").innerHTML += this;
+}
+
+// The window object calls the function:
+window.addEventListener("load", hello);
+
+// A button object calls the function:
+document.getElementById("btn").addEventListener("click", hello);

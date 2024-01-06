@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 200px;
+        padding:10px;
+        margin-bottom: 10px;
+        background-color: black;
+        color: white;
+    }
+    .container div{
+        margin-top: 5px;
+    }
+
+    button {
+        padding: 5px 15px;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #04AA6D;
+        border: none;
+        border-radius: 2px;
+        box-shadow: 0 2px #999;
+    }
+
+    button:hover {
+        background-color: #3e8e41
+    }
+
+    button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(2px);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <!-- angka1 -->
+        <div class="monitor">0</div>
+        <!-- operator -->
+        <div class="monitor">0</div>
+        <!-- angka2 -->
+        <div class="monitor">0</div>
+        <!-- hasil -->
+        <div class="monitor">0</div>
+    </div>
+
+    <div class="content">
+        <button class="numeric">1</button>
+        <button class="numeric">2</button>
+        <button class="numeric">3</button>
+        <br><br>
+        <button class="numeric">4</button>
+        <button class="numeric">5</button>
+        <button class="numeric">6</button>
+        <br><br>
+        <button class="numeric">7</button>
+        <button class="numeric">8</button>
+        <button class="numeric">9</button>
+        <br><br>
+        <button class="numeric">0</button>
+        <button class="operator">+</button>
+        <button class="operator">-</button>
+        <br><br>
+        <button class="operator">x</button>
+        <button class="operator">/</button>
+        <button id="hasil">=</button>
+    </div>
+    <script src="kalkulator.js"></script>
+</body>
+
+</html>

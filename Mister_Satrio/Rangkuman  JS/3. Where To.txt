@@ -1,0 +1,39 @@
+
+------------   Cara Panggil JavaScript  -----------
+
+1. Di dalam <script>
+ contohnya :
+    <script>
+    document.getElementById("demo").innerHTML = "My First JavaScript";
+    </script> 
+
+2. Diantara  <head> 
+ contohnya :
+   <!DOCTYPE html>
+    <html>
+    <head>
+   <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+    </script> 
+    </head>
+    <body>
+    </body>
+    </html> 
+
+3. Didalam  <body>
+ contohnya :
+    <body>
+      <script>
+        <p id="demo">A Paragraph</p>
+
+         function myFunction() {
+         document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+      </script>
+    </body>
+
+3. Diluar HTML
+ contohnya :
+   <script src="myScript.js"></script> 

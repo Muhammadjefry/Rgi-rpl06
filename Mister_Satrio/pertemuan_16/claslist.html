@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClassList</title>
+    <style>
+      .btn {
+        border: none;
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+        display: block;
+        background-color: aqua;
+        transition: 1s;
+      }
+
+      .btn-click {
+        background-color: red;
+        color: white;
+        transition: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn colorRed" id="btn" onclick="myfunction()">SUBMIT</button>
+    <script>
+      let btn = document.getElementById("btn");
+      function myfunction() {
+        btn.classList.toggle("btn-click");
+      }
+    </script>
+  </body>
+</html>

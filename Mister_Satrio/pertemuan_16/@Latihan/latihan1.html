@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .kotak {
+        margin: 150px auto;
+        text-align: center;
+      }
+      .acordion {
+        width: 60%;
+        border-radius: 5px;
+        padding: 10px 30px;
+        font-size: 25px;
+      }
+      /* .acordion .acordion-content {
+        width: 60%;
+        border-radius: 5px;
+        padding: 10px 30px;
+        font-size: 25px;
+      } */
+      .acordion:hover {
+        background-color: rgb(255, 247, 0);
+      }
+
+      .acordion:focus {
+        background-color: aqua;
+      }
+      .acordion-content {
+        width: 60%;
+        max-height: 0;
+        overflow: hidden;
+        /* text-align: center; */
+        /* padding: 0 30px; */
+        margin: auto;
+        transition: 0.5s;
+        background-color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kotak">
+      <button class="acordion">Artikel 1</button>
+      <div class="acordion-content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+          repellat eligendi dignissimos perferendis, culpa molestiae excepturi
+          explicabo perspiciatis aliquid earum, quam provident odio atque at
+          fugit voluptatem, sequi rem debitis!
+        </p>
+      </div>
+      <button class="acordion">Artikel 1</button>
+      <div class="acordion-content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+          repellat eligendi dignissimos perferendis, culpa molestiae excepturi
+          explicabo perspiciatis aliquid earum, quam provident odio atque at
+          fugit voluptatem, sequi rem debitis!
+        </p>
+      </div>
+      <button class="acordion">Artikel 1</button>
+      <div class="acordion-content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+          repellat eligendi dignissimos perferendis, culpa molestiae excepturi
+          explicabo perspiciatis aliquid earum, quam provident odio atque at
+          fugit voluptatem, sequi rem debitis!
+        </p>
+      </div>
+    </div>
+    <script>
+      const acc = document.getElementsByClassName("acordion");
+      // const content = document.getElementsByClassName("acordion-content");
+
+      for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

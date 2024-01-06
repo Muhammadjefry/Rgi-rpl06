@@ -1,0 +1,114 @@
+
+
+------------- JavaScript Maps ----------------
+   
+   * Peta menyimpan pasangan nilai kunci yang kuncinya dapat berupa tipe data apa pun.
+   * Peta mengingat urutan penyisipan asli kunci.
+
+Metode Map Penting
+------------------
+
+Method      	Description
+new Map()   	 Membuat Peta baru
+set() 	         	Menetapkan nilai kunci di Peta
+get() 	        Mendapatkan nilai untuk kunci di 
+                Peta
+delete()       Menghapus elemen Peta yang 
+                ditentukan oleh kunci
+has() 	    Mengembalikan nilai benar jika ada 
+            kunci di Peta
+forEach() 	 	Memanggil fungsi untuk setiap 
+                pasangan kunci/nilai di Peta
+entries() 	Mengembalikan iterator dengan 
+            pasangan [kunci, nilai] di Pet
+Property 	 	Keterangan
+size 	 	Mengembalikan jumlah elemen dalam Peta
+
+
+Cara Membuat Peta
+------------------------
+Anda dapat membuat Peta JavaScript dengan:
+
+    ** Melewati Array kenew Map()
+    * Buat Peta dan gunakanMap.set()
+
+Metode Peta() yang baru
+------------------------
+Anda dapat membuat Peta dengan meneruskan Array ke new Map()konstruktor:
+Contoh
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]); 
+
+
+
+Metode set()
+---------------
+Anda dapat menambahkan elemen ke Peta dengan set()metode:
+Contoh
+// Create a Map
+const fruits = new Map();
+
+// Set Map Values
+fruits.set("apples", 500);
+fruits.set("bananas", 300);
+fruits.set("oranges", 200); 
+
+ * Metode ini set()juga dapat digunakan untuk mengubah nilai Map yang ada:
+Contoh
+fruits.set("apples", 200); 
+
+
+Metode get()
+--------------
+Metode ini get()mendapatkan nilai kunci dalam Peta:
+Contoh
+fruits.get("apples");    // Returns 500 
+
+
+Ukuran Properti
+--------------
+Properti sizemengembalikan jumlah elemen dalam Peta:
+Contoh
+fruits.size; 
+
+
+Metode hapus()
+-------------
+Metode ini delete()menghapus elemen Peta:
+Contoh
+fruits.delete("apples"); 
+
+Metode has()
+----------------
+* Metode ini has()mengembalikan nilai true jika ada kunci di Peta:
+Contoh
+fruits.has("apples");
+Coba ini:
+fruits.delete("apples");
+fruits.has("apples"); 
+
+
+Metode forEach()
+----------------
+Metode ini forEach()memanggil fungsi untuk setiap pasangan kunci/nilai dalam Peta:
+Contoh
+// List all entries
+let text = "";
+fruits.forEach (function(value, key) {
+  text += key + ' = ' + value;
+}) 
+
+
+Metode entri()
+----------------
+Metode ini entries()mengembalikan objek iterator dengan [kunci, nilai] di Peta:
+Contoh
+// List all entries
+let text = "";
+for (const x of fruits.entries()) {
+  text += x;
+} 

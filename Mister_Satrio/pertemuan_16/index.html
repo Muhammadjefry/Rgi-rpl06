@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>getClass & getTag</title>
+  </head>
+  <body>
+    <div class="myclass">Indonesia</div>
+    <div class="myclass">Probolinggo</div>
+    <div class="myclass">Pasuruan</div>
+    <div class="myclass">Indramayu</div>
+    <div id="otherClass">Surabaya</div>
+    <button id="btn" onclick="myBtn()">Start</button>
+    <br />
+    <br />
+    <button id="btn2">Start</button>
+    <script>
+      //------------btn1-------
+      let status = true;
+      let status2 = true;
+      let btn = document.getElementById("btn");
+      function myBtn() {
+        if (status) {
+          btn.innerHTML = "Clicked";
+          status = false;
+        } else {
+          btn.innerHTML = "Start";
+          status = true;
+        }
+      }
+      //------------btn2-------
+
+      let btn2 = document.getElementById("btn2");
+      btn2.addEventListener("click", myBtn2);
+      function myBtn2() {
+        if (status2) {
+          btn2.innerHTML = "Clicked";
+          status2 = false;
+        } else {
+          btn2.innerHTML = "Start";
+          status2 = true;
+        }
+      }
+      let x = document.getElementsByClassName("myclass");
+      x[0].style.color = "red";
+      x[2].style.color = "red";
+      document.getElementById("otherClass").style.color = "red";
+    </script>
+  </body>
+</html>

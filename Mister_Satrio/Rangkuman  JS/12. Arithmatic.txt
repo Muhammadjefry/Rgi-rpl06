@@ -1,0 +1,82 @@
+
+---------- Aritmatika JavaScriptt -------------
+
+       Operator Aritmatika JavaScript
+         - Operator aritmatika melakukan aritmatika pada bilangan (literal atau variabel).
+          Operator 	Description
+            + 	      Addition
+            - 	      Subtraction
+            * 	      Multiplication
+            ** 	      Exponentiation (ES2016)
+            / 	      Division
+            % 	      Modulus (Remainder)
+            ++ 	      Increment
+            -- 	      Decrement
+
+     Menambahkan
+     ------------
+       Operator penjumlahan ( ) +menjumlahkan bilangan:
+       Contohnya:
+          let x = 5;
+          let y = 2;
+          let z = x + y; 
+
+       Mengurangi
+    ----------------
+       Operator pengurangan ( ) -mengurangi angka.
+       Contohnya:
+           let x = 5;
+           let y = 2;
+           let z = x - y; 
+
+       Mengalikan
+    ----------------
+       Operator perkalian ( *) mengalikan bilangan.
+       Contohnya:
+           let x = 5;
+           let y = 2;
+           let z = x * y; 
+
+        Pemisah
+    ----------------
+       Operator pembagian ( /) membagi bilangan.
+       Contohnya:
+           let x = 5;
+           let y = 2;
+           let z = x / y; 
+
+         Sisa
+    ----------------
+       Operator modulus ( %) mengembalikan sisa pembagian.
+       Contohnya:
+           let x = 5;
+           let y = 2;
+           let z = x % y; 
+
+       Bertambah
+    ----------------
+     Operator kenaikan ( ++) menambah angka.
+       Contohnya:
+           let x = 5;
+           x++;
+           
+
+      Mengurangi
+    ----------------
+     Operator pengurangan ( ) mengurangi angka .--
+       Contohnya:
+           let x = 5;
+           x--; 
+           let z = x;
+
+      Eksponensial
+    ----------------
+    Operator eksponensial ( **) menaikkan operan pertama ke pangkat operan kedua.
+       Contohnya:
+         let x = 5;
+         let z = x ** 2; 
+
+     x ** y menghasilkan hasil yang sama seperti Math.pow(x,y):
+        Contohnya:
+          let x = 5;
+          let z = Math.pow(x,2); 

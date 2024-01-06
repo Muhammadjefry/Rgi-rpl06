@@ -1,0 +1,30 @@
+
+---------- Pernyataan JavaScript -----------
+
+  -  Program komputer adalah daftar "instruksi" yang harus "dieksekusi" oleh komputer.
+
+   -  Dalam bahasa pemrograman, instruksi pemrograman ini disebut pernyataan .
+
+   - Program JavaScript adalah daftar pernyataan pemrograman .
+
+
+      Pernyataan JavaScript terdiri dari:
+   - Nilai, Operator, Ekspresi, Kata Kunci, dan Komentar.
+
+    var 	Mendeklarasikan sebuah variabel
+    --------------------------------------------
+    let 	Mendeklarasikan variabel blok
+    --------------------------------------------
+    const 	Mendeklarasikan konstanta blok
+    --------------------------------------------
+    if 	Menandai blok pernyataan yang akan dieksekusi pada suatu kondisi
+    --------------------------------------------
+    switch 	Menandai blok pernyataan yang akan dieksekusi dalam kasus berbeda
+    --------------------------------------------
+    for 	Menandai blok pernyataan yang akan dieksekusi dalam satu lingkaran
+    --------------------------------------------
+    function 	Mendeklarasikan suatu fungsi
+    --------------------------------------------
+    return 	Keluar dari suatu fungsi
+    --------------------------------------------
+    try 	Mengimplementasikan penanganan kesalahan pada blok pernyataan

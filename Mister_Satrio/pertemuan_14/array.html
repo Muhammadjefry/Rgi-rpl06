@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nilaiMtk = [67, 89, 45, 90, 78, 77, 87, 89, 84, 73];
+      let siswa = [
+        "jono",
+        "jeje",
+        "dimas",
+        "udin",
+        "aizen",
+        "iciago",
+        "urahara",
+        "ukitake",
+        "ishida",
+        "messi",
+      ];
+      document.write("Tugas 1");
+      document.write("<hr>");
+      // mencetak semua nama ke html
+      for (indeks in nilaiMtk) {
+        document.write(siswa[indeks] + " = " + nilaiMtk[indeks]);
+        document.write("<br>");
+      }
+      document.write("<br>" + "<br>");
+      document.write("Tugas 2");
+      document.write("<hr>");
+      // mencari nilai rata rata
+      let total = 0;
+      for (n in nilaiMtk) {
+        total += nilaiMtk[n];
+      }
+      let rata = total / nilaiMtk.length;
+      document.write("Rata-Rata = " + rata);
+      document.write("<br>" + "<br>");
+      document.write("Tugas 3");
+      document.write("<hr>");
+      //mencari nilai di bawah kkm
+      let kkm = 71;
+      for (m in nilaiMtk) {
+        if (nilaiMtk[m] < kkm) {
+          document.write(nilaiMtk[m] + ",");
+        }
+      }
+      document.write("<br>" + "<br>");
+      document.write("Tugas 4");
+      document.write("<hr>");
+      document.write("Nilai dibawah kkm = ");
+      let kkm2 = 71;
+      for (z in nilaiMtk) {
+        if (nilaiMtk[z] < kkm2) {
+          document.write(siswa[z] + ",");
+        }
+      }
+    </script>
+  </body>
+</html>

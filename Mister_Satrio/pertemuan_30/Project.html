@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        display: flex;
+        margin: 200px auto;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid black;
+        width: 300px;
+        padding: 10px 20px;
+      }
+      .kotak1 p {
+        font-size: 2em;
+      }
+      #Finish {
+        display: none;
+        background-color: red;
+      }
+      #Start {
+        display: block;
+        width: 100%;
+      }
+      .tgl {
+        display: flex;
+        justify-content: end;
+      }
+      #clock {
+        text-align: end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tgl">
+      <div class="tgl2">
+        <div id="date"></div>
+        <div id="clock"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="kotak1">
+        <p>Kelas 1</p>
+      </div>
+      <div class="kotak2">
+        <div id="waktu">09:55</div>
+        <span>Duration</span>
+        <div id="duration">00:00</div>
+        <button id="Start" disabled>Start</button>
+        <button id="Finish" disabled>Finish</button>
+      </div>
+    </div>
+    <script src="assets/clock24.js"></script>
+    <script src="assets/capture.js"></script>
+    <script src="assets/date.js"></script>
+  </body>
+</html>

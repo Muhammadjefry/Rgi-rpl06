@@ -1,0 +1,13 @@
+1.query selector
+2.add ,toggle ,change ,remove ,
+3.js module
+4.username
+  - panjang minimal 6 cracther
+  - huruf depan tidak boleh angka 
+  - tidak boleh spasi
+password
+ - tidak boleh spasi
+ - panjang minimal 8 cracther
+ - ada angka 
+ - ada huruf
+ - ada huruf besar

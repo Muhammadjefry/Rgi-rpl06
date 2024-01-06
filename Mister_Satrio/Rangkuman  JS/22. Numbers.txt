@@ -1,0 +1,81 @@
+
+------------------ JavaScript Numbers --------------
+
+   * JavaScript hanya memiliki satu jenis angka. Angka dapat ditulis dengan atau tanpa desimal.
+   Contohnya ;
+      let x = 3.14;    // A number with decimals
+      let y = 3;       // A number without decimals 
+
+    * Bilangan ekstra besar atau ekstra kecil dapat ditulis dengan notasi ilmiah (eksponen):
+   Contohnya
+      let x = 123e5;    // 12300000
+      let y = 123e-5;   // 0.00123 
+
+      Integer Precision
+      ------------------
+      * Bilangan bulat (angka tanpa titik atau notasi eksponen) akurat hingga 15 digit.
+     Contohnya ;
+      let x = 999999999999999;   
+      let y = 9999999999999999;  
+
+      Floating Precision
+      ------------------
+      Aritmatika floating point tidak selalu 100% akurat:
+     let x = 0.2 + 0.1; 
+
+     Menambahkan Angka dan String
+     -------------------------
+      PERINGATAN !!
+      -------------
+      * JavaScript menggunakan operator + untuk penambahan dan penggabungan.
+      * Nomor ditambahkan. String digabungkan.
+
+     * Jika dijumlahkan dua angka, hasilnya adalah angka:
+     Contohnya :
+        let x = 10;
+        let y = 20;
+        let z = x + y; 
+
+    * Jika Anda menambahkan dua string, hasilnya adalah rangkaian string:
+    Contohnya :
+       let x = "10";
+       let y = "20";
+       let z = x + y; 
+
+       Numeric Strings
+       ----------------
+       String JavaScript dapat memiliki konten numerik:
+     * let x = 100;         // x is a number
+     * let y = "100";       // y is a string
+
+     NaN - Not a Number
+     ------------------
+   * NaNadalah kata khusus JavaScript yang menunjukkan bahwa suatu angka bukanlah angka yang sah.
+   * Mencoba melakukan aritmatika dengan string non-numerik akan menghasilkan NaN(Bukan Angka):
+
+   Contohnya :
+   let x = 100 / "Apple"; 
+   * Namun, jika stringnya numerik, hasilnya akan berupa angka:
+  Contohnya ;
+  let x = 100 / "10"; 
+      
+      Infinity
+      --------
+      Infinity(atau -Infinity) adalah nilai yang akan dikembalikan JavaScript jika Anda menghitung angka di luar angka terbesar yang mungkin.
+
+      Contohnya ;
+      let myNumber = 2;
+      // Jalankan hingga Tak Terhingga
+      while (myNumber != Infinity) {
+       myNumber = myNumber * myNumber;
+     } 
+     Hexadecimal
+     --------------
+     JavaScript menafsirkan konstanta numerik sebagai heksadesimal jika diawali dengan 0x.
+     Contohnya ;
+     let x = 0xFF; 
+
+     JavaScript Numbers as Objects
+     -----------------------------
+      * Biasanya angka JavaScript adalah nilai primitif yang dibuat dari literal:
+      let x = 123; 

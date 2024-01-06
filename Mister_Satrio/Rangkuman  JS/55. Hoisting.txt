@@ -1,0 +1,24 @@
+
+
+--------- JavaScript Hoisting ------------
+
+  * Mengangkat adalah perilaku default JavaScript untuk memindahkan deklarasi ke atas.
+  * Deklarasi JavaScript Diangkat
+  * Dalam JavaScript, suatu variabel dapat dideklarasikan setelah digunakan.
+  * Dengan kata lain; suatu variabel dapat digunakan sebelum dideklarasikan.
+    Contoh 1 memberikan hasil yang sama dengan Contoh 2 :
+    Contoh 1
+   ----------
+    x = 5; // Assign 5 to x
+    
+    elem = document.getElementById("demo"); // Find an element
+    elem.innerHTML = x;                     // Display x in the element
+    
+    var x; // Declare x 
+        Contoh 2
+        ----------
+    var x; // Declare x
+    x = 5; // Assign 5 to x
+    
+    elem = document.getElementById("demo"); // Find an element
+    elem.innerHTML = x;                     // Display x in the element 

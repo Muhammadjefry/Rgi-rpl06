@@ -1,0 +1,42 @@
+
+<?php
+
+$warna = array(
+    'Merah',
+    'Jingga',
+    'Kuning',
+    'Hijau',
+    'Biru',
+    'Nila',
+    'Ungu',
+);
+
+// perlakukan setiap isi variabel xxx sebagai variabel aaa
+foreach( $xxx as $aaa ) {
+    // abracadabra
+}
+
+/*
+    Loop 1
+    $aaa = 'Merah';
+    ---
+    Loop 2
+    $aaa = 'Jingga';
+    ---
+    Loop 3
+    $aaa = 'Kuning';
+    ---
+    Loop 4
+    $aaa = 'Hijau';
+    ---
+    Loop 5
+    $aaa = 'Biru';
+    ---
+    Loop 6
+    $aaa = 'Nila';
+    ---
+    Loop 7
+    $aaa = 'Ungu';
+*/
+    
+

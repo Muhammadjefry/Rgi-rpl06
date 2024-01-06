@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Serif:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(mang.jpg);
+  object-fit: cover;
+  background-size: cover;
+  height: 100vh;
+  /* background-position: center; */
+}
+* {
+  box-sizing: border-box;
+}
+.teks {
+  width: 600px;
+  z-index: 99;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  text-align: end;
+}
+.teks p {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+.teks h1 {
+  color: rgb(255, 234, 0);
+  font-family: sans-serif;
+  margin-top: -50px;
+  margin-bottom: 100px;
+}
+.teks button {
+  padding: 10px 30px;
+  background-color: rgb(255, 234, 0);
+  transition: 1s;
+  margin-top: 10px;
+}
+.teks button:hover {
+  background-color: rgb(255, 0, 0);
+}
+.teks .icon {
+  margin-top: 50px;
+}
+.teks .icon a {
+  text-decoration: none;
+  margin-left: 50px;
+  font-size: 25px;
+  color: rgb(255, 234, 0);
+  transition: 1s;
+}
+.teks .icon a:hover {
+  color: rgb(255, 0, 0);
+}
+.kotak_login {
+  position: absolute;
+  left: 100px;
+  top: 70px;
+  width: 300px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px black;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+.kotak_login p {
+  text-align: center;
+  font-size: 2em;
+  font-family: "Roboto Serif";
+}
+.kotak_login .form:nth-of-type(1) input:nth-of-type(1) {
+  margin-bottom: 50px;
+}
+.kotak_login .form label {
+  display: block;
+  margin-bottom: 10px;
+}
+.form input {
+  width: 100%;
+  border-radius: 5px;
+  height: 30px;
+  outline: none;
+  padding: 10px;
+}
+
+.check {
+  /* border: 1px solid black; */
+  font-size: 0.8em;
+  margin-top: 20px;
+}
+.kotak_login .check input,
+label {
+  display: inline;
+}
+.kotak_login .tombol_login {
+  display: block;
+  font-size: 20px;
+  background: transparent;
+  /* margin: auto; */
+  margin-bottom: 10px;
+  margin-top: 30px;
+  width: 100%;
+  transition: 1s;
+  height: 50px;
+}
+.kotak_login .tombol_login:hover {
+  background: rgb(236, 0, 0);
+}

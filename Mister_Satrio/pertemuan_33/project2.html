@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="assets/project.css" />
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        let number1 = 0;
+        let number2 = 0;
+        let input1 = "";
+        let input2 = "";
+        let operator = "";
+        let hasil = 0;
+        let value = document.querySelector(".value");
+        $("#num1").click(function () {
+          // if (operator == "") {
+          input1 += $(this).text();
+          // console.log("hasil1");
+          console.log(input1);
+          $(".value").val(input1);
+          // } else {
+          // input2 += $(this).text();
+          // console.log("hasil2");
+          //   console.log(input2);
+          //   $(".value").val(input2);
+          // }
+        });
+        $("#num2").click(function () {
+          if (operator == "") {
+            input1 += $(this).text();
+            // console.log("hasil1");
+            console.log(input1);
+            $(".value").val(input1);
+          } else {
+            input2 += $(this).text();
+            // console.log("hasil2");
+            console.log(input2);
+            $(".value").val(input2);
+          }
+        });
+        $("#num3").click(function () {
+          if (operator == "") {
+            input1 += $(this).text();
+            // console.log("hasil1");
+            console.log(input1);
+            $(".value").val(input1);
+          } else {
+            input2 += $(this).text();
+            // console.log("hasil2");
+            console.log(input2);
+            $(".value").val(input2);
+          }
+        });
+        $("#num4").click(function () {
+          if (operator == "") {
+            input1 += $(this).text();
+            // console.log("hasil1");
+            console.log(input1);
+            $(".value").val(input1);
+          } else {
+            input2 += $(this).text();
+            // console.log("hasil2");
+            console.log(input2);
+            $(".value").val(input2);
+          }
+        });
+        $("#num5").click(function () {
+          if (operator == "") {
+            input1 += $(this).text();
+            // console.log("hasil1");
+            console.log(input1);
+            $(".value").val(input1);
+          } else {
+            input2 += $(this).text();
+            // console.log("hasil2");
+            console.log(input2);
+            $(".value").val(input2);
+          }
+        });
+        $("#num6").click(function () {
+          if (operator == "") {
+            input1 += $(this).text();
+            // console.log("hasil1");
+            console.log(input1);
+            $(".value").val(input1);
+          } else {
+            input2 += $(this).text();
+            // console.log("hasil2");
+            console.log(input2);
+            $(".value").val(input2);
+          }
+        });
+        $("#num7").click(function () {
+          if (operator == "") {
+            input1 += $(this).text();
+            // console.log("hasil1");
+            console.log(input1);
+            $(".value").val(input1);
+          } else {
+            input2 += $(this).text();
+            // console.log("hasil2");
+            console.log(input2);
+            $(".value").val(input2);
+          }
+        });
+        $("#num8").click(function () {
+          if (operator == "") {
+            input1 += $(this).text();
+            // console.log("hasil1");
+            console.log(input1);
+            $(".value").val(input1);
+          } else {
+            input2 += $(this).text();
+            // console.log("hasil2");
+            console.log(input2);
+            $(".value").val(input2);
+          }
+        });
+        $("#num9").click(function () {
+          if (operator == "") {
+            input1 += $(this).text();
+            // console.log("hasil1");
+            console.log(input1);
+            $(".value").val(input1);
+          } else {
+            input2 += $(this).text();
+            // console.log("hasil2");
+            console.log(input2);
+            $(".value").val(input2);
+          }
+        });
+        $("#num0").click(function () {
+          if (operator == "") {
+            input1 += $(this).text();
+            // console.log("hasil1");
+            console.log(input1);
+            $(".value").val(input1);
+          } else {
+            input2 += $(this).text();
+            // console.log("hasil2");
+            console.log(input2);
+            $(".value").val(input2);
+          }
+        });
+        $("#num00").click(function () {
+          if (operator == "") {
+            input1 += $(this).text();
+            // console.log("hasil1");
+            console.log(input1);
+            $(".value").val(input1);
+          } else {
+            input2 += $(this).text();
+            // console.log("hasil2");
+            console.log(input2);
+            $(".value").val(input2);
+          }
+        });
+
+        $("#operator1").click(function () {
+          operator = $("#operator1").text();
+          if (operator == "") {
+            input1 += $(this).text();
+            // console.log("hasil1");
+            console.log(input1);
+            $(".value").val(input1);
+          } else {
+            input2 += $(this).text();
+            // console.log("hasil2");
+            console.log(input2);
+            $(".value").val(input2);
+          }
+        });
+        $("#operator2").click(function () {
+          operator = $("#operator2").text();
+          if (operator == "") {
+            input1 += $(this).text();
+            // console.log("hasil1");
+            console.log(input1);
+            $(".value").val(input1);
+          } else {
+            input2 += $(this).text();
+            // console.log("hasil2");
+            console.log(input2);
+            $(".value").val(input2);
+          }
+        });
+        $("#operator3").click(function () {
+          operator = $("#operator3").text();
+          if (operator == "") {
+            input1 += $(this).text();
+            // console.log("hasil1");
+            console.log(input1);
+            $(".value").val(input1);
+          } else {
+            input2 += $(this).text();
+            // console.log("hasil2");
+            console.log(input2);
+            $(".value").val(input2);
+          }
+        });
+        $("#operator4").click(function () {
+          operator = $("#operator4").text();
+          // $(".value").val(operator);
+          if (operator == "") {
+            input2 -= $(this).text();
+            // console.log("hasil1");
+            console.log(input2);
+            $(".value").val(input2);
+          } else {
+            input1 += $(this).text();
+            // console.log("hasil2");
+            console.log(input1);
+            $(".value").val(input1);
+          }
+        });
+        $("#operator5").click(function () {
+          operator = $("#operator5").text();
+          $(".value").val("");
+          // let hapus = $(".value").val();
+          alert(hasil);
+        });
+
+        $("#hasil").click(function () {
+          number1 = parseInt(input1);
+          number2 = parseInt(input2);
+          if (operator == "+") {
+            hasil = number1 + number1;
+            console.log(hasil);
+            $(".value").val(hasil);
+          } else if (operator == "/") {
+            hasil = number1 / number2;
+            console.log(hasil);
+          } else if (operator == "*") {
+            hasil = number1 * number2;
+            console.log(hasil);
+          } else if (operator == "-") {
+            hasil = number1 - number2;
+            console.log(hasil);
+          } else {
+            hasil = "undefined";
+            console.log(hasil);
+          }
+        });
+      });
+    </script>
+    <title>j-query</title>
+  </head>
+  <body>
+    <div class="btn">
+      <strong><ion-icon name="moon-outline"></ion-icon></strong>
+      <strong><ion-icon name="sunny-outline"></ion-icon></strong>
+    </div>
+    <div class="container">
+      <div action="" class="calculator" name="calc">
+        <input type="text" class="value" name="txt" value="" />
+        <button class="num clear" id="operator5"><i>C</i></button>
+        <button class="num" id="operator1"><i>/</i></button>
+        <button class="num" id="operator2"><i>*</i></button>
+        <button class="num" id="num7"><i>7</i></button>
+        <button class="num" id="num8"><i>8</i></button>
+        <button class="num" id="num9"><i>9</i></button>
+        <button class="num" id="operator3"><i>-</i></button>
+        <button class="num" id="num4"><i>4</i></button>
+        <button class="num" id="num5"><i>5</i></button>
+        <button class="num" id="num6"><i>6</i></button>
+        <button class="num plus" id="operator4"><i>+</i></button>
+        <button class="num" id="num1"><i>1</i></button>
+        <button class="num" id="num2"><i>2</i></button>
+        <button class="num" id="num3"><i>3</i></button>
+        <button class="num" id="num0"><i>0</i></button>
+        <button class="num" id="num00"><i>00</i></button>
+        <button class="num" id="num."><i>.</i></button>
+        <button class="num equal" id="hasil">
+          <i>=</i>
+        </button>
+      </div>
+    </div>
+    <script>
+      let body = document.querySelector("body");
+      let btn = document.querySelector(".btn");
+      btn.onclick = function () {
+        body.classList.toggle("light");
+      };
+    </script>
+  </body>
+</html>

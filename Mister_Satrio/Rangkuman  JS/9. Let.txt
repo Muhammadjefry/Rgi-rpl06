@@ -1,0 +1,43 @@
+  
+  ------------- JavaScript Let -----------
+
+    Tidak Dapat Dinyatakan Ulang
+      - Variabel yang didefinisikan dengan let tidak dapat dideklarasikan ulang .
+   
+     -  Anda tidak dapat secara tidak sengaja mendeklarasikan ulang variabel yang dideklarasikan dengan let.
+
+     Dengan let Anda tidak dapat melakukan ini:
+       let x = "John Doe";
+       let x = 0; 
+     
+     Dengan var Anda dapat:
+       var x = "John Doe";
+       var x = 0; 
+
+       Block Scope(Lingkup Blok)
+       --------------------------
+      -  Kedua kata kunci ini menyediakan Block Scope dalam JavaScript.
+      - Variabel yang dideklarasikan di dalam blok {} tidak dapat diakses dari luar blok:
+
+
+                                 Perbedaan Antara var, let dan const
+      ---------------------------------------------------------------------------
+	 Nama       Cakupan 	Deklarasikan ulang 	Menugaskan kembali 	Diangkat 	Mengikat ini
+      var 	     TIDAK 	         Ya 	           Ya                	Ya  	    Ya
+      let	       Ya          	TIDAK 	           Ya 	               TIDAK    	TIDAK
+      const        Ya       	TIDAK           TIDAK 	              TIDAK 	    TIDAK
+
+
+      Apa yang Baik?
+     ------------------------
+     - letdan constmemiliki cakupan blok .
+     - letdan consttidak dapat dideklarasikan ulang .
+     - letdan constharus dideklarasikan sebelum digunakan.
+     - letdan consttidak mengikatthis . _
+     - letdan consttidak diangkat .
+
+Apa yang Tidak Baik?
+------------------------
+     - vartidak harus diumumkan.
+     - vardiangkat.
+     - varmengikat ini.

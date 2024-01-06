@@ -1,0 +1,27 @@
+body {
+  background-image: url(https://www.azhan.co/wp-content/uploads/2016/04/Amazing-Caribbean-Beach-Scenery-in-HD.jpg);
+}
+
+div .p1 span,
+.p2 span,
+.p3 span {
+  color: red;
+}
+
+div .p1 {
+  background-color: rgba(116, 190, 8, 0.1);
+}
+
+div .p2 {
+  background-color: rgba(116, 190, 8, 0.1);
+}
+
+div .p3 {
+  background-color: rgba(116, 190, 8, 0.1);
+}
+
+.j1,
+.j2,
+.j3 {
+  text-align: center;
+}

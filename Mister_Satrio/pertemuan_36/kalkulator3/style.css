@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+.parent{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 400px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#container_monitor{
+    width: 100%;
+    height: 50px;
+    font-size: 36px;
+    padding: 5px 10px;
+    text-align: right;
+    background-color: black;
+    border-radius:7px ;
+    color: white;
+    margin-bottom: 10px;
+}
+table{
+    width: 100%;
+}
+table tr{
+    height: 50px;
+    border: 1px solid black;
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height:50px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}

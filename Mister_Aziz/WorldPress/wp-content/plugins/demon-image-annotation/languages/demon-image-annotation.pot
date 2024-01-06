@@ -1,0 +1,607 @@
+# Copyright (C) 2022 Demon Image Annotation
+# This file is distributed under the same license as the Demon Image Annotation package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Demon Image Annotation 5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/demon-image-annotation\n"
+"POT-Creation-Date: 2022-08-23 00:58:04+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2022-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: demon-image-annotation.php:145
+msgid "Edit Image Note"
+msgstr ""
+
+#: demon-image-annotation.php:147
+msgid "noted on"
+msgstr ""
+
+#: demon-image-annotation.php:263 demon-image-annotation.php:476
+#: includes/admin.php:46
+msgid "Image Notes"
+msgstr ""
+
+#: demon-image-annotation.php:268 demon-image-annotation.php:475
+#: includes/admin.php:47
+msgid "Settings"
+msgstr ""
+
+#: demon-image-annotation.php:269
+msgid "Usage"
+msgstr ""
+
+#: demon-image-annotation.php:384
+msgid "demon Image annotation"
+msgstr ""
+
+#: demon-image-annotation.php:386 demon-image-annotation.php:388
+msgid "Important:"
+msgstr ""
+
+#: demon-image-annotation.php:386 demon-image-annotation.php:388
+msgid "Please update the new version"
+msgstr ""
+
+#: demon-image-annotation.php:386 demon-image-annotation.php:388
+msgid "Hide Notice"
+msgstr ""
+
+#: includes/admin.php:10 includes/class-image-annotation-list-table.php:251
+#: includes/table.php:208
+msgid "Images Note Deleted."
+msgstr ""
+
+#: includes/admin.php:12 includes/class-image-annotation-list-table.php:261
+#: includes/table.php:218
+msgid "Images Note Updated."
+msgstr ""
+
+#: includes/admin.php:30
+msgid "demon-Image-Annotation Settings"
+msgstr ""
+
+#: includes/admin.php:31
+msgid "Visit my site for more update."
+msgstr ""
+
+#: includes/admin.php:32
+msgid "If you enjoy using demon Image Annotation and find it useful, please consider making a donation."
+msgstr ""
+
+#: includes/admin.php:48
+msgid "Usage."
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:21 includes/table.php:14
+msgid "note"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:22 includes/table.php:15
+msgid "notes"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:33 includes/table.php:22
+msgid "No notes found."
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:47 includes/table.php:30
+msgid "Submitted on :"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:67
+#: includes/class-image-annotation-list-table.php:150
+msgid "Not sync with WordPress comment"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:96 includes/table.php:72
+msgid "IMG ID"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:97
+#: includes/class-image-annotation-list-table.php:444 includes/table.php:73
+#: includes/table.php:383
+msgid "Author"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:98
+#: includes/class-image-annotation-list-table.php:469 includes/table.php:74
+#: includes/table.php:408
+msgid "Text"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:99 includes/table.php:75
+msgid "In Response to"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:100 includes/table.php:76
+msgid "Action"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:136
+#: includes/class-image-annotation-list-table.php:164
+#: includes/class-image-annotation-list-table.php:236 includes/table.php:102
+#: includes/table.php:130 includes/table.php:195
+msgid "Approve"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:139
+#: includes/class-image-annotation-list-table.php:167
+#: includes/class-image-annotation-list-table.php:237 includes/table.php:105
+#: includes/table.php:133 includes/table.php:196
+msgid "Unapprove"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:142 includes/table.php:108
+msgid "Trash"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:153 includes/table.php:119
+msgid "Deleted Comment"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:159 includes/table.php:125
+msgid "Spam"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:178
+#: includes/class-image-annotation-list-table.php:184
+#: includes/class-image-annotation-list-table.php:235 includes/table.php:144
+#: includes/table.php:150 includes/table.php:194
+msgid "Delete"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:183 includes/table.php:149
+msgid "Edit"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:253 includes/table.php:210
+msgid "Images Note Approved."
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:255 includes/table.php:212
+msgid "Images Note Restored."
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:257 includes/table.php:214
+msgid "Images Note Unapproved."
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:259 includes/table.php:216
+msgid "Images Note Edit."
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:267 includes/table.php:222
+msgid "Update security violated."
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:345
+msgid "All"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:346
+msgid "Pending"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:347
+msgid "Approved"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:375 includes/table.php:312
+msgid "Edit Image Note : "
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:379 includes/table.php:316
+msgid "Image Preview"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:435
+#: includes/class-image-annotation-list-table.php:438 includes/table.php:374
+#: includes/table.php:377
+msgid "No preview image"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:448 includes/table.php:387
+msgid "Email"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:453 includes/table.php:392
+msgid "Top"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:457 includes/table.php:396
+msgid "Left"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:461 includes/table.php:400
+msgid "Width"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:465 includes/table.php:404
+msgid "Height"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:474 includes/table.php:413
+msgid "Update"
+msgstr ""
+
+#: includes/class-image-annotation-list-table.php:474 includes/table.php:413
+msgid "Cancel"
+msgstr ""
+
+#: includes/settings.php:16
+msgid "Update security violated"
+msgstr ""
+
+#: includes/settings.php:84
+msgid "Options saved."
+msgstr ""
+
+#: includes/settings.php:112
+msgid "Image Annotation Settings:"
+msgstr ""
+
+#: includes/settings.php:121
+msgid "Plugin Status : "
+msgstr ""
+
+#: includes/settings.php:126 includes/settings.php:160
+#: includes/settings.php:182 includes/settings.php:201
+#: includes/settings.php:220 includes/settings.php:253
+#: includes/settings.php:277 includes/settings.php:301
+#: includes/settings.php:320 includes/settings.php:339
+#: includes/settings.php:368
+msgid "Enable"
+msgstr ""
+
+#: includes/settings.php:127 includes/settings.php:161
+#: includes/settings.php:183 includes/settings.php:202
+#: includes/settings.php:221 includes/settings.php:254
+#: includes/settings.php:278 includes/settings.php:302
+#: includes/settings.php:321 includes/settings.php:340
+#: includes/settings.php:369
+msgid "Disable"
+msgstr ""
+
+#: includes/settings.php:135
+msgid "Enable or disable the plugins although you want it to be Activate."
+msgstr ""
+
+#: includes/settings.php:140
+msgid "Post Content Wrapper : "
+msgstr ""
+
+#: includes/settings.php:143
+msgid " eg: #entrybody, .entrybody"
+msgstr ""
+
+#. translators: %s: The line break tag.
+
+#: includes/settings.php:144
+msgid "The image annotation plugins initiate by targeting post content wrapper,%1$sput in the div wrapper id or class where your post content appear,%2$sleave it empty if you don't know what to do."
+msgstr ""
+
+#: includes/settings.php:145 includes/usage.php:13
+msgid "Example (.entrybody)"
+msgstr ""
+
+#: includes/settings.php:150
+msgid "Leave it empty will treat all images as image annotation."
+msgstr ""
+
+#: includes/settings.php:155
+msgid "Auto Generate Image ID : "
+msgstr ""
+
+#. translators: %s: The line break tag and id.
+
+#: includes/settings.php:169
+msgid "Enable jQuery to auto add an id attribute to HTML img tag,%1$sthe uniqe id will be generate by img src starting with %2$s,%3$sit will skip if the id attribute of img tag is already exist."
+msgstr ""
+
+#: includes/settings.php:170
+msgid "Example (img-postid-4774005463)"
+msgstr ""
+
+#: includes/settings.php:171
+msgid "<img id=\"img-12-4774005463\" src=\"http://farm5.static.flickr.com/4121/4774005463_3837b6de44_o.jpg\" />"
+msgstr ""
+
+#: includes/settings.php:172
+msgid "Disable this option if you want to manually add img tag id attribute to all images."
+msgstr ""
+
+#: includes/settings.php:177
+msgid "Admin Only : "
+msgstr ""
+
+#: includes/settings.php:191
+msgid "Enable to allow Add Note for login user only who can moderate comment, public still able to see image annotation."
+msgstr ""
+
+#: includes/settings.php:196
+msgid "Auto Resize Images : "
+msgstr ""
+
+#: includes/settings.php:210
+msgid "Enable to auto resizing images to fit content max width."
+msgstr ""
+
+#: includes/settings.php:215
+msgid "Numbering : "
+msgstr ""
+
+#: includes/settings.php:229
+msgid "Enable to show numbering every image annotation."
+msgstr ""
+
+#: includes/settings.php:230 includes/settings.php:242
+#: includes/settings.php:266
+msgid "Example"
+msgstr ""
+
+#. translators: %s: The strong tag.
+
+#: includes/settings.php:231
+msgid "%1$s03%2$s | Mouseover to load notes | Image Note by Flickr"
+msgstr ""
+
+#: includes/settings.php:236
+msgid "Mouseover Description : "
+msgstr ""
+
+#: includes/settings.php:239
+msgid " eg. Mouseover to load notes"
+msgstr ""
+
+#: includes/settings.php:241
+msgid "Show description on top of every image annotation, leave it empty to hide."
+msgstr ""
+
+#. translators: %s: The strong tag.
+
+#: includes/settings.php:243
+msgid "03 | %1$sMouseover to load notes%2$s | Image Note by Flickr"
+msgstr ""
+
+#: includes/settings.php:248
+msgid "Image Hyperlink : "
+msgstr ""
+
+#: includes/settings.php:262
+msgid "Enable to show image hyberlink if image is embed as a link, it will show behind load note instruction."
+msgstr ""
+
+#: includes/settings.php:263
+msgid "eg: Source, Link, Flickr"
+msgstr ""
+
+#: includes/settings.php:265
+msgid "Image hyperlink text behind load note instruction, input %TITLE% to show image link title attribute."
+msgstr ""
+
+#. translators: %s: The strong tag.
+
+#: includes/settings.php:267
+msgid "03 | Mouseover to load notes | %1$sImage Note by Flickr%2$s"
+msgstr ""
+
+#: includes/settings.php:272
+msgid "Remove Mouseover Text : "
+msgstr ""
+
+#: includes/settings.php:286
+msgid "Enable to remove mouseover text, it will remove a tag title attribute if your image is clickable."
+msgstr ""
+
+#: includes/settings.php:292
+msgid "Comment Settings:"
+msgstr ""
+
+#: includes/settings.php:296
+msgid "WordPress Comments : "
+msgstr ""
+
+#. translators: %s: The line break tag.
+
+#: includes/settings.php:310
+msgid "Enable to sync all the image note with WordPress commenting system,%snew image note from annoymous will add into WordPress comment as waiting approval."
+msgstr ""
+
+#: includes/settings.php:315
+msgid "Approve Comments : "
+msgstr ""
+
+#: includes/settings.php:329
+msgid "Enable to automatically approve new comments without moderation or approval."
+msgstr ""
+
+#: includes/settings.php:334
+msgid "Comments Thumbnail : "
+msgstr ""
+
+#: includes/settings.php:348
+msgid "Enable to show image thumbnail in comment list."
+msgstr ""
+
+#: includes/settings.php:353
+msgid "Comments Maxlength : "
+msgstr ""
+
+#: includes/settings.php:356
+msgid " eg: 140"
+msgstr ""
+
+#: includes/settings.php:358
+msgid "Maximum characters for image note input."
+msgstr ""
+
+#: includes/settings.php:363
+msgid "Image Note Gravatar : "
+msgstr ""
+
+#: includes/settings.php:377
+msgid "Enable to show gravatar in image note."
+msgstr ""
+
+#: includes/settings.php:378
+msgid "Default gravatar : "
+msgstr ""
+
+#: includes/settings.php:378
+msgid " eg: /images/default.png"
+msgstr ""
+
+#: includes/settings.php:385
+msgid "Update Options"
+msgstr ""
+
+#: includes/table.php:50 includes/table.php:116
+msgid "Not sync with wordpress comment"
+msgstr ""
+
+#: includes/usage.php:9
+msgid "How to use:"
+msgstr ""
+
+#. translators: %s: The strong tag.
+
+#: includes/usage.php:12
+msgid "First enter div wrapper %1$sid%2$s or %3$sclass%4$s in settings where your post content appear, or else the plugin can't find the wrapper to start. Leave it empty if you don't know what to do."
+msgstr ""
+
+#. translators: %s: The strong tag.
+
+#: includes/usage.php:20
+msgid "To embed annotations and comments on images, your img tag must have id attribute value start with %1$s‘img-‘%2$s, this plugin already did the trick if you enable %3$sAuto Generate Image ID%4$s option."
+msgstr ""
+
+#: includes/usage.php:23
+msgid "If you wish to add an id attribute maunally, here is the guide on how to insert id attribute to img tag."
+msgstr ""
+
+#. translators: %s: The strong tag.
+
+#: includes/usage.php:25
+msgid "First disable %1$sAuto Generate Image ID%2$s option"
+msgstr ""
+
+#. translators: %s: The strong tag.
+
+#: includes/usage.php:26
+msgid "Add an id attribute start with %1$s‘img-‘%2$s follow by unique id to img tag."
+msgstr ""
+
+#: includes/usage.php:27
+msgid "All the images must have unique and different id or else you will get the same comments."
+msgstr ""
+
+#: includes/usage.php:29
+msgid "Example (img-4774005463)"
+msgstr ""
+
+#. translators: %s: The strong tag.
+
+#: includes/usage.php:36
+msgid "Decide the option for %1$sWordpress Comments%2$s setting."
+msgstr ""
+
+#: includes/usage.php:38
+msgid "Sync with WordPress comments:"
+msgstr ""
+
+#: includes/usage.php:40
+msgid "image note sync with WordPress comment database"
+msgstr ""
+
+#: includes/usage.php:41
+msgid "modified comment will auto update both database"
+msgstr ""
+
+#: includes/usage.php:42
+msgid "deleted comment from WordPress comment will not sync, have to delete manually in image notes table list."
+msgstr ""
+
+#: includes/usage.php:43
+msgid "new image note from annoymous will auto add into WordPress comment as waiting approval."
+msgstr ""
+
+#: includes/usage.php:44
+msgid "the image note only publish when the comment is approve."
+msgstr ""
+
+#: includes/usage.php:47
+msgid "Not sync with WordPress comments:"
+msgstr ""
+
+#: includes/usage.php:49
+msgid "standalone image note database."
+msgstr ""
+
+#: includes/usage.php:50
+msgid "new image note will publish without approval."
+msgstr ""
+
+#: includes/usage.php:52
+msgid "Pls note if you switch the option, the comments added with previous option will not load."
+msgstr ""
+
+#: includes/usage.php:60
+msgid "Disable Add Note button:"
+msgstr ""
+
+#. translators: %s: The line break tag.
+
+#: includes/usage.php:61
+msgid "Add an addable attribute with value “false” to disable the add note button, but image notes still viewable.%sLogin User who can Moderate Comments still able to see Add button option."
+msgstr ""
+
+#: includes/usage.php:69
+msgid "Exclude image:"
+msgstr ""
+
+#: includes/usage.php:70
+msgid "Add an exclude attribute to disable image annotation function."
+msgstr ""
+
+#: includes/usage.php:77
+msgid "Comments thumbnail:"
+msgstr ""
+
+#: includes/usage.php:78
+msgid "To add thumbnails to your comments list manually, just add the php code below in your comment callback function."
+msgstr ""
+
+#: includes/usage.php:89
+msgid "Other Notes:"
+msgstr ""
+
+#: includes/usage.php:91
+msgid "There's a new method to exlcude image annotation after version 3, but previous version method id=\"img-exclude\" still work."
+msgstr ""
+
+#: includes/usage.php:92
+msgid "Image preview for admin editing is only support version 3 and above, image note added with previous version does not support."
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "Demon Image Annotation"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.superwhite.cc/demon/image-annotation-plugin"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Allows you to add textual annotations to images by select a region of the image and then attach a textual description, the concept of annotating images with user comments."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "demonisblack"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.superwhite.cc"
+msgstr ""

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #monitor {
+        width: 100px;
+        height: 50px;
+        background-color: antiquewhite;
+    }
+
+    button {
+        padding: 5px 15px;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #04AA6D;
+        border: none;
+        border-radius: 2px;
+        box-shadow: 0 2px #999;
+    }
+
+    button:hover {
+        background-color: #3e8e41
+    }
+
+    button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(2px);
+    }
+</style>
+
+<body>
+    <div id="monitor">0</div>
+    <div class="content">
+        <button id="1">1</button>
+        <button id="2">2</button>
+        <button id="tambah">+</button>
+        <button id="hasil">=</button>
+    </div>
+    <script>
+        // Ambil komponen dari HTMl
+        const btn1=document.getElementById("1");
+        const btn2=document.getElementById("2");
+        const btnTambah=document.getElementById("tambah");
+        const btnHasil=document.getElementById("hasil");
+        const monitor=document.getElementById("monitor");
+
+        // Variable
+        let hasil=0;
+        let angka1=0;
+        let angka2=0;
+        let operator="";
+        let temp1="";
+        let temp2="";
+
+        btn1.addEventListener("click",function(){
+            if(operator==""){
+                temp1+="1"
+                console.log("angka1 = ",temp1)
+            }
+            else{
+                temp2+="1"
+                console.log("angka2 = ",temp2)
+            }
+            
+
+        })
+        btn2.addEventListener("click",function(){
+            if(operator==""){
+                temp1+="2"
+                console.log("angka1 = ",temp1)
+            }
+            else{
+                temp2+="2"
+                console.log("angka2 = ",temp2)
+            }
+        })
+        btnTambah.addEventListener("click",function(){
+            operator="+";
+        })
+        btnHasil.addEventListener("click",function(){
+            angka1=parseInt(temp1)
+            angka2=parseInt(temp2)
+            if(operator=="+")
+            {
+                hasil=angka1+angka2;
+            }
+            monitor.innerHTML=hasil;
+        })
+
+        
+    </script>
+</body>
+
+</html>

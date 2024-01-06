@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule  position: absolute;
+    top: -50px;
+    right: 25px;
+    font-size: 36px;
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script> -->
+    <style>
+        *{
+            box-sizing: border-box;
+            /* margin: 0;
+            padding: 0; */
+        }
+        /* #main{
+            background: linear-gradient(to left, blue,red);
+            width: 100%;
+            height: 100vh;
+        } */
+        #mySidnav{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            /* right: 0; */
+            /* display: none; */
+            width: 0;
+            height: 100%;
+            background-color: rgb(95, 95, 95);
+            z-index: 99;
+            padding: 2em 0;
+            overflow-x: hidden;
+           transition: 1s ease;
+        }
+        #mySidnav a{
+            text-align: center;
+            font-size: 2em;
+            display: block;
+           text-decoration: none;
+           padding: 20px 40px;
+           color: #fff;
+        }
+        #btnClose{
+            position: absolute;
+            top: -15px;
+            right: -25px;
+            font-size: 3em;
+            color: #ff0000;
+            z-index: 5;
+        }
+        #btnEnter{
+          cursor: pointer;
+        }
+        #mySidnav a ion-icon {
+            margin-right: 20px;
+            color: yellow;
+        }
+        #main{
+          transition: 1s ease;
+          font-size: 2em;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="mySidnav">
+      <a href="javascript:volid(0)" id="btnClose">&times</a>
+      <a href="#"> <ion-icon name="person-outline"></ion-icon>About</a>
+      <a href="#"> <ion-icon name="construct-outline"></ion-icon>Service</a>
+      <a href="#"><ion-icon name="accessibility-outline"></ion-icon>Clients</a>
+      <a href="#"> <ion-icon name="call-outline"></ion-icon>Contact</a>
+    </div>
+    <div id="main">
+        <a href="javascript:volid(0)"  id="btnEnter">&#9776</a>
+    </div>
+    <script>
+         const btnEnter = document.getElementById('btnEnter');
+         const btnCLose = document.getElementById('btnClose');
+         btnEnter.addEventListener('click',function(){
+            document.getElementById("mySidnav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+         });
+         btnCLose.addEventListener('click',function(){
+            document.getElementById("mySidnav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+         })
+    </script>
+  </body>
+</html>

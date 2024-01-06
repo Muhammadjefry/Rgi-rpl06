@@ -1,0 +1,56 @@
+body {
+  justify-content: center;
+  text-align: center;
+  background-image: url(360_F_283136113_b3VRHNiOPFMOluzYJPpfuoH8Czh9c743.jpg);
+  background-size: cover;
+}
+.btn-click {
+  background-color: red;
+  color: white;
+  transition: 1s ease;
+}
+#sube {
+  font-size: 20px;
+  width: 200px;
+  height: 40px;
+  border-radius: 60px;
+  background-color: whitesmoke;
+  margin: 100px;
+  transition: 1s ease;
+}
+h2 {
+  text-align: center;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.active,
+.accordion:hover {
+  background-color: #878585;
+}
+.accordion:after {
+  content: "\002B";
+  color: #ccc;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}

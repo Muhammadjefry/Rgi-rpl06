@@ -1,0 +1,8 @@
+1.looping
+ -for
+ -for/in
+ -for/of
+ -while
+ -do/while
+2.array
+3.string

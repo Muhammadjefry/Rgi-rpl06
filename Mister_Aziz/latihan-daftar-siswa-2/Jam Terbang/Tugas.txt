@@ -1,0 +1,2 @@
+--- INSERT ---
+- Pegawai harus memiliki minimal 40 jam login dalm 1 minggu, pada hari minggu manager bisa memeriksa  

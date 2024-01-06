@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            background-color: aqua;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 50px;
+        }
+        .demo::before{
+           content: "opo";
+           background-color: aliceblue;
+          width: 600px;
+        }
+        .demo::after{
+          background-color: aliceblue;
+          width: 600px;
+          content: "opo";
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">DEMO</div>
+</html>

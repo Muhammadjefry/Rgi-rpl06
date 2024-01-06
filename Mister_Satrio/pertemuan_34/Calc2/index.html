@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(#555353, #363535, #303030);
+      }
+      .parent {
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+      }
+      .container div {
+        margin-top: 5px;
+      }
+
+      button {
+        margin: 10px;
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #c8b11c;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 5px 5px #999, 5px 1px #999;
+      }
+
+      button:hover {
+        background-color: #3e8e41;
+      }
+
+      button:active {
+        background-color: #3e8e41;
+        box-shadow: 5px 4px #999, 5px 1px #999;
+        transform: translateY(4px);
+      }
+      .container-calc {
+        width: 500px;
+        border: 2px solid #222;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+          10px 10px 70px rgba(0, 0, 0, 0.25),
+          inset -5px -5px 15px rgba(0, 0, 0, 0.5),
+          inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+      }
+      .content {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="container-calc">
+        <div class="container">
+          <div class="monitor">0</div>
+          <div class="monitor">0</div>
+          <div class="monitor">0</div>
+          <div class="monitor">0</div>
+        </div>
+        <div class="content">
+          <button class="clear" style="width: 170px">C</button>
+          <button class="operator">/</button>
+          <button class="operator">*</button>
+          <br /><br />
+          <button class="numeric">1</button>
+          <button class="numeric">2</button>
+          <button class="numeric">3</button>
+          <button class="operator">-</button>
+          <br /><br />
+          <button class="numeric">4</button>
+          <button class="numeric">5</button>
+          <button class="numeric">6</button>
+          <button class="operator">+</button>
+          <br /><br />
+          <button class="numeric">7</button>
+          <button class="numeric">8</button>
+          <button class="numeric">9</button>
+          <button class="numeric">0</button>
+          <br /><br />
+          <button class="numeric">00</button>
+          <button class="numeric">.</button>
+          <button id="hasil" style="width: 170px">=</button>
+          <br /><br />
+          <br /><br />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

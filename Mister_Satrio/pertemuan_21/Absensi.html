@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Animated Login Form</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="kotak">
+        <form action="" id="id01">
+          <div class="form">
+            <h1>Form Here</h1>
+            <!-- username -->
+            <div class="group">
+              <input
+                type="text"
+                class="input"
+                id="Username"
+                required
+                oninvalid="this.setCustomValidity('Masukan Username')"
+                oninput="this.setCustomValidity('')"
+              />
+              <!-- <span class="highlight"></span> -->
+              <span class="bar"></span>
+              <label>Username</label>
+              <!-- <p id="pass"></p> -->
+            </div>
+
+            <!-- password -->
+            <div class="group">
+              <input
+                type="text"
+                class="input"
+                id="Password"
+                required
+                oninvalid="this.setCustomValidity('Masukan Password')"
+                oninput="this.setCustomValidity('')"
+              />
+              <!-- <span class="highlight"></span> -->
+              <span class="bar"></span>
+              <label>Password</label>
+              <!-- <p id="pass"></p> -->
+            </div>
+            <!-- button -->
+            <button
+              class="button1"
+              type="submit"
+              onclick="check_login()"
+              value=""
+            >
+              Login
+            </button>
+          </div>
+          <div class="Bawah">
+            <input type="submit" class="button2" value="Register" />
+            <input type="reset" class="button3" value="Forgot password" />
+          </div>
+        </form>
+      </div>
+      <!-- jam -->
+      <div class="kotak2">
+        <div class="jam">
+          <div id="clock">00:00:00 WIB</div>
+        </div>
+        <div class="tanggal">
+          <div id="date"></div>
+        </div>
+      </div>
+    </div>
+    <div class="data" id="data">
+      <div class="user">
+        <p id="output"></p>
+      </div>
+      <div class="tombol">
+        <button type="submit" onclick="masuk()">MASUK</button>
+        <button type="submit" onclick="keluar()">KELUAR</button>
+      </div>
+      <div class="absensi1">
+        <div>Masuk</div>
+        <div>Keluar</div>
+        <div>Durasi</div>
+        <div>Telat</div>
+      </div>
+      <div class="absensi2">
+        <div id="masuk"></div>
+        <div id="keluar"></div>
+        <div id="durasi"></div>
+        <div id="telat"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

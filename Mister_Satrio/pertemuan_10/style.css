@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-image: url(landscape-717828_1280.jpg);
+  background-size: cover;
+}
+.box {
+  margin: 50px auto;
+  display: flex;
+  width: 60%;
+  /* height: 500px; */
+  flex-direction: row;
+}
+
+.form {
+  flex: 50%;
+  /* height: 100%; */
+  background: transparent;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.8);
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+.form h1 {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Black Ops One", cursive;
+  color: white;
+}
+.form label {
+  display: block;
+  text-align: left;
+  /* margin-left: 45px; */
+  font-family: "Roboto", sans-serif;
+}
+.form input {
+  margin: auto;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 30px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+.form button {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 40px;
+  background: none;
+  color: white;
+}
+.form button:hover {
+  background-color: white;
+  color: black;
+}
+.signin {
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.8);
+  background: transparent;
+  backdrop-filter: blur(2px);
+  flex: 50%;
+  height: 100%;
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+label,
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+.signin h1 {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Black Ops One", cursive;
+}
+.signin label {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  color: black;
+}
+.signin input {
+  margin: auto;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+.signin .button1 {
+  display: block;
+  margin: auto;
+  height: 50px;
+  width: 80%;
+  margin-bottom: 10px;
+  background: none;
+  color: white;
+}
+.signin .button1:hover {
+  background-color: white;
+  color: black;
+}
+.Bawah {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button2,
+.button3 {
+  background: none;
+  border: none;
+  color: white;
+}
+@media (max-width: 800px) {
+  .box {
+    flex-direction: column;
+  }
+}
+
+@media (max-widht: 600px) {
+  .box {
+    flex-direction: column;
+  }
+}

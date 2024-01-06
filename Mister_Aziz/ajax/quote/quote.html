@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0 15%;
+        background: #222;
+        color: #ddd;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      #quote::before,
+      #quote::after {
+        content: '"';
+      }
+      #quote {
+        font-size: 44px;
+        padding: 20px;
+        font-style: italic;
+      }
+      #quoter::before {
+        content: "-- ";
+      }
+      #quoter {
+        font-size: 32px;
+        padding: 10px 20px;
+        text-align: right;
+      }
+      #generate {
+        background-color: orangered;
+        color: #fff;
+        border: none;
+        padding: 15px 25px;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 8px;
+        box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+        transition: all 200ms ease-in-out;
+      }
+      #generate:hover {
+        background-color: #c64312;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="quote">Say some dumb shit.</div>
+    <div id="quoter">Anon</div>
+
+    <button id="generate">Generate!</button>
+    <script>
+      document
+        .querySelector("#generate")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+
+          //kirim data secara ajax
+          fetch("quote.php", {
+            method: "POST",
+            credentials: "same-origin",
+          })
+            .then((Response) => Response.json())
+            .then((data) => {
+              //   --cetak pesan respon ke elemen #notif
+              var fff = document.querySelector("#quote");
+              var eee = document.querySelector("#quoter");
+
+              fff.innerText = data.pesan;
+              eee.innerText = data.quoter;
+            })
+            .catch((error) => {
+              console.log(error);
+            });
+        });
+    </script>
+  </body>
+</html>

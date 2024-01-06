@@ -1,0 +1,167 @@
+
+-------------- JavaScript Number Methods ----------
+ 
+  * Metode angka berikut dapat digunakan pada semua nomor JavaScript:
+
+  Method 	        Description
+  toString() 	   Mengembalikan angka sebagai string
+  toExponential()  	Mengembalikan angka yang ditulis 
+                    dalam notasi eksponensial
+  toFixed() 	    Mengembalikan angka yang ditulis 
+                    dengan angka desimal
+  toPrecision() 	Mengembalikan angka yang ditulis 
+                    dengan panjang tertentu
+  ValueOf() 	     Mengembalikan angka sebagai angka
+
+  Metode toString()
+  ------------------
+   * Metode ini toString()mengembalikan angka sebagai string.
+   * Semua metode bilangan dapat digunakan pada semua jenis bilangan (literal, variabel, atau ekspresi):
+    Contohnya ;
+    let x = 123;
+    x.toString();
+    (123).toString();
+    (100 + 23).toString(); 
+
+    Metode toExponential()
+ --------------------------
+    * toExponential()mengembalikan string, dengan angka dibulatkan dan ditulis menggunakan notasi eksponensial.
+
+    * Parameter menentukan jumlah karakter di belakang koma desimal:
+    Contohnya :
+    let x = 9.656;
+    x.toExponential(2);
+    x.toExponential(4);
+    x.toExponential(6); 
+
+
+    Metode toFixed()
+--------------------
+      * toFixed()mengembalikan sebuah string, dengan angka yang ditulis dengan jumlah desimal tertentu:
+    Contohnya :
+      let x = 9.656;
+      x.toFixed(0);
+      x.toFixed(2);
+      x.toFixed(4);
+      x.toFixed(6); 
+
+      Metode toPrecision()
+  --------------------------
+     * toPrecision()mengembalikan sebuah string, dengan nomor yang ditulis dengan panjang tertentu:
+    Contohnya ;
+      let x = 9.656;
+      x.toPrecision();
+      x.toPrecision(2);
+      x.toPrecision(4);
+      x.toPrecision(6); 
+
+      Metode valueOf()
+ ------------------------
+      * valueOf()mengembalikan angka sebagai angka. 
+    Contohnya ;
+        let x = 123;
+        x.valueOf();
+        (123).valueOf();
+        (100 + 23).valueOf(); 
+
+        Mengubah Variabel menjadi Angka
+ ------------------------------------------
+  * Ada 3 metode JavaScript yang dapat digunakan untuk mengubah variabel menjadi angka:
+
+  Method       	Description
+  Number() 	   	Mengembalikan angka yang dikonversi 
+                dari argumennya.
+  parseFloat() 	Mengurai argumennya dan mengembalikan 
+                angka floating point
+  parseInt() 	 Parsing argumennya dan kembalikan 
+                 bilangan bulat
+
+                 Metode Angka()
+       -----------------------------------
+     * Metode ini Number()dapat digunakan untuk mengubah variabel JavaScript menjadi angka:
+      Contohnya :
+      Number(true);
+      Number(false);
+      Number("10");
+      Number("  10");
+      Number("10  ");
+      Number(" 10  ");
+      Number("10.33");
+      Number("10,33");
+      Number("10 33");
+      Number("John"); 
+
+      Metode Number() Digunakan pada Tanggal
+   -------------------------------------------
+     * Number()juga dapat mengubah tanggal menjadi angka.
+     Contoh
+     Number(new Date("1970-01-01")) 
+
+     Metode parseInt()
+   ---------------------
+      parseInt()mem-parsing string dan mengembalikan bilangan bulat. Spasi diperbolehkan. Hanya nomor pertama yang dikembalikan:
+      Contohnya ;
+      parseInt("-10");
+      parseInt("-10.33");
+      parseInt("10");
+      parseInt("10.33");
+      parseInt("10 20 30");
+      parseInt("10 years");
+      parseInt("years 10"); 
+
+      Metode parseFloat()
+   -----------------------
+    *  parseFloat()mem-parsing string dan mengembalikan nomor. Spasi diperbolehkan. Hanya nomor pertama yang dikembalikan:
+     Contoh
+     parseFloat("10");
+     parseFloat("10.33");
+     parseFloat("10 20 30");
+     parseFloat("10 years");
+     parseFloat("years 10"); 
+
+     Number Object Methods
+     ----------------------
+    * Metode objek ini termasuk dalam objek Number :
+    metode              	Keterangan
+    Number.isInteger() 	   Mengembalikan nilai benar 
+                            jika argumennya berupa bilangan bulat
+    Number.isSafeInteger() 	Mengembalikan nilai 
+                            benar jika argumennya adalah bilangan bulat yang aman
+    Number.parseFloat() 	Mengonversi string menjadi 
+                            angka
+    Number.parseInt() 	  Mengonversi string menjadi 
+                            bilangan bulat
+
+
+           Metode Number.isInteger()
+   ---------------------------------------
+      * Metode ini Number.isInteger()kembali truejika argumennya berupa bilangan bulat.
+      Contoh
+         Number.isInteger(10);
+         Number.isInteger(10.5); 
+
+
+         Metode Number.parseFloat()
+--------------------------------------
+ * Number.parseFloat()mem-parsing string dan mengembalikan nomor.
+
+ * Spasi diperbolehkan. Hanya nomor pertama yang dikembalikan:
+     Contohnya ;
+     Number.parseFloat("10");
+     Number.parseFloat("10.33");
+     Number.parseFloat("10 20 30");
+     Number.parseFloat("10 years");
+     Number.parseFloat("years 10"); 
+
+     Metode Number.parseInt()
+--------------------------------------
+    * Number.parseInt()mem-parsing string dan mengembalikan bilangan bulat.
+    * Spasi diperbolehkan. Hanya nomor pertama yang dikembalikan:
+    Contohnya ;
+    Number.parseInt("-10");
+    Number.parseInt("-10.33");
+    Number.parseInt("10");
+    Number.parseInt("10.33");
+    Number.parseInt("10 20 30");
+    Number.parseInt("10 years");
+    Number.parseInt("years 10"); 

@@ -1,0 +1,42 @@
+
+
+---------------- JavaScript Math Object ------------
+
+
+Math Methods
+--------------
+   * Sintaks untuk metode Math any adalah:Math.method(number)
+   * Ada 4 metode umum untuk membulatkan angka menjadi bilangan bulat:
+Math.round(x) 	Mengembalikan x yang dibulatkan ke 
+                bilangan bulat terdekat
+   Contoh
+   Math.round(4.6); 
+
+Math.ceil(x) 	 Mengembalikan x yang dibulatkan ke 
+                bilangan bulat terdekat
+      * Math.ceil(x)mengembalikan nilai x yang dibulatkan ke bilangan bulat terdekat:
+      Contoh ;
+      Math.ceil(4.9);
+      Math.ceil(4.7);
+      Math.ceil(4.4); 
+      Math.ceil(4.2);
+      Math.ceil(-4.2); 
+Math.floor(x) 	Mengembalikan x yang dibulatkan ke bawah 
+                ke bilangan bulat terdekat
+      Math.floor(x)mengembalikan nilai x yang dibulatkan ke bawah ke bilangan bulat terdekat:
+     Contoh
+     Math.floor(4.9);
+     Math.floor(4.7);
+     Math.floor(4.4);
+     Math.floor(4.2);
+     Math.floor(-4.2); 
+
+Math.trunc(x) 	Mengembalikan bagian integer dari x ( 
+                baru di ES6 )
+    Math.trunc(x)mengembalikan bagian integer dari x:
+    Contoh
+    Math.trunc(4.9);
+    Math.trunc(4.7);
+    Math.trunc(4.4);
+    Math.trunc(4.2);
+    Math.trunc(-4.2); 

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Setting start Background color
+        $("body").css("background-color", "blue");
+        $("#btn").css("background-color", "blue");
+
+        //color stok
+        const colors = [
+          "blue",
+          "green",
+          "pink",
+          "yellow",
+          "red",
+          "brown",
+          "purple",
+          "orange",
+          "gold",
+          "aqua",
+          "white",
+          "grey",
+          "azure",
+        ];
+        let index = 0;
+        let length = colors.length;
+        $("#next").click(function () {
+          index += 1;
+          if (index == length - 1) {
+            index = 0;
+          }
+          console.log(colors[index]);
+
+          $("body").css("background-color", colors[index]);
+          $("#next").css("background-color", colors[index]);
+        });
+        $("#previous").click(function () {
+          index -= 1;
+          if (index == -1) {
+            index = length;
+          }
+          console.log(colors[index]);
+          $("body").css("background-color", colors[index]);
+          $("#previous").css("background-color", colors[index]);
+        });
+      });
+    </script>
+    <title>Document</title>
+    <style>
+      .container {
+        text-align: center;
+        margin: 200px auto;
+        font-size: 2em;
+        font-family: "Sacramento", cursive;
+      }
+
+      #previous {
+        /* background-color: #f1f1f1; */
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        font-size: 20px;
+      }
+
+      #next {
+        /* background-color: #04aa6d; */
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        font-size: 20px;
+      }
+      #next:hover,
+      #previous:hover {
+        background-color: #8e8e8e;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Background Color Changer</h1>
+      <button id="previous">&laquo; Previous</button>
+      <button id="next">Next &raquo;</button>
+    </div>
+  </body>
+</html>

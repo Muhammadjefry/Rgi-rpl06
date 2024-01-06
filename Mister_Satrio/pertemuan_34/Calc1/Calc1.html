@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        /* display: inline-block; */
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #4caf50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 10px 9px #999, 10px 1px #999;
+      }
+
+      button:hover {
+        background-color: #3e8e41;
+      }
+
+      button:active {
+        background-color: #3e8e41;
+        box-shadow: 5px 4px #999, 5px 1px #999;
+        transform: translateY(4px);
+      }
+      #monitor {
+        font-size: 70px;
+        grid-column: 1 / span 4;
+      }
+      #clear {
+        grid-column: 1 / span 2;
+      }
+
+      .content #tambah {
+        grid-row: span 2;
+        height: 180px;
+      }
+
+      .content {
+        margin: 50px auto;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        display: grid;
+        gap: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div id="monitor">0</div>
+      <button id="clear">C</button>
+      <button id="kali">*</button>
+      <button id="bagi">/</button>
+      <button id="tujuh">7</button>
+      <button id="delapan">8</button>
+      <button id="sembilan">9</button>
+      <button id="kurang">-</button>
+      <button id="empat">4</button>
+      <button id="lima">5</button>
+      <button id="enam">6</button>
+      <button id="tambah">+</button>
+      <button id="satu">1</button>
+      <button id="dua">2</button>
+      <button id="tiga">3</button>
+      <button id="nol">0</button>
+      <button id="nolnol">00</button>
+      <button id="">.</button>
+      <button id="hasil">=</button>
+    </div>
+    <script>
+      // ambil componen dari html
+      const btn1 = document.getElementById("satu");
+      const btn2 = document.getElementById("dua");
+      const btn3 = document.getElementById("tiga");
+      const btn4 = document.getElementById("empat");
+      const btn5 = document.getElementById("lima");
+      const btn6 = document.getElementById("enam");
+      const btn7 = document.getElementById("tujuh");
+      const btn8 = document.getElementById("delapan");
+      const btn9 = document.getElementById("sembilan");
+      const btn0 = document.getElementById("nol");
+      const btn00 = document.getElementById("nolnol");
+      const btnKurang = document.getElementById("kurang");
+      const btnBagi = document.getElementById("bagi");
+      const btnKali = document.getElementById("kali");
+      const btnClear = document.getElementById("clear");
+      const btnTambah = document.getElementById("tambah");
+      const btnHasil = document.getElementById("hasil");
+      const monitor = document.getElementById("monitor");
+
+      // Variable
+      let hasil = 0;
+      let angka1 = 0;
+      let angka2 = 0;
+      let operator = "";
+      let temp1 = "";
+      let temp2 = "";
+
+      btn1.addEventListener("click", function () {
+        if (operator == "") {
+          temp1 += btn1.innerHTML;
+          console.log(temp1);
+          monitor.innerHTML = temp1;
+        } else {
+          temp2 += btn1.innerHTML;
+          console.log(temp2);
+          monitor.innerHTML += temp2;
+        }
+      });
+      btn2.addEventListener("click", function () {
+        if (operator == "") {
+          temp1 += btn2.innerHTML;
+          console.log(temp1);
+          monitor.innerHTML = temp1;
+        } else {
+          temp2 += btn2.innerHTML;
+          console.log(temp2);
+          monitor.innerHTML += temp2;
+        }
+      });
+      btn3.addEventListener("click", function () {
+        if (operator == "") {
+          temp1 += btn3.innerHTML;
+          console.log(temp1);
+          monitor.innerHTML = temp1;
+        } else {
+          temp2 += btn3.innerHTML;
+          console.log(temp2);
+          monitor.innerHTML += temp2;
+        }
+      });
+      btn4.addEventListener("click", function () {
+        if (operator == "") {
+          temp1 += btn4.innerHTML;
+          console.log(temp1);
+          monitor.innerHTML = temp1;
+        } else {
+          temp2 += btn4.innerHTML;
+          console.log(temp2);
+          monitor.innerHTML += temp2;
+        }
+      });
+      btn5.addEventListener("click", function () {
+        if (operator == "") {
+          temp1 += btn5.innerHTML;
+          console.log(temp1);
+          monitor.innerHTML = temp1;
+        } else {
+          temp2 += btn5.innerHTML;
+          console.log(temp2);
+          monitor.innerHTML += temp2;
+        }
+      });
+      btn6.addEventListener("click", function () {
+        if (operator == "") {
+          temp1 += btn6.innerHTML;
+          console.log(temp1);
+          monitor.innerHTML = temp1;
+        } else {
+          temp2 += btn6.innerHTML;
+          console.log(temp2);
+          monitor.innerHTML += temp2;
+        }
+      });
+      btn7.addEventListener("click", function () {
+        if (operator == "") {
+          temp1 += btn7.innerHTML;
+          console.log(temp1);
+          monitor.innerHTML = temp1;
+        } else {
+          temp2 += btn7.innerHTML;
+          console.log(temp2);
+          monitor.innerHTML += temp2;
+        }
+      });
+      btn8.addEventListener("click", function () {
+        if (operator == "") {
+          temp1 += btn8.innerHTML;
+          console.log(temp1);
+          monitor.innerHTML = temp1;
+        } else {
+          temp2 += btn8.innerHTML;
+          console.log(temp2);
+          monitor.innerHTML += temp2;
+        }
+      });
+      btn9.addEventListener("click", function () {
+        if (operator == "") {
+          temp1 += btn9.innerHTML;
+          console.log(temp1);
+          monitor.innerHTML = temp1;
+        } else {
+          temp2 += btn9.innerHTML;
+          console.log(temp2);
+          monitor.innerHTML += temp2;
+        }
+      });
+      btn0.addEventListener("click", function () {
+        if (operator == "") {
+          temp1 += btn0.innerHTML;
+          console.log(temp1);
+          monitor.innerHTML = temp1;
+        } else {
+          temp2 += btn0.innerHTML;
+          console.log(temp2);
+          monitor.innerHTML += temp2;
+        }
+      });
+      btn00.addEventListener("click", function () {
+        if (operator == "") {
+          temp1 += btn00.innerHTML;
+          console.log(temp1);
+          monitor.innerHTML = temp1;
+        } else {
+          temp2 += btn00.innerHTML;
+          console.log(temp2);
+          monitor.innerHTML += temp2;
+        }
+      });
+      btnTambah.addEventListener("click", function () {
+        if (operator == "") {
+          temp1 += btnTambah.innerHTML;
+          console.log(temp1);
+          monitor.innerHTML = temp1;
+        } else {
+          temp2 += btnTambah.innerHTML;
+          console.log(temp2);
+          monitor.innerHTML = temp2;
+        }
+        operator = "+";
+      });
+      btnBagi.addEventListener("click", function () {
+        if (operator == "") {
+          temp1 += btnBagi.innerHTML;
+          console.log(temp1);
+          monitor.innerHTML = temp1;
+        } else {
+          temp2 += btnBagi.innerHTML;
+          console.log(temp2);
+          monitor.innerHTML = temp2;
+        }
+        operator = "/";
+      });
+      btnKali.addEventListener("click", function () {
+        if (operator == "") {
+          temp1 += btnKali.innerHTML;
+          console.log(temp1);
+          monitor.innerHTML = temp1;
+        } else {
+          temp2 += btnKali.innerHTML;
+          console.log(temp2);
+          monitor.innerHTML += temp2;
+        }
+        operator = "*";
+      });
+      btnKurang.addEventListener("click", function () {
+        if (operator == "") {
+          temp1 += btnKurang.innerHTML;
+          console.log(temp1);
+          monitor.innerHTML = temp1;
+        } else {
+          temp2 += btnKurang.innerHTML;
+          console.log(temp2);
+          monitor.innerHTML += temp2;
+        }
+        operator = "-";
+      });
+      btnHasil.addEventListener("click", function () {
+        angka1 = parseInt(temp1);
+        angka2 = parseInt(temp2);
+        if (operator == "+") {
+          hasil = angka1 + angka2;
+          monitor.innerHTML = hasil;
+          console.log(hasil);
+        } else if (operator == "/") {
+          hasil = angka1 / angka2;
+          monitor.innerHTML = hasil;
+          console.log(hasil);
+        } else if (operator == "*") {
+          hasil = angka1 * angka2;
+          monitor.innerHTML = hasil;
+          console.log(hasil);
+        } else if (operator == "-") {
+          hasil = angka1 - angka2;
+          monitor.innerHTML = hasil;
+          console.log(hasil);
+        } else {
+          hasil = "Kosong woi";
+          monitor.innerHTML = hasil;
+        }
+      });
+    </script>
+  </body>
+</html>

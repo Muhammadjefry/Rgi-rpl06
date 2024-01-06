@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tts</title>
+	<style>
+#indicator {
+	display: block;
+	height: 100px;
+	width: 100px;
+	border-radius: 999px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: green;
+}
+#indicator.pleasewait {
+	background-color: red;
+}
+
+button {
+	width: 300px;
+	padding: 15px;
+	background-color: #222;
+	color: #eee;
+	font-weight: bold;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #eee;
+	color: #222;
+}
+	</style>
+</head>
+<body>
+
+<div id="indicator"></div>
+<audio></audio>
+
+<h3>Preparing</h3>
+<hr>
+<div id="preparing">
+<button data-no="238">238</button>
+<button data-no="241">241</button>
+<button data-no="240">240</button>
+</div>
+
+<br>
+<br>
+<br>
+
+<h3>Ready</h3>
+<hr>
+<div id="ready"></div>
+
+<script>
+var qs = document.querySelectorAll('[data-no]');
+for (let i = 0; i < qs.length; i++) {
+	qs[i].addEventListener('dblclick',function(e){
+		var str = e.target.getAttribute('data-no');
+		var strings = str.split('');
+		var index = 0;
+		var audio = document.querySelector('audio');
+		var indicator = document.querySelector('#indicator');
+		var cl = 'pleasewait';
+
+		if( !audio.classList.contains(cl) ) {
+			indicator.classList.add(cl);
+
+			audio.src='mp3/'+strings[0]+'.mp3';
+			audio.play();
+
+			audio.onended = function() {
+				index++;
+				if(index < strings.length){
+					audio.src='mp3/'+strings[index]+'.mp3';
+					audio.play();
+				} else {
+					indicator.classList.remove(cl);
+					document.querySelector('#ready').append(e.target);
+				}
+			};
+		}
+
+
+	})
+}
+</script>
+	
+</body>
+</html>

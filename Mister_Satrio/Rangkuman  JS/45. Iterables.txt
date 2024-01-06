@@ -1,0 +1,67 @@
+
+
+-------------- JavaScript Iterables ----------------
+
+   * Iterables adalah objek yang dapat diubah (seperti Array).
+   * Iterables dapat diakses dengan kode sederhana dan efisien.
+   * Iterable dapat diulang dengan for..ofloop
+
+The For Of Loop
+-----------------
+Pernyataan JavaScript for..ofmengulang elemen objek yang dapat diubah.
+Sintaksis
+for (variable of iterable) {
+  // code block to be executed
+} 
+
+Iterasi
+-------------
+ * Iterasi mudah dimengerti.
+ * Ini berarti mengulang serangkaian elemen.
+Berikut beberapa contoh mudahnya:
+    Iterasi pada sebuah String
+    Iterasi pada Array
+
+* Iterasi pada sebuah String
+Anda dapat menggunakan for..ofloop untuk mengulangi elemen string:
+Contoh
+const name = "W3Schools";
+
+for (const x of name) {
+  // code block to be executed
+} 
+
+
+Iterating Over an Array
+---------------------------
+Anda dapat menggunakan for..ofloop untuk mengulangi elemen Array:
+Contoh
+const letters = ["a","b","c"];
+
+for (const x of letters) {
+  // code block to be executed
+} 
+
+Iterating Over a Set
+-------------------
+Anda dapat menggunakan for..ofloop untuk mengulangi elemen-elemen dari suatu Set:
+Contoh
+const letters = new Set(["a","b","c"]);
+
+for (const x of letters) {
+  // code block to be executed
+} 
+
+Iterating Over a Map
+------------------------
+Anda dapat menggunakan for..ofloop untuk mengulangi elemen Peta:
+Contoh
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+for (const x of fruits) {
+  // code block to be executed
+} 

@@ -1,0 +1,3 @@
+getid(single)
+getclassname(array)
+gettagname(array)

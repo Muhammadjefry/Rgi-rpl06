@@ -1,0 +1,2 @@
+Array merupakan kumpulan data 
+dan penghtungannya dimulai dari nol [0]

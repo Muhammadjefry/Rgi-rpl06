@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Setting start Background color
+        $("body").css("background-color", "red");
+        $("#btn").css("background-color", "red");
+
+        //color stok
+        const colors = [
+          "blue",
+          "green",
+          "pink",
+          "yellow",
+          "red",
+          "brown",
+          "purple",
+          "orange",
+          "gold",
+          "aqua",
+          "white",
+          "grey",
+          "azure",
+        ];
+        $("#btn").click(function () {
+          let colorIndex = parseInt(Math.floor(Math.random() * colors.length));
+
+          console.log(colors[colorIndex]);
+          $("body").css("background-color", colors[colorIndex]);
+          $("#btn").css("background-color", colors[colorIndex]);
+        });
+      });
+    </script>
+    <title>Document</title>
+    <style>
+      .container {
+        text-align: center;
+        margin: 200px auto;
+        font-size: 2em;
+        font-family: "Sacramento", cursive;
+      }
+      #btn {
+        padding: 20px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Background Color Changer</h1>
+      <button id="btn">CHANGE COLOR</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+
+
+----------------JavaScript Booleans------------------
+
+Boolean Values :
+Seringkali, dalam pemrograman, Anda memerlukan tipe data yang hanya dapat memiliki satu dari dua nilai, misalnya
+
+    YES / NO
+    ON / OFF
+    TRUE / FALSE
+
+The Boolean() Function
+---------------------
+Contoh
+Boolean(10 > 9) 
+
+Perbandingan dan Kondisi
+------------------------------
+    *  Bab Perbandingan JS memberikan gambaran lengkap tentang operator perbandingan.
+    *  Bab Kondisi JS memberikan gambaran lengkap tentang pernyataan kondisional.
+    *  Berikut beberapa contohnya:
+    Operator 	Description 	Example
+    == 	        equal to 	    if (day == "Monday")
+    > 	       greater than 	 if (salary > 9000)
+    <        	less than 	    if (age < 18)

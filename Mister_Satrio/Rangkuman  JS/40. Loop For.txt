@@ -1,0 +1,28 @@
+
+------------- JavaScript For Loop -------------------
+
+Loop JavaScript
+-----------------
+* Perulangan berguna jika Anda ingin menjalankan kode yang sama berulang kali, setiap kali dengan nilai berbeda.
+* Seringkali hal ini terjadi ketika bekerja dengan array:
+Daripada menulis:
+text += cars[0] + "<br>";
+text += cars[1] + "<br>";
+text += cars[2] + "<br>";
+text += cars[3] + "<br>";
+text += cars[4] + "<br>";
+text += cars[5] + "<br>"; 
+
+Kamu bisa menulis:
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+contoh lain:
+    let i = 0;
+    let len = cars.length;
+    let text = "";
+    for (; i < len; ) {
+      text += cars[i] + "<br>";
+      i++;
+    }

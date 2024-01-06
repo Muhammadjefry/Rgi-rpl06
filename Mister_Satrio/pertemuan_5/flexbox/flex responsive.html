@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flexcontainer {
+        display: flex;
+        flex-direction: row;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .flexcontainer .kiri {
+        background-color: aqua;
+        padding: 10px;
+        flex: 50%;
+      }
+
+      .flexcontainer .kanan {
+        background-color: blue;
+        padding: 10px;
+        flex: 50%;
+      }
+
+      @media (max-width: 800px) {
+        .flexcontainer {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-widht: 600px) {
+        .flexcontainer {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexcontainer">
+      <div class="kiri">1</div>
+      <div class="kanan">2</div>
+    </div>
+  </body>
+</html>

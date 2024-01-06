@@ -1,0 +1,56 @@
+
+---------------- JavaScript Events -------------
+
+ - Peristiwa HTML adalah "hal" yang terjadi pada elemen HTML.
+
+  - Ketika JavaScript digunakan di halaman HTML, JavaScript dapat "bereaksi" terhadap kejadian ini.
+
+  HTML Events
+  -----------
+ HTML Events dapat berupa sesuatu yang dilakukan browser, atau sesuatu yang dilakukan pengguna.
+
+  Berikut adalah beberapa contoh acara HTML:
+   - Halaman web HTML telah selesai dimuat
+    Bidang masukan HTML telah diubah
+    Tombol HTML diklik
+  - Seringkali, ketika suatu peristiwa terjadi, Anda mungkin ingin melakukan sesuatu.
+  - JavaScript memungkinkan Anda mengeksekusi kode ketika peristiwa terdeteksi.
+  - HTML memungkinkan atribut event handler, dengan kode JavaScript , untuk ditambahkan ke elemen HTML.
+
+  Contohnya :
+   <p id="demo"></p>
+   <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+
+   Common HTML Events(Peristiwa HTML Umum)
+   --------------------------------------
+   Event 	    Description
+   onchange 	Elemen HTML telah diubah
+   onclick    	Pengguna mengklik elemen HTML
+   onmouseover 	Pengguna menggerakkan mouse ke
+                 atas elemen HTML
+   onmouseout 	Pengguna menggerakkan mouse
+                 menjauh dari elemen HTML
+   onkeydown 	Pengguna menekan tombol keyboard
+   onload 	   	Browser telah selesai memuat
+                 halaman
+
+  JavaScript Event Handlers(Penangan Peristiwa JavaScript)
+    ---------------------------------------
+    Pengendali peristiwa dapat digunakan untuk menangani dan memverifikasi masukan pengguna, tindakan pengguna, dan tindakan browser:
+
+    * Hal-hal yang harus dilakukan setiap kali halaman dimuat
+    * Hal-hal yang sebaiknya dilakukan ketika halaman ditutup
+    * Tindakan yang harus dilakukan ketika pengguna mengklik tombol
+    * Konten yang harus diverifikasi ketika pengguna memasukkan data
+    * Dan banyak lagi...
+
+    Banyak metode berbeda yang dapat digunakan agar JavaScript dapat bekerja dengan peristiwa:
+
+    * Atribut acara HTML dapat mengeksekusi kode JavaScript secara langsung
+    * Atribut acara HTML dapat memanggil fungsi JavaScript
+    * Anda dapat menetapkan fungsi pengendali acara Anda sendiri ke elemen HTML
+    * Anda dapat mencegah acara dikirim atau ditangani
+    * Dan banyak lagi...
+
+
+  

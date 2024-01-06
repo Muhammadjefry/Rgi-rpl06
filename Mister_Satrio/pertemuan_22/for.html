@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const database_user = [
+        "alvin",
+        "jefry",
+        "sulaiman",
+        "jalal",
+        "lucky",
+        "udin",
+        "dimas",
+      ];
+      //------for (start;end;iterasi) = perulangan terbatas
+      username = "udin";
+      for (let n = 0; n < database_user.length; n++) {
+        if ((username = database_user[n])) {
+          console.log("UDIN ketemu (ini for)");
+        }
+      }
+      //------for in (x in database_user) = menhitung sepanjang array
+      //---memanggil index[0,1,2,3,4,5,6]
+      for (x in database_user) {
+        if (username == database_user[x]) {
+          console.log("UDIN ketemu (ini for in)");
+        }
+      }
+      //-----for of---  ===  memanggil isinya ['jefry']
+      for (y of database_user) {
+        if (username == y) {
+          console.log("Harus ketemu (ini for of)");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+
+
+-------------- JavaScript Debugging ----------
+
+   * Kesalahan dapat (akan) terjadi, setiap kali Anda menulis beberapa kode komputer baru.
+   * Proses Debug Kode
+   * Kode pemrograman mungkin mengandung kesalahan sintaksis, atau kesalahan logika.
+   * Banyak dari kesalahan ini sulit untuk didiagnosis.
+   * Seringkali, ketika kode pemrograman mengandung kesalahan, tidak terjadi apa-apa. Tidak ada pesan kesalahan, dan Anda tidak akan mendapatkan indikasi di mana harus mencari kesalahan.
+   * Mencari (dan memperbaiki) kesalahan dalam kode pemrograman disebut debugging kode.
+   * Debugger JavaScript 
+   * Men-debug tidaklah mudah. Namun untungnya, semua browser modern memiliki debugger JavaScript bawaan.
+   * Debugger bawaan dapat diaktifkan dan dinonaktifkan, sehingga memaksa kesalahan dilaporkan kepada pengguna.
+   * Dengan debugger, Anda juga dapat menyetel breakpoint (tempat di mana eksekusi kode dapat dihentikan), dan memeriksa variabel saat kode dijalankan.
+   * Biasanya (jika tidak, ikuti langkah-langkah di bagian bawah halaman ini), Anda mengaktifkan debugging di browser Anda dengan tombol F12, dan memilih "Konsol" di menu debugger.
+Metode console.log()
+----------------------
+     * Jika browser Anda mendukung debugging, Anda dapat menggunakannya console.log()untuk menampilkan nilai JavaScript di jendela debugger:
+        Contoh
+        <!DOCTYPE html>
+        <html>
+        <body>
+        
+        <h1>My First Web Page</h1>
+        
+        <script>
+        a = 5;
+        b = 6;
+        c = a + b;
+        console.log(c);
+        </script>
+        
+        </body>
+        </html> 
+
+        

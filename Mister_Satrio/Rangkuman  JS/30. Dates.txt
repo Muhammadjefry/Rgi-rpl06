@@ -1,0 +1,24 @@
+
+
+--------------- JavaScript Date Objects ----------
+  
+  Membuat Objek Tanggal
+-----------------------------------
+   * Objek tanggal dibuat dengan new Date()konstruktor.
+   * Ada 9 cara untuk membuat objek tanggal baru:
+
+   * new Date()
+   * new Date(date string)
+   * new Date(year,month)
+   * new Date(year,month,day)
+   * new Date(year,month,day,hours)
+   * new Date(year,month,day,hours,minutes)
+   * new Date(year,month,day,hours,minutes,seconds)
+   * new Date(year,month,day,hours,minutes,seconds,ms)
+   * new Date(milliseconds) 
+
+   JavaScript new Date()
+-------------------------------
+    new Date()membuat objek tanggal dengan tanggal dan waktu saat ini :
+    Contoh
+    const d = new Date(); 

@@ -1,0 +1,23 @@
+
+
+
+------- Perbandingan JavaScript dan Operator Logis --
+
+Operator Perbandingan
+--------------------------
+Operator perbandingan digunakan dalam pernyataan logika untuk menentukan persamaan atau perbedaan antara variabel atau nilai.
+Mengingat x = 5, tabel di bawah menjelaskan operator perbandingan:
+Operator 	                Description                     	Comparing 	        Returns 	
+==                           	equal to 	                      x == 8        	 false 	
+                                                                  x == 5        	 true 	
+                                                                  x == "5"           true 	
+=== 	                equal value and equal type               x === 5 	          true 	
+                                                                  x === "5" 	     false 	
+!=                          	not equal                       	x != 8         	true 	
+!== 	            not equal value or not equal type 	            x !== 5     	false 	
+                                                                    x !== "5"      	true 	
+                                                                    x !== 8 	    true 	
+>                       	greater than                        	x > 8   	false 	
+<                       	less than                           	x < 8    	true 	
+>=                       	greater than or equal to 	            x >= 8  	false 	
+<=                       	less than or equal to 	                x <= 8  	true 	

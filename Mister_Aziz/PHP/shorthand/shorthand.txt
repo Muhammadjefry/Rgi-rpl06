@@ -1,0 +1,46 @@
+<?php
+
+// deklarasikan nilai variabel xxx
+$xxx = 23; // 23
+
+// ================================================== //
+// ================================================== //
+
+// deklarasikan nilai variabel xxx baru
+// dimana nilai baru adalah nilai lama ditambah 1
+$xxx = $xxx + 1; // 24
+
+// menambahkan +1 pada nilai sebuah variabel
+// menggunakan kode yang lebih pendek (shorthand)
+$xxx++; // 25
+
+// ================================================== //
+
+// deklarasikan nilai variabel xxx baru
+// dimana nilai baru adalah nilai lama dikurangi 1
+$xxx = $xxx - 1; // 24
+
+// menambahkan -1 pada nilai sebuah variabel
+// menggunakan kode yang lebih pendek (shorthand)
+$xxx--; // 23
+
+// ================================================== //
+// ================================================== //
+
+// deklarasikan nilai variabel xxx baru
+// dimana nilai baru adalah nilai lama ditambah angka terserah
+$xxx = $xxx + 11; // 34
+
+// menambahkan angka terserah pada nilai sebuah variabel
+// menggunakan kode yang lebih pendek (shorthand)
+$xxx += 13; // 47
+
+// ================================================== //
+
+// deklarasikan nilai variabel xxx baru
+// dimana nilai baru adalah nilai lama dikurangi angka terserah
+$xxx = $xxx - 17; // 30
+
+// mengurangi nilai sebuah variabel
+// menggunakan kode yang lebih pendek (shorthand)
+$xxx -= 22; // 8

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        display: inline-block;
+        width: 25%;
+        border: 1px solid black;
+        text-align: center;
+        cursor: pointer;
+        width: 30px;
+        height: 20px;
+      }
+      span:hover {
+        background-color: gray;
+        color: white;
+      }
+      /* Firefox */
+      input[type="number"] {
+        appearance: textfield;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span class="minus">-</span>
+      <input type="number" value="0" />
+      <span class="plus">+</span>
+    </div>
+    <br />
+    <div>
+      <input
+        type="password"
+        name=""
+        id="pw"
+        placeholder="Enter your password..."
+      />
+      <span class="mata">👁️</span>
+    </div>
+    <br />
+    <div>
+      <input accept="image/*" type="file" id="imgInp" />
+      <img id="blah" src="#" alt="your image" />
+    </div>
+    <script>
+      document.querySelector(".minus").addEventListener("click", function (e) {
+        var xxx = e.target.nextElementSibling.value;
+        xxx--;
+        e.target.nextElementSibling.value = xxx;
+        console.log(xxx);
+      });
+      document.querySelector(".plus").addEventListener("click", function (e) {
+        var zzz = e.target.previousElementSibling.value;
+        zzz++;
+        e.target.previousElementSibling.value = zzz;
+        console.log(zzz);
+      });
+      document.querySelector(".mata").addEventListener("click", function (e) {
+        var zzz = e.target.previousElementSibling;
+        var tipe = zzz.getAttribute("type");
+        if (tipe == "password") {
+          zzz.setAttribute("type", "text");
+        } else {
+          zzz.setAttribute("type", "password");
+        }
+        console.log(tipe);
+      });
+
+      var imgInp = document.querySelector("#imgInp");
+      var blah = document.querySelector("#blah");
+      imgInp.onchange = (evt) => {
+        const [file] = imgInp.files;
+        if (file) {
+          blah.src = URL.createObjectURL(file);
+        }
+      };
+    </script>
+  </body>
+</html>

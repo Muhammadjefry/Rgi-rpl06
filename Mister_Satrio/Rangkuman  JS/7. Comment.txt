@@ -1,0 +1,24 @@
+
+------------- Komentar JavaScript -----------
+
+  1. Komentar Satu Baris
+      - Komentar satu baris dimulai dengan //.
+
+     - Teks apa pun di antara //dan akhir baris akan diabaikan oleh JavaScript (tidak akan dieksekusi).
+     contohnya : 
+         // Change heading:
+        document.getElementById("myH").innerHTML = "My First Page";
+        // Change paragraph:
+         document.getElementById("myP").innerHTML = "My first paragraph.";
+
+   2. Komentar Multi-baris
+      - Komentar multi-baris dimulai dengan /* dan diakhiri dengan */.
+
+      - Teks apa pun di antara /*dan */akan diabaikan oleh JavaScript.
+     contohnya : 
+        /*
+            The code below will change
+            the heading with id = "myH"
+            and the paragraph with id = "myP"
+            in my web page:
+         */

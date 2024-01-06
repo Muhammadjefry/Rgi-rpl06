@@ -1,0 +1,102 @@
+
+
+-------------- Metode Array JavaScript ---------------- 
+      * Array length
+      * Array toString()
+      * Array pop()
+      * Array push()
+      * Array shift()
+      * Array unshift()
+      * Array join()
+      * Array delete()
+      * Array concat()
+      * Array flat()
+      * Array splice()
+      * Array slice()
+
+      JavaScript Array length
+      -----------------------
+      Properti lengthmengembalikan panjang (ukuran) array:
+     Contoh
+     const fruits = ["Banana", "Orange", "Apple", "Mango"];
+     let size = fruits.length; 
+
+     JavaScript Array toString()
+     ------------------------------
+    *  Metode JavaScript toString()mengonversi array menjadi string nilai array (dipisahkan koma).
+     Contoh
+     const fruits = ["Banana", "Orange", "Apple", "Mango"];
+     document.getElementById("demo").innerHTML = fruits.toString(); 
+     Hasil:
+     Banana,Orange,Apple,Mango 
+
+     JavaScript Array pop()
+   ----------------------------
+    TMetode ini pop()menghapus elemen terakhir dari array:
+    Contoh:
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.pop(); 
+
+    JavaScript Array push()
+    -----------------------
+    * Metode ini push()menambahkan elemen baru ke array (di akhir):
+    Contoh
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.push("Kiwi"); 
+
+    JavaScript Array shift()
+    -----------------------
+    * Metode ini shift()menghapus elemen array pertama dan "menggeser" semua elemen lainnya ke indeks yang lebih rendah.
+    Contoh
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.shift(); 
+
+    JavaScript Array unshift()
+-----------------------------------
+     * Metode ini unshift()menambahkan elemen baru ke array (di awal), dan "membatalkan pergeseran" elemen lama:
+      Example
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+     fruits.unshift("Lemon");
+
+     JavaScript Array length
+     -----------------------
+    * Properti ini lengthmenyediakan cara mudah untuk menambahkan elemen baru ke array:
+    Contoh
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits[fruits.length] = "Kiwi"; 
+
+    JavaScript Array delete()
+    ---------------------------
+       Peringatan !
+    * Elemen array dapat dihapus menggunakan operator JavaScript delete.
+    * Menggunakan deletemeninggalkan undefinedlubang di array.
+    * Gunakan pop() atau shift() sebagai gantinya.
+    Contoh
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+   delete fruits[0]; 
+
+   Splicing and Slicing Arrays
+   ---------------------------
+   * Metode ini splice()menambahkan item baru ke array.
+   * Metode ini slice()memotong sepotong array.
+
+   JavaScript Array splice()
+   -----------------------------
+    * The splice() method can be used to add new items to an array:
+     Example
+     const fruits = ["Banana", "Orange", "Apple", "Mango"];
+     fruits.splice(2, 0, "Lemon", "Kiwi"); 
+
+     Using splice() to Remove Elements
+-------------------------------------------
+   With clever parameter setting, you can use splice() to remove elements without leaving "holes" in the array:
+   Example
+   const fruits = ["Banana", "Orange", "Apple", "Mango"];
+   fruits.splice(0, 1); 
+   JavaScript Array slice()
+   ------------------------
+   Metode ini slice()membagi sebagian array menjadi array baru.
+    Contoh ini memotong bagian array mulai dari elemen array 1 ("Oranye"):
+    Contoh
+    const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    const citrus = fruits.slice(1); 

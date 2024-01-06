@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.sidenav {
+  /* display: none; */
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  /* right: 0; */
+  background-color: black;
+  overflow-x: hidden;
+  transition: 1s;
+  /* padding-top: 60px; */
+}
+.sidenav a {
+  display: block;
+  padding: 8px 8px 8px 2px;
+  font-size: 25px;
+  color: #bdbdbd81;
+  text-decoration: none;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: 1s;
+  margin-top: 60px;
+}
+
+.sidenav a:hover {
+  color: #ff0000;
+  transition: 0.7s;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: -50px;
+  right: 25px;
+  font-size: 36px;
+}
+#main {
+  transition: 1s;
+}

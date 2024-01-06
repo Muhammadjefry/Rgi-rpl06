@@ -1,0 +1,25 @@
+{
+  "folders": [
+	{
+		"path": "../../../../latihan ngoding/my website"
+	},
+	{
+		"path": "../../../../latihan ngoding/navbar"
+	},
+	{
+		"path": "../../../../latihan ngoding/html/hyperlink"
+	},
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../../../latihan ngoding/css/position"
+	},
+	{
+		"path": "../../../../latihan ngoding/afry-wedding"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "pertemuan 5"
+  }
+}

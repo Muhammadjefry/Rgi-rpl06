@@ -1,0 +1,97 @@
+
+
+---------- JavaScript Operator Precedence ------
+
+   * Prioritas operator menjelaskan urutan operasi yang dilakukan dalam ekspresi aritmatika.
+   * Perkalian ( *) dan pembagian ( /) mempunyai prioritas lebih tinggi dibandingkan penjumlahan ( +) dan pengurangan ( -).
+   * Seperti dalam matematika tradisional, perkalian dilakukan terlebih dahulu:
+    let x = 100 + 50 * 3; 
+
+
+                                                 Nilai Prioritas Operator
+                            Ekspresi dalam tanda kurung dihitung sebelum ekspresi lainnya
+                        Fungsi dijalankan sebelum hasilnya digunakan dalam ekspresi lainnya
+Val             	Operator                   	Keterangan                                      	Contoh
+18                    ( )               	Pengelompokan Ekspresi                          	(100 + 50) * 3
+17 	                  . 	               Anggota dari 	                                    orang.nama
+17 	                  [] 	               Anggota dari 	                                    orang["nama"]
+17 	                  ?. 	               Rangkaian Opsional                                   ES2020 	X ?. kamu
+17 	                  () 	               Panggilan Fungsi                                 	 fungsi saya()
+17 	                  baru 	               Baru dengan Argumen                                   Tanggal baru("5 Juni 2022")
+16 	                  baru 	               Baru tanpa Argumen                                 	 Tanggal baru()
+
+                                           Operator Kenaikan
+                                           ------------------
+                               Kenaikan postfix dijalankan sebelum kenaikan awalan
+15                  	++              	Peningkatan Postfix                             	saya++
+15                  	--              	Penurunan Postfix                             	     Saya--
+14                  	++              	Kenaikan Awalan 	                                ++saya
+14                  	--              	Penurunan Awalan 	                               --Saya
+BUKAN Operator
+14 	! 	Logis TIDAK 	!(x==kamu)
+14 	~ 	Sedikit demi sedikit TIDAK 	~x
+Operator Unary
+14 	+ 	Unary Ditambah 	+x
+14 	- 	Minus Unary 	-X
+14 	jenis 	Tipe data 	jenis x
+14 	ruang kosong 	Evaluasi Kekosongan 	batal(0)
+14 	menghapus 	Penghapusan Properti 	hapus myCar.color
+Operator Aritmatika
+Eksponensial dijalankan sebelum perkalian
+Perkalian dan pembagian dijalankan sebelum penjumlahan dan pengurangan
+13 	** 	Eksponensial ES2016 	10**2
+12 	* 	Perkalian 	10*5
+12 	/ 	Divisi 	10/5
+12 	% 	Sisa Divisi 	10% 5
+11 	+ 	Tambahan 	10+5
+11 	- 	Pengurangan 	10 - 5
+11 	+ 	Rangkaian 	"John" + "Doe"
+Operator Pergeseran
+10 	<< 	Geser ke Kiri 	x << 2
+10 	>> 	Shift Kanan (ditandatangani) 	x >> 2
+10 	>>> 	Shift Kanan (tidak ditandatangani) 	x >>> 2
+Operator Relasional
+9 	di dalam 	Properti di Objek 	"PI" dalam Matematika
+9 	contoh 	Contoh Objek 	x contoh Array
+Operator Perbandingan
+9 	< 	Kurang dari 	x < kamu 
+9 	<= 	Kurang dari atau sama 	x <= kamu
+9 	> 	Lebih besar dari 	x > kamu
+9 	>= 	Lebih besar dari atau sama 	x >= Himpunan
+8 	== 	Setara 	x == kamu
+8 	=== 	Sangat setara 	x === kamu
+8 	!= 	Tidak setara 	x != kamu
+8 	!== 	Sangat tidak setara 	x !== kamu
+Operator Bitwise
+7 	& 	Sedikit demi sedikit DAN 	x & y
+6 	^ 	XOR sedikit demi sedikit 	x^y
+5 	| 	Sedikit demi sedikit ATAU 	x | kamu
+Operator Logis
+4 	&& 	Logis DAN 	x && kamu
+3 	|| 	Logis ATAU 	x || kamu
+3 	?? 	Penggabungan Nullish ES2020 	X ?? kamu
+Operator Bersyarat (terner).
+2 	? : 	Kondisi 	? "ya Tidak"
+Operator Penugasan
+Penugasan dijalankan setelah operasi lainnya
+2 	= 	Tugas Sederhana 	x = kamu
+2 	: 	Penugasan Usus Besar 	x: 5
+2 	+= 	Tugas Tambahan 	x += kamu
+2 	-= 	Tugas Pengurangan 	x -= kamu
+2 	*= 	Tugas Perkalian 	x *= kamu
+2 	**= 	Tugas Eksponensial 	x **= kamu
+2 	/= 	Penugasan Divisi 	x /= kamu
+2 	%= 	Tugas Sisa 	x %= kamu
+2 	<<= 	Penugasan Shift Kiri 	x <<= kamu
+2 	>>= 	Penugasan Shift Kanan 	x >>= kamu
+2 	>>>= 	Pergeseran Kanan Tanpa Tanda Tangan 	x >>>= kamu
+2 	&= 	Bitwise DAN Penugasan 	x &= kamu
+2 	|= 	Bitwise ATAU Penugasan 	x |= kamu
+2 	^= 	Penugasan XOR Bitwise 	x^= kamu
+2 	&&= 	Logis DAN Tugas 	x &&= kamu
+2 	||= 	Logis ATAU Penugasan 	x ||= kamu
+2 	=> 	Anak panah 	x => kamu
+2 	menghasilkan 	Jeda / Lanjutkan 	hasil x
+2 	menghasilkan* 	Melimpahkan 	hasil* x
+2 	... 	Menyebar 	... X
+1 	, 	Koma 	x , kamu

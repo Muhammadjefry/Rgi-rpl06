@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        font-size:  30px;
+      }
+
+      .container .containerkiri {
+        background-color: aqua;
+        flex: 50%;
+      }
+
+      .container .containerkanan {
+        background-color: blue;
+     
+        flex: 50%;
+      }
+      .containerkanan, .containerkiri{
+        display: flex;
+      }
+    .containerkiri .satu{
+        background-color: green;
+       
+        flex: 50%;
+      }
+
+  .containerkiri .dua{
+        background-color: aqua;
+        flex: 50%;
+      }
+     .containerkanan .tiga{
+        background-color: violet;
+        flex: 50%;
+      } 
+       .containerkanan .empat{
+        background-color: blue;
+        flex: 50%;
+      }
+
+      @media (max-width: 600px) {
+        .container .containerkanan .containerkiri{
+          flex-direction: column;
+        }
+      }
+
+
+
+
+      @media (max-width: 800px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="containerkiri">
+      <div class="satu">1</div>
+      <div class="dua">2</div>
+    </div>
+    <div class="containerkanan">
+      <div class="tiga">3</div>
+      <div class="empat">4</div>
+    </div>
+  </body>
+</html>

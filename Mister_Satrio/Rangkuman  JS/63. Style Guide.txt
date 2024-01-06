@@ -1,0 +1,21 @@
+
+
+------------- JavaScript Style Guide ---------
+Selalu gunakan konvensi pengkodean yang sama untuk semua proyek JavaScript Anda.
+Konvensi Pengkodean JavaScript
+
+Konvensi pengkodean adalah pedoman gaya untuk pemrograman . Mereka biasanya mencakup:
+
+    Aturan penamaan dan deklarasi untuk variabel dan fungsi.
+    Aturan penggunaan spasi, lekukan, dan komentar.
+    Praktik dan prinsip pemrograman.
+
+Konvensi pengkodean menjamin kualitas :
+
+    Meningkatkan keterbacaan kode
+    Jadikan pemeliharaan kode lebih mudah
+
+Konvensi pengkodean dapat berupa aturan yang didokumentasikan untuk diikuti oleh tim, atau hanya menjadi praktik pengkodean individu Anda.
+
+Halaman ini menjelaskan konvensi kode JavaScript umum yang digunakan oleh W3Schools.
+Anda juga harus membaca bab berikutnya "Praktik Terbaik", dan mempelajari cara menghindari kesalahan pengkodean.

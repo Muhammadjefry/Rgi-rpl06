@@ -1,0 +1,105 @@
+
+
+-------------- JavaScript typeof ---------------
+
+Dalam JavaScript ada 5 tipe data berbeda yang dapat berisi nilai:
+------------
+    string
+    number
+    boolean
+    object
+    function
+
+Ada 6 jenis objek:
+---------------
+    Object
+    Date
+    Array
+    String
+    Number
+    Boolean
+
+Dan 2 tipe data yang tidak bisa berisi nilai:
+--------------
+    null
+    undefined
+
+
+Jenis Operator
+--------------
+Anda dapat menggunakan typeofoperator untuk menemukan tipe data variabel JavaScript.
+
+typeof "John"                 // Returns "string"
+typeof 3.14                   // Returns "number"
+typeof NaN                    // Returns "number"
+typeof false                  // Returns "boolean"
+typeof [1,2,3,4]              // Returns "object"
+typeof {name:'John', age:34}  // Returns "object"
+typeof new Date()             // Returns "object"
+typeof function () {}         // Returns "function"
+typeof myCar                  // Returns "undefined" *
+typeof null                   // Returns "object" 
+
+
+Data Primitif
+----------------
+Nilai data primitif adalah nilai data sederhana tanpa properti dan metode tambahan.
+
+Operator typeofdapat mengembalikan salah satu tipe primitif berikut:
+
+    string
+    number
+    boolean
+    undefined
+
+Contoh
+typeof "John"              // Returns "string"
+typeof 3.14                // Returns "number"
+typeof true                // Returns "boolean"
+typeof false               // Returns "boolean"
+typeof x                   // Returns "undefined" (if x has no value) 
+
+
+Data Kompleks
+-------------
+Operator typeofdapat mengembalikan salah satu dari dua tipe kompleks:
+
+    function
+    object
+
+Operator typeofmengembalikan "objek" untuk objek, array, dan null.
+
+Operator typeoftidak mengembalikan "objek" untuk fungsi.
+Contoh
+typeof {name:'John', age:34} // Returns "object"
+typeof [1,2,3,4]             // Returns "object" (not "array", see note below)
+typeof null                  // Returns "object"
+typeof function myFunc(){}   // Returns "function" 
+
+Undefined
+------------
+Dalam JavaScript, variabel tanpa nilai memiliki nilai undefined. Tipenya juga undefined.
+Example
+let car;    // Value is undefined, type is undefined 
+
+
+Empty Values
+---------------
+* Nilai kosong tidak ada hubungannya dengan undefined.
+* String kosong memiliki nilai legal dan tipe.
+Example
+let car = "";    // The value is "", the typeof is "string" 
+
+Null
+----------
+
+  * Dalam JavaScript nulladalah "tidak ada". Itu seharusnya menjadi sesuatu yang tidak ada.
+  
+  * Sayangnya, dalam JavaScript, tipe datanya nulladalah objek.
+  
+  * Anda dapat menganggapnya sebagai bug dalam JavaScript yang typeof nullberupa objek. Seharusnya begitu null.
+  
+  * Anda dapat mengosongkan suatu objek dengan mengaturnya ke null:
+Contoh
+let person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+person = null;    // Now value is null, but type is still an object 

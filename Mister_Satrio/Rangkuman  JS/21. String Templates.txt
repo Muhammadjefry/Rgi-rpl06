@@ -1,0 +1,67 @@
+
+------------------- Literal Templat JavaScript --------
+
+      Sinonim:
+          * Literal Templat
+          * String Templat
+          * Templat String
+          * Sintaks Back-Tics
+
+          Back-Tics Syntax
+          ------------------
+          Literal Templat menggunakan tanda centang kembali (``) dan bukan tanda kutip ("") untuk mendefinisikan string:
+          Contohnya :
+         let text = `Hello World!`;
+
+         Quotes Inside Strings
+         ---------------------
+         Dengan template literals , Anda dapat menggunakan tanda kutip tunggal dan ganda di dalam string:
+
+         Contohnya  :
+         let text = `He's often called "Johnny"`; 
+
+         Multiline Strings
+         ------------------
+        Literal templat memungkinkan string multiline:
+        let text =
+         `The quick
+         brown fox
+         jumps over
+         the lazy dog`; 
+
+         Interpolation
+         -------------
+         * Literal templat menyediakan cara mudah untuk menginterpolasi variabel dan ekspresi menjadi string.
+        * Metode ini disebut interpolasi string.
+        * Sintaksnya adalah:
+        ${...}
+
+        Variable Substitutions
+        ----------------------
+        Literal templat mengizinkan variabel dalam string:
+        Contoh
+        let firstName = "John";
+        let lastName = "Doe";
+        let text = `Welcome ${firstName}, ${lastName}!`;
+
+        Expression Substitution
+        ------------------------
+       Literal templat mengizinkan ekspresi dalam string:
+       Contohnya :
+       let price = 10;
+       let VAT = 0.25;
+       let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`; 
+
+       HTML Templates
+       --------------
+       Contoh
+      let header = "Templates Literals";
+      let tags = ["template literals", "javascript", "es6"];
+      
+      let html = `<h2>${header}</h2><ul>`;
+      for (const x of tags) {
+        html += `<li>${x}</li>`;
+      }
+      
+      html += `</ul>`; 
+

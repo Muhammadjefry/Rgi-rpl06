@@ -1,0 +1,6 @@
+color, bakground, border, shadow, gradient
+position
+inline-block 
+css selector and comibantor 
+psuedo class 
+pasuedo element 

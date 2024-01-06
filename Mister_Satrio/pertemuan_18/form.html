@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <style>
+        .succes{
+            color:green;
+        }
+        .error{
+            color: red;
+        }
+    </style>
+  </head>
+  <body>
+     <form action="" id="form">
+        <div sub-form>
+        <label for="username" value= >Username</label>
+        <input type="text" id="username" placeholder="USERNAME" value=""/>
+        </div>
+      <button type="button" onclick="myFunction()">SUBMIT</button>
+      <p id="hasil"></p>
+    </form>
+    <script>
+        function myFunction(){
+         let user = document.getElementById("username").value;
+         console.log(user[0])
+         if(user.length > 6){
+            let hurufDepan=user[0]
+            if(isNaN(user[0])){
+                let spasi=user.indexOf(" ");
+                if(spasi==-1){
+                document.getElementById("hasil").innerHTML = "Data anda berhasil disimpan";
+                  hasil.classList.add('succes');
+                  hasil.classList.remove('error');
+                }else{
+                 document.getElementById("hasil").innerHTML = " Jangan masukan spasi...!!!";
+                 hasil.classList.add('error');
+                hasil.classList.remove('succes');
+                 }
+            }else{
+            document.getElementById("hasil").innerHTML = "Huruf depan tidak boleh angka...!";
+            hasil.classList.add('error');
+            hasil.classList.remove('succes');
+            }
+        }  else{
+            document.getElementById("hasil").innerHTML = "Masukan huruf, minimal 7 karacther..!!!";
+            hasil.classList.add('error');
+            hasil.classList.remove('succes');
+         }
+    }
+    </script>
+  </body>
+</html>

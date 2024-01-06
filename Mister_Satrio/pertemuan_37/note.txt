@@ -1,0 +1,4 @@
+MVC 
+- MODEL
+- VIEW (FrontEnd) Tampilan
+- CONTROLLER (BAckEnd) Prosses

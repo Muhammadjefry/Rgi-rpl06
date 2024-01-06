@@ -1,0 +1,13 @@
+=========Memulai java script=======
+1.Dimana meletakan java script
+2.output,statement,coment,variable,let,const
+ -
+3.opperator assignment
+data stypes
+if dan for 
+= memasukan nilai
+== apakah sama dengan
+=== apakah jenis san nilai sama dengan 
+== equel
+< less 
+<= 

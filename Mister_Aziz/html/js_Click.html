@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <input type="text" id="inp" />
+    <button type="submit" id="btn">Click</button>
+    <p id="output"></p>
+  </body>
+  <script>
+    document.querySelector("#btn").addEventListener("click", function (e) {
+      var xxx = e.target.previousElementSibling.value;
+      e.target.previousElementSibling.value = xxx;
+      var output = document.querySelector("#output");
+      output.innerHTML = xxx;
+      console.log(xxx);
+    });
+  </script>
+</html>

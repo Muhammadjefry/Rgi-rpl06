@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Side nav</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:volid(0)" class="closebtn" onclick="closeNav()"
+        >&times</a
+      >
+      <a href="#"> <ion-icon name="person-outline"></ion-icon>About</a>
+      <a href="#"> <ion-icon name="construct-outline"></ion-icon>Service</a>
+      <a href="#"><ion-icon name="accessibility-outline"></ion-icon>Clients</a>
+      <a href="#"> <ion-icon name="call-outline"></ion-icon>Contact</a>
+    </div>
+    <div id="main">
+      <h2>Sidenav Example</h2>
+      <p>click on the element</p>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776;
+      </span>
+    </div>
+
+    <script src="push_Cotent.js"></script>
+  </body>
+</html>
